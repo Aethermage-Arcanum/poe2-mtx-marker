@@ -14,10 +14,10 @@
   const UNMATCHED_LOG_TEXT = 'Kein PoE2-Treffer:';
   const STORAGE_AREA_LOCAL = 'local';
 
+  const ELEMENT_NODE = 1;
+
   function createMarker({ document, logger, MutationObserver }) {
     let index = null;
-    let generation = 0;
-    const evaluatedAt = new WeakMap();
     const loggedUnmatched = new Set();
     let observer = null;
 
@@ -27,9 +27,9 @@
     }
 
     function evaluateElement(el) {
-      evaluatedAt.set(el, generation);
       removeMark(el);
-      if (!index) return;
+      // Der Shop hängt Karten zuerst leer an und befüllt sie asynchron; erst der Inhalt zählt.
+      if (!index || !core.isCardRendered(el)) return;
       const card = core.extractCard(el);
       const text = core.labelText(core.evaluateCard(card, index));
       if (text) {
@@ -44,9 +44,38 @@
       }
     }
 
-    function scan() {
-      for (const el of document.querySelectorAll(core.SHOP_SELECTORS.CARD)) {
-        if (evaluatedAt.get(el) !== generation) evaluateElement(el);
+    function evaluateAll() {
+      for (const el of document.querySelectorAll(core.SHOP_SELECTORS.CARD)) evaluateElement(el);
+    }
+
+    function isOwnLabel(node) {
+      return node.nodeType === ELEMENT_NODE && node.classList.contains(LABEL_CLASS);
+    }
+
+    function owningCard(node) {
+      const el = node.nodeType === ELEMENT_NODE ? node : node.parentElement;
+      return el ? el.closest(core.SHOP_SELECTORS.CARD) : null;
+    }
+
+    function affectedCards(records) {
+      const cards = new Set();
+      for (const record of records) {
+        const changed = [...record.addedNodes, ...record.removedNodes];
+        if (changed.length > 0 && changed.every(isOwnLabel)) continue;
+        const owner = owningCard(record.target);
+        if (owner) cards.add(owner);
+        for (const node of record.addedNodes) {
+          if (node.nodeType !== ELEMENT_NODE) continue;
+          if (node.matches(core.SHOP_SELECTORS.CARD)) cards.add(node);
+          for (const card of node.querySelectorAll(core.SHOP_SELECTORS.CARD)) cards.add(card);
+        }
+      }
+      return cards;
+    }
+
+    function onMutations(records) {
+      for (const el of affectedCards(records)) {
+        if (el.isConnected) evaluateElement(el);
       }
     }
 
@@ -65,9 +94,9 @@
     return {
       start() {
         if (observer) return;
-        observer = new MutationObserver(scan);
+        observer = new MutationObserver(onMutations);
         observer.observe(document.documentElement, { childList: true, subtree: true });
-        scan();
+        evaluateAll();
       },
       stop() {
         if (observer) observer.disconnect();
@@ -76,8 +105,7 @@
       setData(data) {
         index = data && data.index ? core.indexFromPayload(data.index) : null;
         updateNotice(data ? data.source : core.DATA_SOURCES.NONE, data ? data.fetchedAt : null);
-        generation += 1;
-        scan();
+        evaluateAll();
       },
       setSettings(settings) {
         const glow = core.glowStyle(core.normalizeSettings(settings));

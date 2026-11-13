@@ -12,3 +12,6 @@
   unterschlagen ihn.
 - jsdom normalisiert `box-shadow` beim Serialisieren (`rgb(...) 0px ...`). Stilwerte in Tests über dieselbe
   CSS-Serialisierung vergleichen, nicht als Rohstring.
+- Der Shop hängt `div.shopItemBase#<id>` zuerst leer an `#mtx-list` an und befüllt die Karte danach
+  asynchron per `$el.html(...)`. Karten erst bewerten, wenn ihr Inhalt da ist, und bei Mutationen im
+  Karten-Teilbaum neu bewerten. Jsdom-Tests mit fertig eingefügtem HTML decken das nicht ab.

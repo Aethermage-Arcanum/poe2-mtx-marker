@@ -60,3 +60,10 @@ test('SHOP_SELECTORS.CARD: nur Karten mit id direkt in #mtx-list, keine Lade-Ske
   const ids = [...doc.querySelectorAll(core.SHOP_SELECTORS.CARD)].map((el) => el.id);
   assert.deepEqual(ids, ['WolfOfOghamPet']);
 });
+
+test('isCardRendered: leere Karte (nur äußeres Element der Fixture) nein, befüllte Karte ja', () => {
+  const filled = cardElement('en_variant_PhoenixPetVariations');
+  const empty = filled.cloneNode(false);
+  assert.equal(core.isCardRendered(empty), false);
+  assert.equal(core.isCardRendered(filled), true);
+});

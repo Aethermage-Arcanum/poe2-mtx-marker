@@ -219,3 +219,92 @@ test('Content-Bootstrap: meldet Seitenaufruf, übernimmt Daten, Einstellungen li
   assert.deepEqual(await replies.find((r) => r), { matchedCards: 2, totalCards: 2 });
   marker.stop();
 });
+
+function emptyShell(document, name) {
+  const real = parseHtml(readDomFixture(name)).body.firstElementChild;
+  return { shell: document.importNode(real.cloneNode(false), true), innerHtml: real.innerHTML };
+}
+
+function assertMarkAndLabelConsistent(document) {
+  for (const el of document.querySelectorAll(core.SHOP_SELECTORS.CARD)) {
+    const labels = el.querySelectorAll(`:scope > .${LABEL_CLASS}`).length;
+    assert.equal(labels, el.classList.contains(MARK_CLASS) ? 1 : 0, `Karte ${el.id}: Klasse und Label inkonsistent`);
+  }
+}
+
+test('Content: leer angehängte Karte wird erst nach dem Befüllen bewertet (Variante -> 3/3, kein Log in der Leerphase)', async () => {
+  const { document, logger, marker } = setupPage('<div id="mtx-list"></div>');
+  marker.start();
+  marker.setData(liveData(FULL_PAYLOAD));
+  const { shell, innerHtml } = emptyShell(document, PHOENIX);
+  document.getElementById('mtx-list').appendChild(shell);
+  await flushMutations();
+  assert.equal(isMarked(document, 'PhoenixPetVariations'), false);
+  assert.equal(logger.calls.length, 0);
+  shell.innerHTML = innerHtml;
+  await flushMutations();
+  assert.equal(isMarked(document, 'PhoenixPetVariations'), true);
+  assert.equal(labelOf(document, 'PhoenixPetVariations'), 'PoE2 ready 3/3');
+  assert.equal(logger.calls.length, 0);
+  assertMarkAndLabelConsistent(document);
+  marker.stop();
+});
+
+test('Content: leer angehängtes Einzelitem bekommt nach dem Befüllen Klasse und Label', async () => {
+  const { document, logger, marker } = setupPage('<div id="mtx-list"></div>');
+  marker.start();
+  marker.setData(liveData(FULL_PAYLOAD));
+  const { shell, innerHtml } = emptyShell(document, WOLF);
+  document.getElementById('mtx-list').appendChild(shell);
+  await flushMutations();
+  assert.equal(isMarked(document, 'WolfOfOghamPet'), false);
+  shell.innerHTML = innerHtml;
+  await flushMutations();
+  assert.equal(isMarked(document, 'WolfOfOghamPet'), true);
+  assert.equal(labelOf(document, 'WolfOfOghamPet'), 'PoE2 ready');
+  assert.equal(logger.calls.length, 0);
+  assertMarkAndLabelConsistent(document);
+  marker.stop();
+});
+
+test('Content: Inhalt einer markierten Karte per innerHTML ersetzt -> Label wieder da, genau eins', async () => {
+  const { document, marker } = setupPage(`<div id="mtx-list">${cardHtml(WOLF, PHOENIX)}</div>`);
+  marker.start();
+  marker.setData(liveData(FULL_PAYLOAD));
+  await flushMutations();
+  for (const [id, name, expected] of [['WolfOfOghamPet', WOLF, 'PoE2 ready'], ['PhoenixPetVariations', PHOENIX, 'PoE2 ready 3/3']]) {
+    document.getElementById(id).innerHTML = emptyShell(document, name).innerHtml;
+    await flushMutations();
+    assert.equal(labelOf(document, id), expected);
+    assert.equal(document.getElementById(id).querySelectorAll(`.${LABEL_CLASS}`).length, 1);
+  }
+  assertMarkAndLabelConsistent(document);
+  marker.stop();
+});
+
+test('Content: Mutation bewertet nur betroffene Karten neu, eigene Labels lösen keine Schleife aus', async () => {
+  const { document, marker } = setupPage(`<div id="mtx-list">${cardHtml(WOLF, PHOENIX, CHAOTIC)}</div>`);
+  marker.start();
+  marker.setData(liveData(FULL_PAYLOAD));
+  await flushMutations();
+  const original = core.extractCard;
+  let calls = 0;
+  core.extractCard = (el) => {
+    calls += 1;
+    return original(el);
+  };
+  try {
+    await flushMutations();
+    assert.equal(calls, 0);
+    document.getElementById('mtx-list').insertAdjacentHTML('beforeend', cardHtml(COMMANDER));
+    await flushMutations();
+    await flushMutations();
+    await flushMutations();
+    assert.equal(calls, 1);
+    assert.equal(labelOf(document, 'CommanderBootsVariations'), 'PoE2 ready 2/2');
+  } finally {
+    core.extractCard = original;
+  }
+  assertMarkAndLabelConsistent(document);
+  marker.stop();
+});
