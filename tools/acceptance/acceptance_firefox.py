@@ -10,7 +10,7 @@ from expected import build_index, shop_category, expected_label  # noqa: E402
 
 FIREFOX = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 EXT_FILES = ['manifest.json', 'background.js', 'content.js', 'content.css', 'popup.html', 'popup.js',
-             'options.html', 'options.js', 'lib', 'data']
+             'options.html', 'options.js', 'lib', 'data', 'icons']
 MARK_CLASS = 'poe2mtx-marked'
 LABEL_CLASS = 'poe2mtx-label'
 NOTICE_ID = 'poe2mtx-notice'

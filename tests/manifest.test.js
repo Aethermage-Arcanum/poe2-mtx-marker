@@ -37,6 +37,8 @@ test('manifest: alle referenzierten Dateien existieren', () => {
     ...cs.css,
     manifest.options_ui.page,
     manifest.action.default_popup,
+    ...Object.values(manifest.icons),
+    ...Object.values(manifest.action.default_icon),
     'data/poe2db-shopid-map.json',
   ];
   for (const file of files) assert.ok(fs.existsSync(path.join(ROOT, file)), file);

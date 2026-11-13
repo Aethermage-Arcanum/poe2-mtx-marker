@@ -1,8 +1,14 @@
 {
   "manifest_version": 3,
   "name": "PoE2 MTX Marker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Markiert Shop-Karten auf pathofexile.com, deren MTX laut poe2db.tw in Path of Exile 2 verfügbar sind.",
+  "icons": {
+    "16": "icons/icon-small.svg",
+    "32": "icons/icon-small.svg",
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "poe2-mtx-marker@djih",
@@ -30,6 +36,10 @@
   },
   "action": {
     "default_title": "PoE2 MTX Marker",
+    "default_icon": {
+      "16": "icons/icon-small.svg",
+      "32": "icons/icon-small.svg"
+    },
     "default_popup": "popup.html"
   }
 }

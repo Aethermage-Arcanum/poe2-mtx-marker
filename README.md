@@ -36,6 +36,7 @@ WCAG-2-Kontrast hat (bei Gleichstand schwarz); das Content-Script setzt sie als 
 | `content.js`, `content.css` | Markiert Karten in `#mtx-list` (MutationObserver), Label, Hinweis "Stand vom" bei Cache-Daten, Konsolen-Protokoll nicht gematchter Karten |
 | `popup.html`, `popup.js` | Treffer, Karten gesamt, Datenstand, Quelle, Fehler- und Berechtigungshinweise |
 | `options.html`, `options.js` | Farbe, Intensität, Live-Vorschau; offene Shop-Tabs übernehmen Änderungen über `storage.onChanged` |
+| `icons/icon.svg`, `icons/icon-small.svg` | Icon ab 48 px mit Schriftzug, 16/32 px (Toolbar) ohne. Flach, ohne Verläufe; Schriftzug "PoE2" als Pfade aus Cinzel (SIL Open Font License 1.1) |
 | `data/poe2db-shopid-map.json` | Mitgelieferte Zuordnung Slug -> Shop-IDs (`{"generatedAt", "map"}`) |
 | `tools/build-idmap.mjs` | Baut die Zuordnung aus einer Listen-HTML und gecachten Detailseiten |
 | `tools/acceptance/` | Datenabruf und Firefox-Abnahme per Selenium (siehe unten) |

@@ -1,6 +1,6 @@
 {
   "name": "poe2-mtx-marker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Firefox-Extension: markiert PoE-Shop-Karten, deren MTX in Path of Exile 2 verfügbar sind.",
   "scripts": {
