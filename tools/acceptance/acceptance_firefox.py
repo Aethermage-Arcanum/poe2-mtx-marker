@@ -134,8 +134,14 @@ def layout_problems(d):
         const l = c.querySelector(':scope > .{LABEL_CLASS}'); if (!l) return true;
         const a = c.getBoundingClientRect(), b = l.getBoundingClientRect();
         return b.left < a.left || b.right > a.right || b.top < a.top || b.bottom > a.bottom; }}).map(c => c.id);
-      return {{columns: xs.size, widths: [...widths], labelOutside: outside.slice(0, 5), nOutside: outside.length}};""")
-    ok = r['columns'] == 2 and r['widths'] == [460] and r['nOutside'] == 0
+      const notUnderBuy = cards.filter(c => c.classList.contains('{MARK_CLASS}')).filter(c => {{
+        const l = c.querySelector(':scope > .{LABEL_CLASS}'), btn = c.querySelector('.controls .buyButton, .controls .singleOwnedIcon');
+        if (!l || !btn) return true;
+        const b = l.getBoundingClientRect(), k = btn.getBoundingClientRect();
+        return b.top < k.bottom - 1 || Math.abs(b.left - k.left) > 2; }}).map(c => c.id);
+      return {{columns: xs.size, widths: [...widths], labelOutside: outside.slice(0, 5), nOutside: outside.length,
+               labelNotUnderBuy: notUnderBuy.slice(0, 5), nNotUnderBuy: notUnderBuy.length}};""")
+    ok = r['columns'] == 2 and r['widths'] == [460] and r['nOutside'] == 0 and r['nNotUnderBuy'] == 0
     print('   Layout:', r, 'OK' if ok else 'FEHLER')
     return 0 if ok else 1
 
@@ -146,6 +152,28 @@ def screenshot(d, name):
     p = os.path.join(OUT, name + '.png')
     d.save_screenshot(p)
     print('   Screenshot', p)
+
+
+def set_options(d, uuid, color, intensity_max):
+    d.switch_to.new_window('tab')
+    d.get(f'moz-extension://{uuid}/options.html')
+    time.sleep(1)
+    d.execute_script("""
+      const c=document.querySelector('input[type=color]'); c.value=arguments[0];
+      c.dispatchEvent(new Event('input',{bubbles:true})); c.dispatchEvent(new Event('change',{bubbles:true}));
+      const r=document.querySelector('input[type=range]'); if (arguments[1]) r.value=String(r.max);
+      r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));""", color, intensity_max)
+    time.sleep(1)
+    d.save_screenshot(os.path.join(OUT, f'options_{color.lstrip("#")}.png'))
+    d.close()
+    d.switch_to.window(d.window_handles[0])
+    time.sleep(1.5)
+
+
+def marked_style(d):
+    return d.execute_script(f"""const c=document.querySelector('.{MARK_CLASS}'); const s=getComputedStyle(c);
+      const l=getComputedStyle(c.querySelector(':scope > .{LABEL_CLASS}'));
+      return {{border: s.borderTopColor, shadow: s.boxShadow, labelBg: l.backgroundColor, labelText: l.color}}""")
 
 
 def popup_text(d, uuid):
@@ -193,26 +221,21 @@ def main():
     print('   Stats aus Content-Script:', stats)
 
     print('\n== Szenario 2: Optionen wirken live ==')
-    before = d.execute_script(f"const c=document.querySelector('.{MARK_CLASS}'); const s=getComputedStyle(c); return [s.borderTopColor, s.boxShadow]")
-    d.switch_to.new_window('tab')
-    d.get(f'moz-extension://{uuid}/options.html')
-    time.sleep(1)
-    d.execute_script("""
-      const c=document.querySelector('input[type=color]'); c.value='#00ff00';
-      c.dispatchEvent(new Event('input',{bubbles:true})); c.dispatchEvent(new Event('change',{bubbles:true}));
-      const r=document.querySelector('input[type=range]'); r.value=String(r.max);
-      r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));""")
-    time.sleep(1)
-    d.save_screenshot(os.path.join(OUT, 'options.png'))
-    d.close()
-    d.switch_to.window(d.window_handles[0])
-    time.sleep(1.5)
-    after = d.execute_script(f"const c=document.querySelector('.{MARK_CLASS}'); const s=getComputedStyle(c); return [s.borderTopColor, s.boxShadow]")
-    print('   vorher', before)
-    print('   nachher', after)
-    if before == after or '0, 255, 0' not in after[0]:
-        problems += 1
-        print('   FEHLER: Einstellungen wirken nicht live')
+    # Erwartete Label-Schrift nach WCAG-2-Kontrast (unabhängig in Python berechnet).
+    cases = [(None, 'rgb(255, 42, 42)', 'rgb(0, 0, 0)'),
+             ('#00ff00', 'rgb(0, 255, 0)', 'rgb(0, 0, 0)'),
+             ('#000080', 'rgb(0, 0, 128)', 'rgb(255, 255, 255)'),
+             ('#ff2a2a', 'rgb(255, 42, 42)', 'rgb(0, 0, 0)')]
+    for color, border, text in cases:
+        if color:
+            set_options(d, uuid, color, color == '#00ff00')
+        st_ = marked_style(d)
+        ok = st_['border'] == border and st_['labelBg'] == border and st_['labelText'] == text
+        print(f'   Farbe {color or "Standard"}: {st_}', 'OK' if ok else f'FEHLER (soll Rahmen {border}, Schrift {text})')
+        if not ok:
+            problems += 1
+        if color == '#000080':
+            screenshot(d, 'options_live_navy_de_bundles')
     screenshot(d, 'options_live_de_bundles')
 
     print('\n== Szenario 3: poe2db nicht erreichbar, Cache vorhanden ==')
