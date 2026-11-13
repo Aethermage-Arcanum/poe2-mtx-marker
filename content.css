@@ -1,0 +1,35 @@
+#mtx-list > div.shopItemBase.poe2mtx-marked {
+  position: relative;
+  overflow: visible;
+  border: 2px solid var(--poe2mtx-color) !important;
+  box-shadow: var(--poe2mtx-shadow) !important;
+}
+
+.poe2mtx-label {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--poe2mtx-color);
+  color: #fff;
+  font: bold 11px/16px sans-serif;
+  text-shadow: 0 0 2px #000;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#poe2mtx-notice {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(20, 20, 20, 0.85);
+  color: #f0d080;
+  font: 12px/18px sans-serif;
+  z-index: 2147483647;
+  pointer-events: none;
+}

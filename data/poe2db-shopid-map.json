@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-11-13T14:22:28.368Z",
+  "map": {
+    "Celestial_Body_Armour": [
+      "CelestialBodyArmour"
+    ],
+    "Legion_Commander_Boots": [
+      "LegionCommanderBoots"
+    ],
+    "Scourge_Commander_Boots": [
+      "ScourgeCommanderBoots"
+    ],
+    "Molten_Portal_Effect": [
+      "MoltenPortalEffect",
+      "MoltenPortalEffectVariation"
+    ],
+    "Stormborne_Helmet": [
+      "StormborneHelmet",
+      "StormborneHelmetVariation"
+    ],
+    "Stormborne_Boots": [
+      "StormborneBoots",
+      "StormborneBootsVariation"
+    ],
+    "Stormborne_Gloves": [
+      "StormborneGloves",
+      "StormborneGlovesVariation"
+    ],
+    "Chaotic_Stormborne_Body_Armour": [
+      "ChaoticStormborneBodyArmour"
+    ],
+    "Nursery_Web_Spider_Pet": [],
+    "Phoenix_Pet": [
+      "PhoenixPet"
+    ],
+    "Blueflame_Phoenix_Pet": [
+      "BlueflamePhoenixPet"
+    ],
+    "Abyssal_Phoenix_Pet": [
+      "AbyssalPhoenixPet"
+    ],
+    "Wolf_of_Ogham_Pet": [
+      "WolfOfOghamPet"
+    ]
+  }
+}

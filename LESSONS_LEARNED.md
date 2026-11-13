@@ -6,3 +6,9 @@
   PoE2-Grafik (z. B. `BodyArmourIconArcane` statt der PoE1-Grafik), außerdem teilen sich Varianten-Gruppe
   und erste Variante im Shop denselben Bildpfad.
 - Die API-Angabe `total` kann größer sein als die tatsächlich gelieferte Anzahl (specials: 351 vs. 331).
+- poe2db-Slugs sind rohe, teils bereits URL-kodierte `href`-Werte (`..._%28Currency%29`). Für den Abruf
+  relativ zur Listen-URL auflösen, nicht erneut kodieren; sonst entsteht `%2528` und eine falsche Seite.
+- Nicht jeder poe2db-Listeneintrag hat ein Bild (`Hideout_Music_Player`). Zählungen über die Bild-Links
+  unterschlagen ihn.
+- jsdom normalisiert `box-shadow` beim Serialisieren (`rgb(...) 0px ...`). Stilwerte in Tests über dieselbe
+  CSS-Serialisierung vergleichen, nicht als Rohstring.
