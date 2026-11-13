@@ -5,8 +5,11 @@
   "description": "Markiert Shop-Karten auf pathofexile.com, deren MTX laut poe2db.tw in Path of Exile 2 verfügbar sind.",
   "browser_specific_settings": {
     "gecko": {
-      "id": "poe2-mtx-marker@local",
-      "strict_min_version": "109.0"
+      "id": "poe2-mtx-marker@djih",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "permissions": ["storage"],

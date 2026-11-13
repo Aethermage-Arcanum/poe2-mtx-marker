@@ -21,3 +21,5 @@
 - Für Abnahmetests "poe2db nicht erreichbar" reicht `network.dns.localDomains` allein nicht: Firefox
   verwendet offene Verbindungen weiter. Zusätzlich DNS-Cache leeren und Verbindungen kappen
   (`net:prune-all-connections`).
+- web-ext-Konfiguration als `.mjs` mit `export default` anlegen. Unter Node 24 liefert der Import einer
+  `.cjs`-Datei zusätzlich den Schlüssel `module.exports`, den web-ext als unbekannte Option ablehnt.

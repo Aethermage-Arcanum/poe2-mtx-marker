@@ -5,9 +5,13 @@
   "description": "Firefox-Extension: markiert PoE-Shop-Karten, deren MTX in Path of Exile 2 verfügbar sind.",
   "scripts": {
     "test": "node --test",
-    "build-idmap": "node tools/build-idmap.mjs"
+    "build-idmap": "node tools/build-idmap.mjs",
+    "lint": "web-ext lint",
+    "build": "web-ext build",
+    "sign": "web-ext sign"
   },
   "devDependencies": {
-    "jsdom": "^31.0.1"
+    "jsdom": "^31.0.1",
+    "web-ext": "^10.8.0"
   }
 }

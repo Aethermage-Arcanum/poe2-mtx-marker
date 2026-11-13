@@ -51,6 +51,29 @@ HTML wird im Background mit dem `DOMParser` von Firefox geparst, in Tests und im
 3. Unter `about:addons` > PoE2 MTX Marker > Berechtigungen prüfen, dass der Zugriff auf
    pathofexile.com und poe2db.tw erlaubt ist (in Firefox MV3 vom Nutzer entziehbar; das Popup meldet es).
 
+## Signieren und weitergeben
+
+Release-Firefox installiert dauerhaft nur von Mozilla signierte Add-ons. Signiert wird "unlisted": kostenlos,
+automatische Prüfung, das Add-on erscheint nicht im Store. Die signierte `.xpi` kann man direkt weitergeben
+(in Firefox ziehen oder öffnen).
+
+1. Auf addons.mozilla.org anmelden, unter Developer Hub > Tools > Manage API Keys einen JWT-Issuer und ein
+   Secret erzeugen. Die Schlüssel nicht ins Repo schreiben.
+2. Vor jeder neuen Signierung `version` in `manifest.json` (und `package.json`) erhöhen; eine Version lässt
+   sich nur einmal signieren. Die Add-on-ID (`poe2-mtx-marker@djih`) nicht mehr ändern, Updates hängen an ihr.
+3. Prüfen und signieren (PowerShell):
+   ```
+   npm run lint
+   $env:WEB_EXT_API_KEY = "<JWT-Issuer>"; $env:WEB_EXT_API_SECRET = "<Secret>"
+   npm run sign
+   ```
+   Die signierte `.xpi` landet in `web-ext-artifacts/` (gitignored).
+
+`web-ext-config.mjs` legt fest, was ins Paket kommt (nur die Extension-Dateien, keine Tests, Tools, Doku),
+und setzt den Kanal `unlisted`. `npm run build` baut ein unsigniertes ZIP zum Prüfen des Paketinhalts.
+`npm run lint` meldet zwei erwartete Warnungen: `data_collection_permissions` wird erst ab Firefox 140
+(Android 142) ausgewertet, ältere Versionen ignorieren den Schlüssel.
+
 ## Tests ausführen
 
 ```
