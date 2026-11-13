@@ -30,6 +30,13 @@ function cssBoxShadow(document, value) {
   return probe.style.boxShadow;
 }
 
+function cssColor(document, value) {
+  const probe = document.createElement('div');
+  probe.style.color = value;
+  assert.notEqual(probe.style.color, '');
+  return probe.style.color;
+}
+
 function fire(dom, element, value) {
   element.value = value;
   element.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
@@ -63,4 +70,14 @@ test('Optionen: Änderung aktualisiert Vorschau sofort und speichert in storage'
   const expected = { color: '#3366ff', intensity: 100 };
   assert.equal(document.getElementById(OPTION_IDS.PREVIEW).style.boxShadow, cssBoxShadow(document, core.glowStyle(expected).boxShadow));
   assert.deepEqual(writes.at(-1), { [core.STORAGE_KEYS.SETTINGS]: expected });
+});
+
+test('Optionen: Vorschau-Label nutzt schwarze oder weiße Schrift nach WCAG-Kontrast', async () => {
+  const { dom, document, storage } = setup({ color: '#00ff00', intensity: 50 });
+  await initOptions({ document, storage });
+  const label = document.getElementById(OPTION_IDS.PREVIEW_LABEL);
+  assert.equal(label.style.color, cssColor(document, '#000000'));
+  fire(dom, document.getElementById(OPTION_IDS.COLOR), '#000080');
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  assert.equal(label.style.color, cssColor(document, '#ffffff'));
 });

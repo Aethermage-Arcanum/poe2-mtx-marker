@@ -176,6 +176,14 @@ test('Content: Einstellungen setzen Farbe und Glow als CSS-Variablen', () => {
   assert.equal(style.getPropertyValue(CSS_VARS.SHADOW), core.glowStyle({ color: '#00ff00', intensity: 100 }).boxShadow);
 });
 
+test('Content: Label-Schriftfarbe folgt dem WCAG-Kontrast zur eingestellten Farbe', () => {
+  const { document, marker } = setupPage();
+  marker.setSettings({ color: '#00ff00', intensity: 50 });
+  assert.equal(document.documentElement.style.getPropertyValue(CSS_VARS.LABEL_TEXT), '#000000');
+  marker.setSettings({ color: '#000080', intensity: 50 });
+  assert.equal(document.documentElement.style.getPropertyValue(CSS_VARS.LABEL_TEXT), '#ffffff');
+});
+
 function createFakeBrowser({ storedSettings, pageData }) {
   const listeners = { storage: [], message: [] };
   const sent = [];

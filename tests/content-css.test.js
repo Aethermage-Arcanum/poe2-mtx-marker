@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { JSDOM } = require('jsdom');
-const { MARK_CLASS, LABEL_CLASS } = require('../content.js');
+const { MARK_CLASS, LABEL_CLASS, CSS_VARS } = require('../content.js');
 
 const CSS = fs.readFileSync(path.join(__dirname, '..', 'content.css'), 'utf8');
 const dom = new JSDOM('<!DOCTYPE html><html><head></head><body></body></html>');
@@ -36,4 +36,10 @@ test('content.css: Label innerhalb der Karte unten rechts, kein top / margin-top
   assert.notEqual(style.getPropertyValue('right'), '');
   assert.equal(style.getPropertyValue('top'), '');
   assert.equal(style.getPropertyValue('margin-top'), '');
+});
+
+test('content.css: Label-Schrift nutzt die Kontrast-Variable, kein text-shadow', () => {
+  const style = ruleFor((selector) => selector.trim() === `.${LABEL_CLASS}`);
+  assert.equal(style.getPropertyValue('color'), `var(${CSS_VARS.LABEL_TEXT})`);
+  assert.equal(style.getPropertyValue('text-shadow'), '');
 });

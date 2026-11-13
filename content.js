@@ -9,6 +9,7 @@
   const CSS_VARS = Object.freeze({
     COLOR: '--poe2mtx-color',
     SHADOW: '--poe2mtx-shadow',
+    LABEL_TEXT: '--poe2mtx-label-text',
   });
   const LOG_PREFIX = '[PoE2 MTX Marker]';
   const UNMATCHED_LOG_TEXT = 'Kein PoE2-Treffer:';
@@ -111,6 +112,7 @@
         const glow = core.glowStyle(core.normalizeSettings(settings));
         document.documentElement.style.setProperty(CSS_VARS.COLOR, glow.color);
         document.documentElement.style.setProperty(CSS_VARS.SHADOW, glow.boxShadow);
+        document.documentElement.style.setProperty(CSS_VARS.LABEL_TEXT, core.labelTextColor(glow.color));
       },
       stats() {
         const cards = [...document.querySelectorAll(core.SHOP_SELECTORS.CARD)];

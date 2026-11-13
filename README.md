@@ -21,6 +21,9 @@ Varianten-Gruppe mit nur einem Item) zeigen "PoE2 ready", Karten mit mindestens 
 Optik: Das Label sitzt innerhalb der Karte unten rechts. Markierte Karten erhalten `box-sizing: border-box`,
 damit der 2-px-Rahmen die Kartenbreite (460 px im 920 px breiten Flex-Container) nicht vergrößert und das
 zweispaltige Layout erhalten bleibt.
+Die Label-Schrift ist schwarz oder weiß, je nachdem, was auf der eingestellten Farbe den höheren
+WCAG-2-Kontrast hat (bei Gleichstand schwarz); das Content-Script setzt sie als CSS-Variable
+`--poe2mtx-label-text`, die Options-Vorschau nutzt dieselbe Regel.
 
 ## Aufbau
 

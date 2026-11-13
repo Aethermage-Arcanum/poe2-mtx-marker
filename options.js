@@ -26,6 +26,7 @@
       preview.style.borderColor = glow.color;
       preview.style.boxShadow = glow.boxShadow;
       byId(OPTION_IDS.PREVIEW_LABEL).style.background = glow.color;
+      byId(OPTION_IDS.PREVIEW_LABEL).style.color = core.labelTextColor(glow.color);
       byId(OPTION_IDS.INTENSITY_VALUE).textContent = String(settings.intensity);
     }
 

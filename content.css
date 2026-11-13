@@ -13,9 +13,8 @@
   padding: 1px 6px;
   border-radius: 3px;
   background: var(--poe2mtx-color);
-  color: #fff;
+  color: var(--poe2mtx-label-text);
   font: bold 11px/16px sans-serif;
-  text-shadow: 0 0 2px #000;
   white-space: nowrap;
   pointer-events: none;
   z-index: 5;
