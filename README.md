@@ -9,6 +9,10 @@ Phase 1 in Arbeit. Schlüsselstrategie "Option D" ist freigegeben und umgesetzt:
 Treffer, wenn seine Shop-ID zu einem aktuell auf poe2db gelisteten Slug gehört (Zuordnung Slug -> Shop-IDs
 aus den poe2db-Detailseiten) oder sein Bildpfad-Schlüssel (artKey) dem eines gelisteten Eintrags entspricht.
 
+Label an markierten Karten (ab 1 Treffer): Karten mit genau einem Item (Einzelitem, aber auch Bündel oder
+Varianten-Gruppe mit nur einem Item) zeigen "PoE2 ready", Karten mit mindestens zwei Items "PoE2 ready x/y"
+(x = Treffer, y = Anzahl Items). 0 Treffer: keine Markierung, kein Label.
+
 ## Aufbau
 
 | Datei | Aufgabe |

@@ -16,7 +16,7 @@ function fixtureIdMap() {
 function evaluateFixture(name, index) {
   const card = core.extractCard(cardElement(name));
   const result = core.evaluateCard(card, index);
-  return { ...result, label: core.labelText(card, result) };
+  return { ...result, label: core.labelText(result) };
 }
 
 const fullIndex = core.buildIndex(listEntries, fixtureIdMap());
@@ -83,13 +83,26 @@ test('Index-Payload: Hin- und Rückweg erhält Shop-IDs und artKeys', () => {
   assert.deepEqual([...restored.artKeys].sort(), [...fullIndex.artKeys].sort());
 });
 
-test('labelText: Einzelitem, Mehrfach-Karte, 0 Treffer', () => {
-  const single = { type: core.CARD_TYPES.SINGLE };
-  const variant = { type: core.CARD_TYPES.VARIANT };
-  const bundle = { type: core.CARD_TYPES.BUNDLE };
-  assert.equal(core.labelText(single, { matched: 1, total: 1 }), 'PoE2 ready');
-  assert.equal(core.labelText(variant, { matched: 2, total: 3 }), 'PoE2 ready 2/3');
-  assert.equal(core.labelText(bundle, { matched: 1, total: 1 }), 'PoE2 ready 1/1');
-  assert.equal(core.labelText(single, { matched: 0, total: 1 }), null);
-  assert.equal(core.labelText(bundle, { matched: 0, total: 4 }), null);
+test('labelText: x/y nur ab 2 Items, sonst "PoE2 ready", 0 Treffer kein Label', () => {
+  assert.equal(core.labelText({ matched: 1, total: 1 }), 'PoE2 ready');
+  assert.equal(core.labelText({ matched: 2, total: 3 }), 'PoE2 ready 2/3');
+  assert.equal(core.labelText({ matched: 1, total: 2 }), 'PoE2 ready 1/2');
+  assert.equal(core.labelText({ matched: 0, total: 1 }), null);
+  assert.equal(core.labelText({ matched: 0, total: 4 }), null);
+});
+
+test('labelText: echtes 1-Item-Bündel (CharacterSlotBundle, Shop-API-Fixture) -> "PoE2 ready" ohne x/y', () => {
+  const item = readShopApi('www_bundles_0').items.find((i) => i.id === 'CharacterSlotBundle');
+  const card = {
+    id: item.id,
+    type: core.CARD_TYPES.BUNDLE,
+    name: item.name,
+    children: item.items.map((child) => ({ id: child.id, artKey: null })),
+  };
+  assert.deepEqual(card.children, [{ id: 'CharacterSlot', artKey: null }]);
+  const index = { shopIds: new Set(['CharacterSlot']), artKeys: new Set() };
+  const result = core.evaluateCard(card, index);
+  assert.deepEqual(result, { matched: 1, total: 1 });
+  assert.equal(core.labelText(result), 'PoE2 ready');
+  assert.equal(core.labelText(core.evaluateCard(card, { shopIds: new Set(), artKeys: new Set() })), null);
 });

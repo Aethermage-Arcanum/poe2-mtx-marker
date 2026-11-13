@@ -31,7 +31,7 @@
       removeMark(el);
       if (!index) return;
       const card = core.extractCard(el);
-      const text = core.labelText(card, core.evaluateCard(card, index));
+      const text = core.labelText(core.evaluateCard(card, index));
       if (text) {
         const label = document.createElement('span');
         label.className = LABEL_CLASS;
