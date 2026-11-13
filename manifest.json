@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PoE2 MTX Marker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "__MSG_extensionDescription__",
   "author": "djih",
   "default_locale": "en",
