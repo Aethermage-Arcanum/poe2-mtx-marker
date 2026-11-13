@@ -1,15 +1,15 @@
 #mtx-list > div.shopItemBase.poe2mtx-marked {
   position: relative;
   overflow: visible;
+  box-sizing: border-box;
   border: 2px solid var(--poe2mtx-color) !important;
   box-shadow: var(--poe2mtx-shadow) !important;
 }
 
 .poe2mtx-label {
   position: absolute;
-  top: 100%;
-  right: 0;
-  margin-top: 4px;
+  bottom: 6px;
+  right: 8px;
   padding: 1px 6px;
   border-radius: 3px;
   background: var(--poe2mtx-color);
