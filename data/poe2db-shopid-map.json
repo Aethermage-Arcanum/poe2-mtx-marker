@@ -1,19 +1,2963 @@
 {
-  "generatedAt": "2026-11-13T14:22:28.368Z",
+  "generatedAt": "2026-11-13T15:22:11.570Z",
   "map": {
+    "Vanishing_Dye": [
+      "VanishingDye"
+    ],
+    "Invisible_Buff_Effect": [
+      "VanishingDyeSkills"
+    ],
+    "Infernal_Footprints_Effect": [
+      "InfernalFootprints"
+    ],
+    "Lightning_Footprints_Effect": [
+      "LightningFootprints"
+    ],
+    "Arctic_Footprints_Effect": [
+      "ArcticFootprints"
+    ],
+    "Ebony_Footprints_Effect": [
+      "EbonyFootprints"
+    ],
+    "Radiant_Footprints_Effect": [
+      "RadiantFootprints"
+    ],
+    "Necrotic_Footprints_Effect": [
+      "NecroticFootprints"
+    ],
+    "Gore_Footprints_Effect": [
+      "GoreFootprints"
+    ],
+    "Ghostflame_Footprints_Effect": [
+      "GhostFlameFootprints"
+    ],
+    "Warrior_Portrait_Frame": [],
+    "Champion_Portrait_Frame": [],
+    "Conqueror_Portrait_Frame": [],
+    "Journeyman_Portrait_Frame": [],
+    "Master_Portrait_Frame": [],
+    "Grandmaster_Portrait_Frame": [],
+    "Arcane_Body_Armour": [
+      "ArcaneBodyArmour"
+    ],
+    "Arcane_Boots": [
+      "ArcaneBoots"
+    ],
+    "Arcane_Gloves": [
+      "ArcaneGloves"
+    ],
+    "Arcane_Helmet": [
+      "ArcaneHelmet"
+    ],
+    "Arctic_Helmet": [
+      "ArcticHelmet"
+    ],
+    "Arctic_Boots": [
+      "ArcticBoots"
+    ],
+    "Arctic_Gloves": [
+      "ArcticGloves"
+    ],
+    "Arctic_Body_Armour": [
+      "ArcticBody"
+    ],
+    "Chimera_Helmet": [],
+    "Chimera_Boots": [],
+    "Chimera_Gloves": [],
+    "Chimera_Body_Armour": [],
+    "Vampiric_Wings": [
+      "VampiricWings"
+    ],
+    "Eclipse_Helmet": [],
+    "Eclipse_Boots": [],
+    "Eclipse_Gloves": [],
+    "Eclipse_Body_Armour": [],
+    "Pure_Light_Footprints_Effect": [],
+    "Jaeger_Cloak": [
+      "JaegerCloak"
+    ],
+    "Executioner_Hood": [
+      "ExecutionerHood"
+    ],
+    "Executioner_Boots": [
+      "ExecutionerBoots"
+    ],
+    "Executioner_Gloves": [
+      "ExecutionerGloves"
+    ],
+    "Executioner_Body": [
+      "ExecutionerBody"
+    ],
+    "Fire_Footprints_Effect": [
+      "FireFootprintsEffect"
+    ],
+    "Ice_Footprints_Effect": [
+      "IceFootprintsEffect"
+    ],
+    "Seeker_Helmet": [],
+    "Seeker_Boots": [],
+    "Seeker_Gloves": [],
+    "Seeker_Body_Armour": [],
+    "Fire_Helmet": [
+      "FireHelmet"
+    ],
+    "Fire_Boots": [
+      "FireBoots"
+    ],
+    "Fire_Gloves": [
+      "FireGloves"
+    ],
+    "Fire_Body_Armour": [
+      "FireBodyArmour"
+    ],
+    "Fire_and_Ice_Helmet": [
+      "FireandIceHelmet"
+    ],
+    "Fire_and_Ice_Boots": [
+      "FireandIceBoots"
+    ],
+    "Fire_and_Ice_Gloves": [
+      "FireandIceGloves"
+    ],
+    "Fire_and_Ice_Body_Armour": [
+      "FireandIceBodyArmour"
+    ],
+    "Celestial_Helmet": [
+      "CelestialHelmet"
+    ],
+    "Celestial_Boots": [
+      "CelestialBoots"
+    ],
+    "Celestial_Gloves": [
+      "CelestialGloves"
+    ],
     "Celestial_Body_Armour": [
       "CelestialBodyArmour"
+    ],
+    "Sin_Wings": [
+      "SinWings"
+    ],
+    "Sin_Cloak": [
+      "SinCloak"
+    ],
+    "Sin_Helmet": [
+      "SinHelmet"
+    ],
+    "Sin_Boots": [
+      "SinBoots"
+    ],
+    "Sin_Gloves": [
+      "SinGloves"
+    ],
+    "Sin_Body_Armour": [
+      "SinBodyArmour"
+    ],
+    "Innocence_Wings": [
+      "InnocenceWings"
+    ],
+    "Innocence_Cloak": [
+      "InnocenceCloak"
+    ],
+    "Sin_and_Innocence_Helmet": [
+      "SinandInnocenceHelmet"
+    ],
+    "Sin_and_Innocence_Boots": [
+      "SinandInnocenceBoots"
+    ],
+    "Sin_and_Innocence_Gloves": [
+      "SinandInnocenceGloves"
+    ],
+    "Sin_and_Innocence_Body_Armour": [
+      "SinandInnocenceBodyArmour"
+    ],
+    "Harpy_Portrait_Frame": [],
+    "Alpha_Harpy_Portrait_Frame": [],
+    "Manticore_Portrait_Frame": [],
+    "Alpha_Manticore_Portrait_Frame": [],
+    "Malachai_Helmet": [
+      "MalachaiHelmet"
+    ],
+    "Malachai_Boots": [
+      "MalachaiBoots"
+    ],
+    "Malachai_Gloves": [
+      "MalachaiGloves"
+    ],
+    "Malachai_Body_Armour": [
+      "MalachaiBodyArmour"
+    ],
+    "Council_Portrait_Frame": [],
+    "High_Council_Portrait_Frame": [],
+    "Conquest_Portrait_Frame": [],
+    "Grand_Conquest_Portrait_Frame": [],
+    "Spider_Back_Attachment": [
+      "SpiderBackAttachment"
+    ],
+    "Ebony_Character_Effect": [
+      "EbonyCharacterEffect"
+    ],
+    "Forge_Portrait_Frame": [],
+    "Dreadforge_Portrait_Frame": [],
+    "Stalker_Portrait_Frame": [],
+    "Shadowstalker_Portrait_Frame": [],
+    "Gorgon_Back_Attachment": [
+      "GorgonBackAttachment"
+    ],
+    "Necrotic_Wings": [
+      "NecroticWings"
+    ],
+    "Azurite_Back_Attachment": [],
+    "Coliseum_Helmet": [
+      "ColiseumHelmet"
+    ],
+    "Coliseum_Boots": [
+      "ColiseumBoots"
+    ],
+    "Coliseum_Gloves": [
+      "ColiseumGloves"
+    ],
+    "Coliseum_Body_Armour": [
+      "ColiseumBodyArmour"
+    ],
+    "Coliseum_Helmet_Attachment": [
+      "ColiseumHelmetAttachment"
+    ],
+    "Aquila_Crest_Helmet_Attachment": [
+      "AquilaCrestHelmetAttachment"
+    ],
+    "Swan_Crest_Helmet_Attachment": [
+      "SwanCrestHelmetAttachment"
+    ],
+    "Dragon_Hunter_Footprints_Effect": [
+      "DragonHunterFootprintsEffect"
+    ],
+    "Gorgon_Shield": [
+      "GorgonShield"
+    ],
+    "Arcane_Footprints_Effect": [
+      "ArcaneFootprintsEffect"
+    ],
+    "Corsair_Back_Attachment": [
+      "CorsairWings"
+    ],
+    "Corsair_Cloak": [
+      "CorsairCloak"
+    ],
+    "Corsair_Hood": [
+      "CorsairHood"
+    ],
+    "Corsair_Helmet": [
+      "CorsairHelmet"
+    ],
+    "Corsair_Hat": [
+      "CorsairHat"
+    ],
+    "Corsair_Body_Armour": [
+      "CorsairBodyArmour"
+    ],
+    "Corsair_Gloves": [
+      "CorsairGloves"
+    ],
+    "Corsair_Boots": [
+      "CorsairBoots"
+    ],
+    "Spectre_Wings": [
+      "SpectreWings"
+    ],
+    "Spectre_Cloak": [
+      "SpectreCloak"
+    ],
+    "Undertaker_Portrait_Frame": [],
+    "Master_Undertaker_Portrait_Frame": [],
+    "Soulstealer_Portrait_Frame": [],
+    "Master_Soulstealer_Portrait_Frame": [],
+    "Pitfighter_Portrait_Frame": [],
+    "Pitfighter_Back_Attachment": [],
+    "Assassin_Portrait_Frame": [],
+    "Assassin_Cloak": [],
+    "Assassin_Hood": [],
+    "Assassin_Helmet": [],
+    "Assassin_Body_Armour": [],
+    "Assassin_Gloves": [],
+    "Assassin_Boots": [],
+    "Vanguard_Portrait_Frame": [],
+    "Vanguard_Banner_Back_Attachment": [],
+    "Empyrean_Portrait_Frame": [],
+    "Empyrean_Back_Attachment": [],
+    "Crucible_Portrait_Frame": [],
+    "Crucible_Hood": [],
+    "Crucible_Boots": [],
+    "Crucible_Gloves": [],
+    "Crucible_Body_Armour": [],
+    "Crucible_Back_Attachment": [],
+    "Arctic_Crystal_Helmet": [
+      "ArcticCrystalHelmet"
+    ],
+    "Arctic_Crystal_Boots": [
+      "ArcticCrystalBoots"
+    ],
+    "Arctic_Crystal_Gloves": [
+      "ArcticCrystalGloves"
+    ],
+    "Arctic_Crystal_Body_Armour": [
+      "ArcticCrystalBodyArmour"
+    ],
+    "Celestial_Wings": [
+      "CelestialWings"
+    ],
+    "Sunstone_Portrait_Frame": [],
+    "Sunspire_Portrait_Frame": [],
+    "Doomcrow_Portrait_Frame": [],
+    "Doomguard_Portrait_Frame": [],
+    "Madcap_Footprints_Effect": [
+      "MadcapFootprintsEffect"
+    ],
+    "Huntsman_Footprints_Effect": [
+      "HuntsmanFootprintsEffect"
+    ],
+    "Necrotic_Cloak": [
+      "NecroticCloak"
+    ],
+    "Mageguard_Hood": [
+      "MageguardHood"
+    ],
+    "Mageguard_Helmet": [
+      "MageguardHelmet"
+    ],
+    "Mageguard_Boots": [
+      "MageguardBoots"
+    ],
+    "Mageguard_Gloves": [
+      "MageguardGloves"
+    ],
+    "Mageguard_Body_Armour": [
+      "MageguardBodyArmour"
+    ],
+    "Gargoyle_Helmet": [
+      "GargoyleHelmet"
+    ],
+    "Gargoyle_Boots": [
+      "GargoyleBoots"
+    ],
+    "Gargoyle_Gloves": [
+      "GargoyleGloves"
+    ],
+    "Gargoyle_Body_Armour": [
+      "GargoyleBodyArmour"
+    ],
+    "Cult_of_Darkness_Portrait_Frame": [],
+    "Cult_of_Apocalypse_Portrait_Frame": [],
+    "Blood_Knight_Portrait_Frame": [],
+    "Blood_Guardian_Portrait_Frame": [],
+    "Wild_Cougar_Helmet": [
+      "WildHood"
+    ],
+    "Wild_Helmet": [
+      "WildHelmet"
+    ],
+    "Wild_Boots": [
+      "WildBoots"
+    ],
+    "Wild_Gloves": [
+      "WildGloves"
+    ],
+    "Wild_Body_Armour": [
+      "WildBodyArmour"
+    ],
+    "Wild_Footprints_Effect": [
+      "WildFootprintsEffect"
+    ],
+    "Wild_Gold_Footprints_Effect": [],
+    "Wrangler_Footprints_Effect": [
+      "WranglerFootprintsEffect"
+    ],
+    "Silver_Wrangler_Footprints_Effect": [],
+    "Illusionist_Back_Attachment": [
+      "IllusionistBackAttachment"
+    ],
+    "Lich_Portrait_Frame": [],
+    "Bane_Lich_Portrait_Frame": [],
+    "Sentinel_Portrait_Frame": [],
+    "Sentinel_Overlord_Portrait_Frame": [],
+    "Miracle_Helmet": [
+      "MiracleHelmet"
+    ],
+    "Miracle_Boots": [
+      "MiracleBoots"
+    ],
+    "Miracle_Gloves": [
+      "MiracleGloves"
+    ],
+    "Miracle_Body_Armour": [
+      "MiracleBodyArmour"
+    ],
+    "Void_Emperor_Helmet": [
+      "CorruptedEmperorHelmet"
+    ],
+    "Void_Emperor_Boots": [
+      "CorruptedEmperorBoots"
+    ],
+    "Void_Emperor_Gloves": [
+      "CorruptedEmperorGloves"
+    ],
+    "Void_Emperor_Body_Armour": [
+      "CorruptedEmperorBodyArmour"
+    ],
+    "Havenwood_Hood": [
+      "HavenwoodHood"
+    ],
+    "Havenwood_Boots": [
+      "HavenwoodBoots"
+    ],
+    "Havenwood_Gloves": [
+      "HavenwoodGloves"
+    ],
+    "Havenwood_Body_Armour": [
+      "HavenwoodBodyArmour"
+    ],
+    "Havenwood_Cloak": [
+      "HavenwoodCloak"
+    ],
+    "Chiyou_Portrait_Frame": [],
+    "Basilisk_Hood": [],
+    "Basilisk_Boots": [],
+    "Basilisk_Gloves": [],
+    "Basilisk_Body_Armour": [],
+    "Basilisk_Helmet": [],
+    "Basilisk_Portrait_Frame": [],
+    "Crusader_Portrait_Frame": [],
+    "Eyrie_Hood": [],
+    "Eyrie_Helmet": [],
+    "Eyrie_Boots": [],
+    "Eyrie_Gloves": [],
+    "Eyrie_Body_Armour": [],
+    "Eyrie_Portrait_Frame": [],
+    "Judicator_Portrait_Frame": [],
+    "Orion_Back_Attachment": [],
+    "Orion_Portrait_Frame": [],
+    "Damnation_Portrait_Frame": [],
+    "Eternal_Damnation_Portrait_Frame": [],
+    "Sanctum_Portrait_Frame": [],
+    "Grand_Sanctum_Portrait_Frame": [],
+    "Black_and_White_Hood": [
+      "BlackandWhiteHood"
+    ],
+    "Black_and_White_Helmet": [
+      "BlackandWhiteHelmet"
+    ],
+    "Black_and_White_Boots": [
+      "BlackandWhiteBoots"
+    ],
+    "Black_and_White_Gloves": [
+      "BlackandWhiteGloves"
+    ],
+    "Black_and_White_Body_Armour": [
+      "BlackandWhiteBodyArmour"
+    ],
+    "Darkprism_Helmet": [
+      "DarkprismHelmet"
+    ],
+    "Darkprism_Boots": [
+      "DarkprismBoots"
+    ],
+    "Darkprism_Gloves": [
+      "DarkprismGloves"
+    ],
+    "Darkprism_Body_Armour": [
+      "DarkprismBodyArmour"
+    ],
+    "Stygian_Character_Effect": [
+      "StygianCharacterEffect"
+    ],
+    "Dark_Deicide_Portrait_Frame": [],
+    "Darkseer_Portrait_Frame": [],
+    "Elder_Darkseer_Portrait_Frame": [],
+    "Fateweaver_Portrait_Frame": [],
+    "Elite_Fateweaver_Portrait_Frame": [],
+    "Project_Helmet": [
+      "ProjectHelmet"
+    ],
+    "Project_Hood": [
+      "ProjectHood"
+    ],
+    "Project_Boots": [
+      "ProjectBoots"
+    ],
+    "Project_Gloves": [
+      "ProjectGloves"
+    ],
+    "Project_Body_Armour": [
+      "ProjectBodyArmour"
+    ],
+    "Balefire_Back_Attachment": [
+      "BalefireBackAttachment"
+    ],
+    "Dreadspire_Helmet": [
+      "DreadspireHelmet"
+    ],
+    "Dreadspire_Boots": [
+      "DreadspireBoots"
+    ],
+    "Dreadspire_Gloves": [
+      "DreadspireGloves"
+    ],
+    "Dreadspire_Body_Armour": [
+      "DreadspireBodyArmour"
+    ],
+    "Dreadspire_Cloak": [
+      "DreadspireCloak"
+    ],
+    "Malice_Portrait_Frame": [],
+    "Insatiable_Malice_Portrait_Frame": [],
+    "Benevolence_Portrait_Frame": [],
+    "Divine_Benevolence_Portrait_Frame": [],
+    "Angelic_Hood": [
+      "AngelicHood"
+    ],
+    "Angelic_Helmet": [
+      "AngelicHelmet"
+    ],
+    "Angelic_Boots": [
+      "AngelicBoots"
+    ],
+    "Angelic_Gloves": [
+      "AngelicGloves"
+    ],
+    "Angelic_Body_Armour": [
+      "AngelicBodyArmour"
+    ],
+    "Angelic_Cloak": [
+      "AngelicCloak"
+    ],
+    "Angelic_Wings": [
+      "AngelicWings"
+    ],
+    "Demonic_Hood": [
+      "DemonicHood"
+    ],
+    "Demonic_Helmet": [
+      "DemonicHelmet"
+    ],
+    "Demonic_Boots": [
+      "DemonicBoots"
+    ],
+    "Demonic_Gloves": [
+      "DemonicGloves"
+    ],
+    "Demonic_Body_Armour": [
+      "DemonicBodyArmour"
+    ],
+    "Pandemonium_Hood": [
+      "PandemoniumHood"
+    ],
+    "Pandemonium_Helmet": [
+      "PandemoniumHelmet"
+    ],
+    "Pandemonium_Boots": [
+      "PandemoniumBoots"
+    ],
+    "Pandemonium_Gloves": [
+      "PandemoniumGloves"
+    ],
+    "Pandemonium_Body_Armour": [
+      "PandemoniumBodyArmour"
+    ],
+    "Glimmerwood_Hat": [
+      "GlimmerwoodHat"
+    ],
+    "Seraph_Banner_Back_Attachment": [
+      "SeraphBannerBackAttachment"
+    ],
+    "Goddess_Portrait_Frame": [],
+    "Spellblade_Portrait_Frame": [],
+    "Master_Spellblade_Portrait_Frame": [],
+    "Eagle_Portrait_Frame": [],
+    "Imperial_Eagle_Helmet": [],
+    "Imperial_Eagle_Boots": [],
+    "Imperial_Eagle_Gloves": [],
+    "Imperial_Eagle_Body_Armour": [],
+    "Imperial_Eagle_Portrait_Frame": [],
+    "Tencent_Anniversary_3_Portrait_Frame": [],
+    "Sunrise_Cloak": [
+      "SunriseCloak"
+    ],
+    "Sunrise_Wings": [
+      "SunriseWings"
+    ],
+    "Nightfall_Helmet": [
+      "NightfallHelmet"
+    ],
+    "Nightfall_Boots": [
+      "NightfallBoots"
+    ],
+    "Nightfall_Gloves": [
+      "NightfallGloves"
+    ],
+    "Nightfall_Body_Armour": [
+      "NightfallBodyArmour"
+    ],
+    "Nightfall_Cloak": [
+      "NightfallCloak"
+    ],
+    "Nightfall_Wings": [
+      "NightfallWings"
+    ],
+    "Nightfall_Footprints_Effect": [
+      "NightfallFootprintsEffect"
+    ],
+    "Twilight_Helmet_Attachment": [
+      "TwilightHelmetAttachment"
+    ],
+    "Twilight_Helmet": [
+      "TwilightHelmet"
+    ],
+    "Twilight_Boots": [
+      "TwilightBoots"
+    ],
+    "Twilight_Gloves": [
+      "TwilightGloves"
+    ],
+    "Twilight_Body_Armour": [
+      "TwilightBodyArmour"
+    ],
+    "Twilight_Cloak": [
+      "TwilightCloak"
+    ],
+    "Darkwood_Helmet": [
+      "DarkwoodHelmet"
+    ],
+    "Darkwood_Boots": [
+      "DarkwoodBoots"
+    ],
+    "Darkwood_Gloves": [
+      "DarkwoodGloves"
+    ],
+    "Darkwood_Body_Armour": [
+      "DarkwoodBodyArmour"
+    ],
+    "Glimmersprite_Wings": [
+      "DarkwoodWings"
+    ],
+    "Darkwood_Cloak": [
+      "DarkwoodCloak"
+    ],
+    "Crescent_Portrait_Frame": [],
+    "Silver_Crescent_Portrait_Frame": [],
+    "Sun_Portrait_Frame": [],
+    "Imperial_Sun_Helmet": [],
+    "Imperial_Sun_Boots": [],
+    "Imperial_Sun_Gloves": [],
+    "Imperial_Sun_Body_Armour": [],
+    "Imperial_Sun_Helmet_Attachment": [],
+    "Imperial_Sun_Portrait_Frame": [],
+    "Renegade_Portrait_Frame": [],
+    "Deadly_Renegade_Portrait_Frame": [],
+    "Faithsworn_Portrait_Frame": [],
+    "Elite_Faithsworn_Portrait_Frame": [],
+    "Delve_Core_Portrait_Frame": [],
+    "Breach_Core_Portrait_Frame": [],
+    "Abyss_Core_Crown": [],
+    "Abyss_Core_Helmet": [],
+    "Abyss_Core_Boots": [],
+    "Abyss_Core_Gloves": [],
+    "Abyss_Core_Body_Armour": [],
+    "Abyss_Core_Portrait_Frame": [],
+    "Harvest_Core_Portrait_Frame": [],
+    "Atlas_Core_Portrait_Frame": [],
+    "Suffering_Helmet_Attachment": [
+      "SufferingHelmetAttachment"
+    ],
+    "Suffering_Helmet": [
+      "SufferingHelmet"
+    ],
+    "Suffering_Boots": [
+      "SufferingBoots"
+    ],
+    "Suffering_Gloves": [
+      "SufferingGloves"
+    ],
+    "Suffering_Body_Armour": [
+      "SufferingBodyArmour"
+    ],
+    "Suffering_Cloak": [
+      "SufferingCloak"
+    ],
+    "Suffering_Back_Attachment": [
+      "SufferingWings"
+    ],
+    "Misery_Helmet_Attachment": [
+      "MiseryHelmetAttachment"
+    ],
+    "Misery_Helmet": [
+      "MiseryHelmet"
+    ],
+    "Misery_Boots": [
+      "MiseryBoots"
+    ],
+    "Misery_Gloves": [
+      "MiseryGloves"
+    ],
+    "Misery_Body_Armour": [
+      "MiseryBodyArmour"
+    ],
+    "Misery_Swords_Back_Attachment": [
+      "MiseryCloak"
+    ],
+    "Misery_Wings": [
+      "MiseryWings"
+    ],
+    "Misery_Footprints_Effect": [
+      "MiseryFootprintsEffect"
+    ],
+    "Despair_Helmet": [
+      "DespairHelmet"
+    ],
+    "Despair_Boots": [
+      "DespairBoots"
+    ],
+    "Despair_Gloves": [
+      "DespairGloves"
+    ],
+    "Despair_Body_Armour": [
+      "DespairBodyArmour"
+    ],
+    "Despair_Cloak": [
+      "DespairCloak"
+    ],
+    "Despair_Wings": [
+      "DespairWings"
+    ],
+    "Despair_Footprints_Effect": [
+      "DespairFootprintsEffect"
+    ],
+    "Rapture_Back_Attachment": [
+      "RaptureWings"
+    ],
+    "Verdant_Cloak": [
+      "VerdantCloak"
+    ],
+    "Maven_Portal_Effect": [
+      "MavenPortalEffect"
+    ],
+    "Lightbringer_Hood": [
+      "LightbringerHood"
+    ],
+    "Lightbringer_Helmet": [
+      "LightbringerHelmet"
+    ],
+    "Lightbringer_Boots": [
+      "LightbringerBoots"
+    ],
+    "Lightbringer_Gloves": [
+      "LightbringerGloves"
+    ],
+    "Lightbringer_Body_Armour": [
+      "LightbringerBodyArmour"
+    ],
+    "Lightbringer_Wings": [
+      "LightbringerWings"
+    ],
+    "Lightbringer_Cloak": [
+      "LightbringerCloak"
+    ],
+    "Darkshard_Hood": [
+      "DarkshardHood"
+    ],
+    "Darkshard_Helmet": [
+      "DarkshardHelmet"
+    ],
+    "Darkshard_Boots": [
+      "DarkshardBoots"
+    ],
+    "Darkshard_Gloves": [
+      "DarkshardGloves"
+    ],
+    "Darkshard_Body_Armour": [
+      "DarkshardBodyArmour"
+    ],
+    "Darkshard_Wings": [
+      "DarkshardWings"
+    ],
+    "Darkshard_Cloak": [
+      "DarkshardCloak"
+    ],
+    "Darkshard_Helmet_Attachment": [
+      "DarkshardHelmetAttachment"
+    ],
+    "Darkshard_Footprints_Effect": [
+      "DarkshardFootprintsEffect"
+    ],
+    "Apollyon_Wings": [
+      "ApollyonWings"
+    ],
+    "Apollyon_Cloak": [
+      "ApollyonCloak"
+    ],
+    "Apollyon_Footprints_Effect": [
+      "ApollyonFootprintsEffect"
+    ],
+    "Jingwei_Helmet": [],
+    "Jingwei_Boots": [],
+    "Jingwei_Gloves": [],
+    "Jingwei_Body_Armour": [],
+    "Jingwei_Portrait_Frame": [],
+    "Vaal_Orb_Cloak": [
+      "VaalOrbCloak"
+    ],
+    "Arcane_Cloak": [
+      "ArcaneCloak"
+    ],
+    "Soulkeeper_Portrait_Frame": [],
+    "Soulkeeper_Vizier_Portrait_Frame": [],
+    "Soulkeeper_Demigod_Portrait_Frame": [],
+    "Aesir_Portrait_Frame": [],
+    "Aesir_Warrior_Portrait_Frame": [],
+    "Aesir_Demigod_Portrait_Frame": [],
+    "Scavenger_Hood": [
+      "ScavengerHood"
+    ],
+    "Scavenger_Helmet": [
+      "ScavengerHelmet"
+    ],
+    "Scavenger_Boots": [
+      "ScavengerBoots"
+    ],
+    "Scavenger_Gloves": [
+      "ScavengerGloves"
+    ],
+    "Scavenger_Body_Armour": [
+      "ScavengerBodyArmour"
+    ],
+    "Scavenger_Back_Attachment": [
+      "ScavengerWings"
+    ],
+    "Scavenger_Tail_Attachment": [
+      "ScavengerBackAttachment"
+    ],
+    "Scavenger_Portal_Effect": [
+      "ScavengerPortalEffect"
+    ],
+    "Scavenger_Footprints_Effect": [
+      "ScavengerFootprintsEffect"
+    ],
+    "Overseer_Hood": [
+      "OverseerHood"
+    ],
+    "Overseer_Helmet": [
+      "OverseerHelmet"
+    ],
+    "Overseer_Boots": [
+      "OverseerBoots"
+    ],
+    "Overseer_Gloves": [
+      "OverseerGloves"
+    ],
+    "Overseer_Body_Armour": [
+      "OverseerBodyArmour"
+    ],
+    "Overseer_Wings": [
+      "OverseerWings"
+    ],
+    "Overseer_Cloak": [
+      "OverseerBackAttachment"
+    ],
+    "Overseer_Portal_Effect": [
+      "OverseerPortalEffect"
+    ],
+    "Overseer_Footprints_Effect": [
+      "OverseerFootprintsEffect"
+    ],
+    "Midnight_Pact_Hood": [
+      "MidnightPactHood"
+    ],
+    "Midnight_Pact_Wings": [
+      "MidnightPactWings"
+    ],
+    "Midnight_Pact_Cloak": [
+      "MidnightPactBackAttachment"
+    ],
+    "Midnight_Pact_Portal_Effect": [
+      "MidnightPactPortalEffect"
+    ],
+    "Midnight_Pact_Footprints_Effect": [
+      "MidnightPactFootprintsEffect"
+    ],
+    "Starfall_Helmet": [
+      "StarfallHelmet"
+    ],
+    "Starfall_Boots": [
+      "StarfallBoots"
+    ],
+    "Starfall_Gloves": [
+      "StarfallGloves"
+    ],
+    "Starfall_Body_Armour": [
+      "StarfallBodyArmour"
+    ],
+    "Starfall_Wings": [
+      "StarfallWings"
+    ],
+    "Starfall_Cloak": [
+      "StarfallCloak"
+    ],
+    "Myrmidon_Helmet": [
+      "MyrmidonHelmet"
+    ],
+    "Myrmidon_Boots": [
+      "MyrmidonBoots"
+    ],
+    "Myrmidon_Gloves": [
+      "MyrmidonGloves"
+    ],
+    "Myrmidon_Body_Armour": [
+      "MyrmidonBodyArmour"
+    ],
+    "Myrmidon_Cloak": [
+      "MyrmidonCloak"
+    ],
+    "Zenith_Portal_Effect": [
+      "ZenithPortalEffect"
+    ],
+    "Myrmidon_Hood": [
+      "MyrmidonHood"
+    ],
+    "Arctic_Crystal_Portal_Effect": [
+      "ArcticCrystalPortalEffect"
+    ],
+    "Sunprism_Wings": [
+      "SunprismWings"
+    ],
+    "Sunprism_Cloak": [
+      "SunprismCloak"
+    ],
+    "Astral_Portal_Effect": [
+      "AstralPortalEffect"
+    ],
+    "Astral_Weapon_Effect": [
+      "AstralWeaponEffect"
+    ],
+    "Liege_Portrait_Frame": [],
+    "Intrepid_Liege_Portrait_Frame": [],
+    "Triumphant_Liege_Portrait_Frame": [],
+    "Dread_Weapon": [],
+    "Dread_Portrait_Frame": [],
+    "Ancient_Dread_Helmet": [],
+    "Ancient_Dread_Boots": [],
+    "Ancient_Dread_Gloves": [],
+    "Ancient_Dread_Body_Armour": [],
+    "Ancient_Dread_Wings": [],
+    "Ancient_Dread_Portrait_Frame": [],
+    "Primordial_Dread_Apparition_Portal_Effect": [],
+    "Primordial_Dread_Shield": [],
+    "Primordial_Dread_Helmet_Attachment": [],
+    "Primordial_Dread_Portrait_Frame": [],
+    "Tencent_4_Year_Portrait_Frame": [],
+    "Tencent_5_Year_Portrait_Frame": [],
+    "Siren_Hood": [
+      "SirenHood"
+    ],
+    "Siren_Helmet": [
+      "SirenHelmet"
+    ],
+    "Siren_Boots": [
+      "SirenBoots"
+    ],
+    "Siren_Gloves": [
+      "SirenGloves"
+    ],
+    "Siren_Body_Armour": [
+      "SirenBodyArmour"
+    ],
+    "Siren_Wings": [
+      "SirenLargeBackAttachment"
+    ],
+    "Siren_Cloak": [
+      "SirenSmallBackAttachment"
+    ],
+    "Siren_Weapon": [
+      "SirenWeapon"
+    ],
+    "Siren_Weapon_Effect": [
+      "SirenWeaponEffect"
+    ],
+    "Siren_Character_Effect": [
+      "SirenCharacterEffect"
+    ],
+    "Siren_Footprints_Effect": [
+      "SirenFootprintsEffect"
+    ],
+    "Siren_Portal_Effect": [
+      "SirenPortalEffect"
+    ],
+    "Deepwater_Alternate_Helmet": [
+      "DeepwaterHood"
+    ],
+    "Deepwater_Helmet": [
+      "DeepwaterHelmet"
+    ],
+    "Deepwater_Boots": [
+      "DeepwaterBoots"
+    ],
+    "Deepwater_Gloves": [
+      "DeepwaterGloves"
+    ],
+    "Deepwater_Body_Armour": [
+      "DeepwaterBodyArmour"
+    ],
+    "Deepwater_Wings": [
+      "DeepwaterLargeBackAttachment"
+    ],
+    "Deepwater_Back_Attachment": [
+      "DeepwaterSmallBackAttachment"
+    ],
+    "Deepwater_Weapon": [
+      "DeepwaterWeapon"
+    ],
+    "Deepwater_Weapon_Effect": [
+      "DeepwaterWeaponEffect"
+    ],
+    "Deepwater_Character_Effect": [
+      "DeepwaterCharacterEffect"
+    ],
+    "Deepwater_Footprints_Effect": [
+      "DeepwaterFootprintsEffect"
+    ],
+    "Deepwater_Portal_Effect": [
+      "DeepwaterPortalEffect"
+    ],
+    "Atlantis_Hood": [
+      "AtlantisHood"
+    ],
+    "Atlantis_Helmet": [
+      "AtlantisHelmet"
+    ],
+    "Atlantis_Boots": [
+      "AtlantisBoots"
+    ],
+    "Atlantis_Gloves": [
+      "AtlantisGloves"
+    ],
+    "Atlantis_Body_Armour": [
+      "AtlantisBodyArmour"
+    ],
+    "Atlantis_Cloak": [
+      "AtlantisSmallBackAttachment"
+    ],
+    "Atlantis_Wings": [
+      "AtlantisLargeBackAttachment"
+    ],
+    "Atlantis_Portal_Effect": [
+      "AtlantisPortalEffect"
+    ],
+    "Atlantis_Footprints_Effect": [
+      "AtlantisFootprintsEffect"
+    ],
+    "Scourge_Weapon": [],
+    "Scourge_Wings": [],
+    "Scourgelord_Back_Attachment": [
+      "ScourgelordBackAttachment"
+    ],
+    "Onyx_Oblivion_Wings": [
+      "OnyxOblivionWings"
+    ],
+    "Onyx_Oblivion_Weapon": [
+      "OnyxOblivionWeapon"
+    ],
+    "Onyx_Oblivion_Weapon_Effect": [
+      "OnyxOblivionWeaponEffect"
+    ],
+    "Oblivion_Weapon": [
+      "OblivionWeapon"
+    ],
+    "Direblade_Wings": [
+      "DirebladeWings"
+    ],
+    "Direblade_Weapon": [
+      "DirebladeWeapon"
+    ],
+    "Verdant_Weapon": [
+      "VerdantWeaponSkin"
+    ],
+    "Sulphurous_Gargoyle_Wings": [
+      "SulphurousGargoyleWings"
+    ],
+    "Alabaster_Gargoyle_Wings": [
+      "AlabasterGargoyleWings"
+    ],
+    "Stygian_Gargoyle_Wings": [
+      "StygianGargoyleWings"
+    ],
+    "Pitch-black_Gargoyle_Wings": [
+      "PitchblackGargoyleWings"
+    ],
+    "Illusionist_Character_Effect": [
+      "IllusionistCharacterEffect"
+    ],
+    "Brimstone_Character_Effect": [
+      "BrimstoneCharacterEffect"
+    ],
+    "Imperator_Helmet": [],
+    "Imperator_Boots": [],
+    "Imperator_Gloves": [],
+    "Imperator_Body_Armour": [],
+    "Imperator_Portrait_Frame": [],
+    "Nullifier_Apparition_Portal_Effect": [],
+    "Nullifier_Weapon_Effect": [],
+    "Nullifier_Portrait_Frame": [],
+    "Annihilator_Wings": [],
+    "Annihilator_Weapon": [],
+    "Annihilator_Helmet_Attachment": [],
+    "Annihilator_Weapon_Effect": [],
+    "Annihilator_Portrait_Frame": [],
+    "Ravager_Wings": [],
+    "Ravager_Weapon": [],
+    "Ravager_Weapon_Effect": [],
+    "Ravager_Portrait_Frame": [],
+    "Incinerator_Wings": [],
+    "Incinerator_Weapon": [],
+    "Incinerator_Apparition_Portal_Effect": [],
+    "Incinerator_Weapon_Effect": [],
+    "Incinerator_Portrait_Frame": [],
+    "Wyrm_Weapon": [],
+    "Wyrm_Portrait_Frame": [],
+    "Wyrmcaller_Portrait_Frame": [],
+    "Wyrmlord_Wings": [],
+    "Wyrmlord_Portrait_Frame": [],
+    "Emberkeep_Weapon": [],
+    "Emberkeep_Portrait_Frame": [],
+    "Elite_Emberkeep_Weapon_Effect": [],
+    "Elite_Emberkeep_Portrait_Frame": [],
+    "Supreme_Emberkeep_Wings": [],
+    "Supreme_Emberkeep_Portrait_Frame": [],
+    "Archnemesis_Weapon": [],
+    "Archnemesis_Wings": [],
+    "Harmony_Wings": [
+      "HarmonyWings"
+    ],
+    "Harmony_Cloak": [
+      "HarmonyCloak"
+    ],
+    "Harmony_Weapon_Effect": [
+      "HarmonyWeaponEffect"
+    ],
+    "Harmony_Footprints_Effect": [
+      "HarmonyFootprintsEffect"
+    ],
+    "Harmony_Portal_Effect": [
+      "HarmonyPortalEffect"
+    ],
+    "Heritage_Wings": [
+      "HeritageWings"
+    ],
+    "Heritage_Cloak": [
+      "HeritageCloak"
+    ],
+    "Heritage_Weapon_Effect": [
+      "HeritageWeaponEffect"
+    ],
+    "Heritage_Weapon": [
+      "HeritageWeapon"
+    ],
+    "Heritage_Portal_Effect": [
+      "HeritagePortalEffect"
+    ],
+    "Divergence_Wings": [
+      "DivergenceWings"
+    ],
+    "Divergence_Cloak": [
+      "DivergenceCloak"
+    ],
+    "Divergence_Weapon": [
+      "DivergenceWeapon"
+    ],
+    "Divergence_Weapon_Effect": [
+      "DivergenceWeaponEffect"
+    ],
+    "Divergence_Footprints_Effect": [
+      "DivergenceFootprintsEffect"
+    ],
+    "Divergence_Character_Effect": [
+      "DivergenceCharacterEffect"
+    ],
+    "Divergence_Portal_Effect": [
+      "DivergencePortalEffect"
+    ],
+    "God_of_Thunder_Portrait_Frame": [],
+    "Blue_God_of_Thunder_Portrait_Frame": [],
+    "Cursed_Hat": [],
+    "Cursed_Helmet": [],
+    "Cursed_Boots": [],
+    "Cursed_Gloves": [],
+    "Cursed_Body_Armour": [],
+    "Vulcan_Helmet": [
+      "VulcanHelmet"
+    ],
+    "Vulcan_Boots": [
+      "VulcanBoots"
+    ],
+    "Vulcan_Gloves": [
+      "VulcanGloves"
+    ],
+    "Vulcan_Body_Armour": [
+      "VulcanBodyArmour"
+    ],
+    "Vulcan_Cloak": [
+      "VulcanCloak"
+    ],
+    "Vulcan_Shield": [
+      "VulcanShield"
+    ],
+    "Vulcan_Weapon": [
+      "VulcanWeapon"
+    ],
+    "Vulcan_Portal_Effect": [
+      "VulcanPortalEffect"
+    ],
+    "Harmonious_Helmet": [
+      "HarmoniousHelmet"
+    ],
+    "Harmonious_Boots": [
+      "HarmoniousBoots"
+    ],
+    "Harmonious_Gloves": [
+      "HarmoniousGloves"
+    ],
+    "Harmonious_Body_Armour": [
+      "HarmoniousBodyArmour"
+    ],
+    "Harmonious_Weapon": [
+      "HarmoniousWeapon"
+    ],
+    "Harmonious_Weapon_Effect": [
+      "HarmoniousWeaponEffect"
+    ],
+    "Thundering_Portal_Effect": [
+      "ThunderSwirlPortalEffect"
+    ],
+    "Madcap_Shield_Skin": [
+      "MadcapShieldSkin"
+    ],
+    "Huntsman_Shield_Skin": [
+      "HuntsmanShieldSkin"
+    ],
+    "Celestial_Emperor_Wings": [
+      "CelestialEmperorWings"
+    ],
+    "Bloodscouring_Cloak": [],
+    "Ring_of_the_Victor": [],
+    "Arcanist_Portrait_Frame": [],
+    "Esteemed_Arcanist_Portrait_Frame": [],
+    "Grand_Arcanist_Portrait_Frame": [],
+    "Reaper_Portrait_Frame": [],
+    "Savage_Reaper_Portrait_Frame": [],
+    "Sanguine_Reaper_Portrait_Frame": [],
+    "Sorcerer_Wand": [
+      "SorcererWand"
+    ],
+    "Arcane_Deathnotch_Bow": [
+      "ArcaneDeathnotchBow"
+    ],
+    "Automaton_Deathnotch_Bow": [
+      "AutomatonDeathnotchBow"
+    ],
+    "Shadow_Deathnotch_Bow": [
+      "ShadowDeathnotchBow"
+    ],
+    "Spectral_Deathnotch_Bow": [
+      "SpectralDeathnotchBow"
+    ],
+    "Mana_Tank_Back_Attachment": [
+      "ManaTankBackAttachment",
+      "ManaTankBackAttachmentVariations"
+    ],
+    "Celestial_Mana_Tank_Back_Attachment": [
+      "CelestialManaTankBackAttachment"
+    ],
+    "Frosted_Mana_Tank_Back_Attachment": [
+      "FrostedManaTankBackAttachment"
+    ],
+    "Necrotic_Mana_Tank_Back_Attachment": [
+      "NecroticManaTankBackAttachment"
+    ],
+    "Steampunk_Mana_Tank_Back_Attachment": [
+      "SteampunkManaTankBackAttachment"
+    ],
+    "Pure_Mana_Tank_Back_Attachment": [
+      "PureManaTankBackAttachment"
+    ],
+    "Crowstorm_Portal_Effect": [],
+    "Azure_Shardbound_Portal_Effect": [
+      "AzureShardboundPortalEffect"
+    ],
+    "Divine_Shardbound_Portal_Effect": [
+      "DivineShardboundPortalEffect"
+    ],
+    "Demonic_Shardbound_Portal_Effect": [
+      "DemonicShardboundPortalEffect"
+    ],
+    "Regal_Shardbound_Portal_Effect": [
+      "RegalShardboundPortalEffect"
+    ],
+    "Nethermancer_Cloak": [
+      "NethermancerCloak"
+    ],
+    "Rogue_Portrait_Frame": [],
+    "Rogue_Stalker_Portrait_Frame": [],
+    "Rogue_Overseer_Portrait_Frame": [],
+    "Knight_Portrait_Frame": [],
+    "Knightmaster_Portrait_Frame": [],
+    "Knightlord_Portrait_Frame": [],
+    "Bloodsoaked_Character_Effect": [],
+    "Gold-plated_Dovecaller_Wings": [
+      "GoldPlatedDovecallerWings"
+    ],
+    "Silver-plated_Dovecaller_Wings": [
+      "SilverPlatedDovecallerWings"
+    ],
+    "Bronze-plated_Dovecaller_Wings": [
+      "BronzePlatedDovecallerWings"
+    ],
+    "Bismuth-plated_Dovecaller_Wings": [
+      "BismuthPlatedDovecallerWings"
+    ],
+    "Defiled_Revelation_Blade": [
+      "DefiledRevelationBlade"
+    ],
+    "Eternal_Revelation_Blade": [
+      "EternalRevelationBlade"
+    ],
+    "Cleansed_Revelation_Blade": [
+      "CleansedRevelationBlade"
+    ],
+    "Mist_Portal_Effect": [
+      "MistPortalEffect"
+    ],
+    "Tencent_Streamer_Portrait_Frame": [],
+    "Botanists_Enduring_Back_Attachment": [
+      "BotanistsEnduringBackAttachment"
+    ],
+    "Botanists_Frenzied_Back_Attachment": [
+      "BotanistsFrenziedBackAttachment"
+    ],
+    "Botanists_Powerful_Back_Attachment": [
+      "BotanistsPowerfulBackAttachment"
+    ],
+    "Electroswarm_Character_Effect": [
+      "ElectroswarmCharacterEffect"
+    ],
+    "Project_Electroswarm_Character_Effect": [
+      "ProjectElectroswarmCharacterEffect"
+    ],
+    "Siren_Electroswarm_Character_Effect": [
+      "SirenElectroswarmCharacterEffect"
+    ],
+    "Void_Emperor_Electroswarm_Character_Effect": [
+      "VoidEmperorElectroswarmCharacterEffect"
+    ],
+    "Gemling_Portrait_Frame": [],
+    "Gemling_Artificer_Portrait_Frame": [],
+    "Gemling_Sage_Portrait_Frame": [],
+    "Forgekeeper_Portrait_Frame": [],
+    "Forgeguard_Portrait_Frame": [],
+    "Forgemaster_Portrait_Frame": [],
+    "Tormentor_Portrait_Frame": [],
+    "Hellfire_Portrait_Frame": [],
+    "Bloodthirsty_Portrait_Frame": [],
+    "Chronomancer_Portrait_Frame": [],
+    "Voidborn_Portrait_Frame": [],
+    "Arachnamagus_Helmet": [
+      "ArachnamagusHelmet"
+    ],
+    "Arachnamagus_Boots": [
+      "ArachnamagusBoots"
+    ],
+    "Arachnamagus_Gloves": [
+      "ArachnamagusGloves"
+    ],
+    "Arachnamagus_Body_Armour": [
+      "ArachnamagusBodyArmour"
+    ],
+    "Arachnamagus_Cloak": [
+      "ArachnamagusCloak"
+    ],
+    "Arachnamagus_Wings": [
+      "ArachnamagusWings"
+    ],
+    "Arachnamagus_Portal_Effect": [
+      "ArachnamagusPortalEffect"
+    ],
+    "Crucible_Forge_Portal_Effect": [
+      "CrucibleForgePortalEffect"
+    ],
+    "Lithomancer_Portrait_Frame": [],
+    "Ancestral_Lithomancer_Portrait_Frame": [],
+    "Ancient_Lithomancer_Portrait_Frame": [],
+    "Enchanter_Portrait_Frame": [],
+    "Master_Enchanter_Portrait_Frame": [],
+    "High_Enchanter_Portrait_Frame": [],
+    "Lunar_Portrait_Frame": [],
+    "Tencent_Grading_Portrait_Frame1": [],
+    "Tencent_Grading_Portrait_Frame2": [],
+    "Tencent_Grading_Portrait_Frame3": [],
+    "Tencent_Grading_Portrait_Frame4": [],
+    "Tencent_Grading_Portrait_Frame5": [],
+    "Tencent_Grading_Portrait_Frame6": [],
+    "Tencent_Grading_Portrait_Frame7": [],
+    "Planetary_Orb": [
+      "PlanetaryOrb"
+    ],
+    "Eldritch_Planetary_Orb": [
+      "EldritchPlanetaryOrb"
+    ],
+    "Void_Emperor_Planetary_Orb": [
+      "VoidEmperorPlanetaryOrb"
+    ],
+    "Solar_Paladin_Portal_Effect": [
+      "SolarPaladinPortalEffect"
+    ],
+    "Lunar_Paladin_Portal_Effect": [
+      "LunarPaladinPortalEffect"
+    ],
+    "Crimson_Paladin_Portal_Effect": [
+      "CrimsonPaladinPortalEffect"
+    ],
+    "Engineers_Cobalt_Prototype": [
+      "EngineersCobaltPrototype"
+    ],
+    "Engineers_Bronze_Prototype": [
+      "EngineersBronzePrototype"
+    ],
+    "Chayulas_Grasp_Rare_Finisher_Effect": [
+      "ChayulasGraspRareFinisherEffect"
+    ],
+    "Disciple_Portrait_Frame": [],
+    "Ardent_Disciple_Portrait_Frame": [],
+    "Devoted_Disciple_Portrait_Frame": [],
+    "Shade_Portrait_Frame": [],
+    "Haunting_Shade_Portrait_Frame": [],
+    "Midnight_Shade_Portrait_Frame": [],
+    "Cathedral_Helmet": [],
+    "Cathedral_Boots": [],
+    "Cathedral_Gloves": [],
+    "Cathedral_Body_Armour": [],
+    "Eldritch_Royalty_Helmet": [
+      "EldritchRoyaltyHelmet"
+    ],
+    "Eldritch_Royalty_Boots": [
+      "EldritchRoyaltyBoots"
+    ],
+    "Eldritch_Royalty_Gloves": [
+      "EldritchRoyaltyGloves"
+    ],
+    "Eldritch_Royalty_Body_Armour": [
+      "EldritchRoyaltyBodyArmour"
+    ],
+    "Eldritch_Monarch_Helmet": [
+      "EldritchMonarchHelmet"
+    ],
+    "Eldritch_Monarch_Boots": [
+      "EldritchMonarchBoots"
+    ],
+    "Eldritch_Monarch_Gloves": [
+      "EldritchMonarchGloves"
+    ],
+    "Eldritch_Monarch_Body_Armour": [
+      "EldritchMonarchBodyArmour"
+    ],
+    "Tencent_Douyu_Streamer_Portrait_Frame": [],
+    "Tencent_Huya_Streamer_Portrait_Frame": [],
+    "Tencent_Bilbili_Streamer_Portrait_Frame": [],
+    "Golden_Chiyou_Portrait_Frame": [],
+    "Immortal_Spirit_Helmet": [
+      "ImmortalSpiritHelmet"
+    ],
+    "Immortal_Spirit_Gloves": [
+      "ImmortalSpiritGloves"
+    ],
+    "Immortal_Spirit_Boots": [
+      "ImmortalSpiritBoots"
+    ],
+    "Immortal_Spirit_Body_Armour": [
+      "ImmortalSpiritBodyArmour"
+    ],
+    "Immortal_Body_Helmet": [
+      "ImmortalBodyHelmet"
+    ],
+    "Immortal_Body_Boots": [
+      "ImmortalBodyBoots"
+    ],
+    "Immortal_Body_Gloves": [
+      "ImmortalBodyGloves"
+    ],
+    "Immortal_Body_Body_Armour": [
+      "ImmortalBodyBodyArmour"
+    ],
+    "Elven_Knight_Helmet": [
+      "ElvenKnightHelmet"
+    ],
+    "Elven_Knight_Boots": [
+      "ElvenKnightBoots"
+    ],
+    "Elven_Knight_Gloves": [
+      "ElvenKnightGloves"
+    ],
+    "Elven_Knight_Body_Armour": [
+      "ElvenKnightBodyArmour"
+    ],
+    "Snowcaller_Helmet": [
+      "SnowcallerHelmetVariations",
+      "SnowcallerHelmet"
+    ],
+    "Snowcaller_Boots": [
+      "SnowcallerBootsVariations",
+      "SnowcallerBoots"
+    ],
+    "Snowcaller_Gloves": [
+      "SnowcallerGlovesVariations",
+      "SnowcallerGloves"
+    ],
+    "Snowcaller_Body_Armour": [
+      "SnowcallerBodyArmourVariations",
+      "SnowcallerBodyArmour"
+    ],
+    "Ashcaller_Helmet": [
+      "AshcallerHelmet"
+    ],
+    "Ashcaller_Boots": [
+      "AshcallerBoots"
+    ],
+    "Ashcaller_Gloves": [
+      "AshcallerGloves"
+    ],
+    "Ashcaller_Body_Armour": [
+      "AshcallerBodyArmour"
+    ],
+    "Halls_of_the_Dead_Portal_Effect": [
+      "HallsoftheDeadPortalEffect"
+    ],
+    "Anchor_Drop_Rare_Finisher_Effect": [
+      "AnchorDropRareFinisherEffect"
+    ],
+    "Consuming_Tentacle_Rare_Finisher_Effect": [
+      "ConsumingTentacleRareFinisherEffect"
+    ],
+    "Dragon_Fire_Rare_Finisher_Effect": [
+      "DragonFireRareFinisherEffect"
+    ],
+    "Plummeting_Chaos_Rare_Finisher_Effect": [
+      "PlummetingChaosRareFinisherEffect"
+    ],
+    "Plumeting_Exalted_Rare_Finisher_Effect": [],
+    "Plummeting_Vaal_Rare_Finisher_Effect": [
+      "PlummetingVaalRareFinisherEffect"
+    ],
+    "Plummeting_Mirror_Rare_Finisher_Effect": [
+      "PlummetingMirrorRareFinisherEffect"
+    ],
+    "Pillar_of_Flame_Rare_Finisher_Effect": [
+      "PillarOfFlameRareFinisherEffect"
+    ],
+    "Black_Hole_Rare_Finisher_Effect": [
+      "BlackHoleRareFinisherEffect"
+    ],
+    "Solar_Knight_Helmet": [],
+    "Solar_Knight_Boots": [],
+    "Solar_Knight_Gloves": [],
+    "Solar_Knight_Body_Armour": [],
+    "Nethermancer_Helmet": [
+      "NethermancerHelmet"
+    ],
+    "Nethermancer_Boots": [
+      "NethermancerBoots"
+    ],
+    "Nethermancer_Gloves": [
+      "NethermancerGloves"
+    ],
+    "Nethermancer_Body_Armour": [
+      "NethermancerBodyArmour"
+    ],
+    "Delirious_Footprints_Effect": [
+      "DeliriousFootprintsEffect"
+    ],
+    "Blighted_Footprints_Effect": [
+      "BlightedFootprintsEffect"
+    ],
+    "Harvest_Seed_Footprints_Effect": [
+      "HarvestSeedFootprintsEffect"
+    ],
+    "Synthesised_Footprints_Effect": [
+      "SynthesisedFootprintsEffect"
+    ],
+    "Shackled_Immortal_Helmet": [],
+    "Shackled_Immortal_Boots": [],
+    "Shackled_Immortal_Gloves": [],
+    "Shackled_Immortal_Body_Armour": [],
+    "Kalguuran_Runesmith_Portrait_Frame": [],
+    "Shackled_Immortal_Portrait_Frame": [],
+    "Vaal_Serpent-God_Portrait_Frame": [],
+    "Karui_Elemancer_Portrait_Frame": [],
+    "Sandwraith_Assassin_Portrait_Frame": [],
+    "Celestial_Emperor_Rare_Finisher_Effect": [
+      "CelestialEmperorRareFinisherEffect"
+    ],
+    "Necrotic_Flames_Rare_Finisher_Effect": [
+      "NecroticFlamesRareFinisherEffect"
+    ],
+    "Exiles_Pilfering_Ring": [
+      "ExilesPilferingRing"
+    ],
+    "Exiles_Pedometer_Ring": [
+      "ExilesPedometerRing"
+    ],
+    "Cane_Toad_King_Portal_Effect": [
+      "CaneToadKingPortalEffect"
+    ],
+    "Albino_Toad_King_Portal_Effect": [
+      "AlbinoToadKingPortalEffect"
+    ],
+    "River_Toad_King_Portal_Effect": [
+      "RiverToadKingPortalEffect"
+    ],
+    "Sacred_Wisps_Portal_Effect": [
+      "SacredWispsPortalEffect"
+    ],
+    "Cursebringer_Portal_Effect": [
+      "CursebringerPortalEffect"
+    ],
+    "Alternate_Art_Atziris_Mirror": [],
+    "Alternate_Art_Wurms_Molt": [],
+    "Alternate_Art_Unset_Ring": [],
+    "Alternate_Art_Winterheart": [],
+    "Alternate_Art_Warped_Timepiece": [],
+    "Alternate_Art_Ungils_Harmony": [],
+    "Alternate_Art_The_Ignomon": [],
+    "Alternate_Art_Tear_Of_Purity": [],
+    "Alternate_Art_Taste_Of_Hate": [],
+    "Alternate_Art_Stone_Of_Lazhwar": [],
+    "Alternate_Art_Soulthirst": [],
+    "Alternate_Art_Rumis_Concoction": [],
+    "Alternate_Art_Rashkaldors_Patience": [],
+    "Alternate_Art_Pyre": [],
+    "Alternate_Art_Nights_Hold": [],
+    "Alternate_Art_Ngamahu_Tiki": [],
+    "Alternate_Art_Natural_Hierarchy": [],
+    "Alternate_Art_Meginords_Girdle": [],
+    "Alternate_Art_Malachais_Artifice": [],
+    "Alternate_Art_Laviangas_Spirit": [],
+    "Alternate_Art_Kikazaru": [],
+    "Alternate_Art_Karui_Ward": [],
+    "Alternate_Art_Eye_Of_Chayula": [],
+    "Alternate_Art_Emberwake": [],
+    "Alternate_Art_Dyadian_Dawn": [],
+    "Alternate_Art_Doedres_Damning": [],
+    "Alternate_Art_Death_Rush": [],
+    "Alternate_Art_Carnage_Heart": [],
+    "Alternate_Art_Call_Of_The_Brotherhood": [],
+    "Alternate_Art_Blood_Of_Corruption": [],
+    "Alternate_Art_Bloodgrip": [],
+    "Alternate_Art_Blackheart": [],
+    "Alternate_Art_Atziris_Foible": [],
+    "Alternate_Art_Astramentis": [],
+    "Alternate_Art_Andvarius": [],
+    "Alternate_Art_Two_Stone_Ring": [],
+    "Alternate_Art_Topaz_Ring": [],
+    "Alternate_Art_Thiefs_Torment": [],
+    "Alternate_Art_The_Taming": [],
+    "Alternate_Art_The_Anvil": [],
+    "Alternate_Art_Talisman_Of_The_Victor": [],
+    "Alternate_Art_Sidhebreath": [],
+    "Alternate_Art_Sapphire_Ring": [],
+    "Alternate_Art_Rustic_Sash": [],
+    "Alternate_Art_Ring_Of_The_Victor": [],
+    "Alternate_Art_Ruby_Ring": [],
+    "Alternate_Art_Coral_Ring": [],
+    "Alternate_Art_Prismatic_Ring": [],
+    "Alternate_Art_Perandus_Signet": [],
+    "Alternate_Art_Perandus_Blazon": [],
+    "Alternate_Art_Moonstone_Ring": [],
+    "Alternate_Art_Mings_Heart": [],
+    "Alternate_Art_Le_Heup_Of_All": [],
+    "Alternate_Art_Leather_Belt": [],
+    "Alternate_Art_Kaoms_Sign": [],
+    "Alternate_Art_Crimson_Jewel": [],
+    "Alternate_Art_Immortal_Flesh": [],
+    "Alternate_Art_Headhunter": [],
+    "Alternate_Art_Gifts_From_Above": [],
+    "Alternate_Art_Dream_Fragments": [],
+    "Alternate_Art_Divination_Distillate": [],
+    "Alternate_Art_Daressos_Salute": [],
+    "Alternate_Art_Bereks_Respite": [],
+    "Alternate_Art_Bereks_Pass": [],
+    "Alternate_Art_Bereks_Grip": [],
+    "Alternate_Art_Auxium": [],
+    "Alternate_Art_Onyx_Amulet": [],
+    "Alternate_Art_Amethyst_Ring": [],
+    "Alternate_Art_Asphyxias_Wrath": [],
+    "Alternate_Art_Blackgleam": [],
+    "Alternate_Art_Mokous_Embrace": [],
+    "Demigods_Presence": [],
+    "Demigods_Eye": [],
+    "Divine_Artillery_Strike_Rare_Finisher_Effect": [
+      "DivineArtilleryStrikeRareFinisherEffect"
+    ],
+    "Eldritch_Portrait_Frame": [],
+    "Eldritch_Hunger_Portrait_Frame": [],
+    "Eldritch_Horror_Portrait_Frame": [],
+    "Solar_Portrait_Frame": [],
+    "Solar_Knight_Portrait_Frame": [],
+    "Solar_Guardian_Portrait_Frame": [],
+    "Cerulean_Crustacean_Alternate_Helmet": [
+      "AlternateCeruleanCrustaceanHelmet"
+    ],
+    "Cerulean_Crustacean_Helmet": [
+      "CeruleanCrustaceanHelmet"
+    ],
+    "Cerulean_Crustacean_Boots": [
+      "CeruleanCrustaceanBoots"
+    ],
+    "Cerulean_Crustacean_Gloves": [
+      "CeruleanCrustaceanGloves"
+    ],
+    "Cerulean_Crustacean_Body_Armour": [
+      "CeruleanCrustaceanBodyArmour"
+    ],
+    "Cerulean_Crustacean_Back_Attachment": [
+      "CeruleanCrustaceanBackAttachment"
+    ],
+    "Coral_Crustacean_Back_Attachment": [
+      "CoralCrustaceanBackAttachment"
+    ],
+    "Alternate_Coral_Crustacean_Helmet": [],
+    "Coral_Crustacean_Helmet": [
+      "CoralCrustaceanHelmet"
+    ],
+    "Coral_Crustacean_Boots": [
+      "CoralCrustaceanBoots"
+    ],
+    "Coral_Crustacean_Gloves": [
+      "CoralCrustaceanGloves"
+    ],
+    "Coral_Crustacean_Body_Armour": [
+      "CoralCrustaceanBodyArmour"
+    ],
+    "Something_Fishy_Chest_Extra_Effect": [
+      "SomethingFishyChestExtraEffect"
+    ],
+    "Not_the_Bees_Chest_Extra_Effect": [
+      "NotTheBeesChestExtraEffect"
+    ],
+    "Trapped_Wisps_Chest_Extra_Effect": [
+      "TrappedWispsChestExtraEffect"
+    ],
+    "Dark_Fae_Wings": [
+      "DarkFaeWings"
+    ],
+    "Spring_Fae_Wings": [
+      "SpringFaeWings"
+    ],
+    "Autumn_Fae_Wings": [
+      "AutumnFaeWings"
+    ],
+    "Bloodsoaked_Gargoyle_Portal_Effect": [
+      "BloodsoakedGargoylePortalEffect"
+    ],
+    "Auspicious_Gargoyle_Portal_Effect": [
+      "AuspiciousGargoylePortalEffect"
+    ],
+    "Marble_Gargoyle_Portal_Effect": [
+      "MarbleGargoylePortalEffect"
+    ],
+    "Overgrown_Gargoyle_Portal_Effect": [
+      "OvergrownGargoylePortalEffect"
+    ],
+    "Legion_Commander_Helmet": [
+      "LegionCommanderHelmet"
     ],
     "Legion_Commander_Boots": [
       "LegionCommanderBoots"
     ],
+    "Legion_Commander_Gloves": [
+      "LegionCommanderGloves"
+    ],
+    "Legion_Commander_Body_Armour": [
+      "LegionCommanderBodyArmour"
+    ],
+    "Legion_Commander_Back_Attachment": [
+      "LegionCommanderBackAttachment"
+    ],
+    "Scourge_Commander_Helmet": [
+      "ScourgeCommanderHelmet"
+    ],
     "Scourge_Commander_Boots": [
       "ScourgeCommanderBoots"
+    ],
+    "Scourge_Commander_Gloves": [
+      "ScourgeCommanderGloves"
+    ],
+    "Scourge_Commander_Body_Armour": [
+      "ScourgeCommanderBodyArmour"
+    ],
+    "Scourge_Commander_Back_Attachment": [
+      "ScourgeCommanderBackAttachment"
+    ],
+    "Divine_Judgement_Unique_Finisher_Effect": [],
+    "Paladin_Weapon_Effect": [],
+    "Ghoul_Character_Effect": [
+      "GhoulCharacterEffect"
+    ],
+    "Demonic_Ghoul_Character_Effect": [
+      "DemonicGhoulCharacterEffect"
+    ],
+    "Ghostflame_Ghoul_Character_Effect": [
+      "GhostflameGhoulCharacterEffect"
+    ],
+    "Stygian_Ghoul_Character_Effect": [
+      "StygianGhoulCharacterEffect"
+    ],
+    "Penance_Back_Attachment": [],
+    "Divine_Paladin_Helmet": [],
+    "Divine_Paladin_Boots": [],
+    "Divine_Paladin_Gloves": [],
+    "Divine_Paladin_Body_Armour": [],
+    "Divine_Paladin_Back_Attachment": [],
+    "Acolytes_Penance_Helmet": [],
+    "Acolytes_Penance_Boots": [],
+    "Acolytes_Penance_Gloves": [],
+    "Acolytes_Penance_Body_Armour": [],
+    "Clerics_Bell_Back_Attachment": [],
+    "Penance_Portrait_Frame": [],
+    "Acolytes_Penance_Portrait_Frame": [],
+    "Zealots_Penance_Portrait_Frame": [],
+    "Paladin_Portrait_Frame": [],
+    "Divine_Paladin_Portrait_Frame": [],
+    "Sacred_Paladin_Portrait_Frame": [],
+    "Opal_Jellyfish_Portal_Effect": [
+      "OpalJellyfishPortalEffect"
+    ],
+    "Turquoise_Jellyfish_Portal_Effect": [
+      "TurquoiseJellyfishPortalEffect"
+    ],
+    "Amber_Jellyfish_Portal_Effect": [
+      "AmberJellyfishPortalEffect"
+    ],
+    "Zealots_Madness_Portal_Effect": [],
+    "Wuzhiqi_Helmet": [],
+    "Wuzhiqi_Boots": [],
+    "Wuzhiqi_Gloves": [],
+    "Wuzhiqi_Body_Armour": [],
+    "Wuzhiqi_Wings": [],
+    "Wuzhiqi_Cloak": [],
+    "Wuzhiqi_Weapon_Skin": [],
+    "Wuzhiqi_Shield": [],
+    "Wuzhiqi_Portal_Effect": [],
+    "Wuzhiqi_Footprints_Effect": [],
+    "Wuzhiqi_Character_Effect": [],
+    "Wuzhiqi_Weapon_Effect": [],
+    "Wuzhiqi_Apparition_Effect": [],
+    "Wuzhiqi_Portrait_Frame": [],
+    "Gold_Fluttering_Scarab_Shield": [
+      "GoldFlutteringScarabShield"
+    ],
+    "Iron_Fluttering_Scarab_Shield": [
+      "IronFlutteringScarabShield"
+    ],
+    "Royal_Fluttering_Scarab_Shield": [
+      "RoyalFlutteringScarabShield"
+    ],
+    "Lute_Back_Attachment": [
+      "LuteBackAttachment"
+    ],
+    "Black_Lute_Back_Attachment": [
+      "BlackLuteBackAttachment"
+    ],
+    "Metal_Lute_Back_Attachment": [
+      "MetalLuteBackAttachment"
+    ],
+    "Violet_Clay_Mage_Helmet": [
+      "VioletClayMageHelmet"
+    ],
+    "Violet_Clay_Mage_Boots": [
+      "VioletClayMageBoots"
+    ],
+    "Violet_Clay_Mage_Gloves": [
+      "VioletClayMageGloves"
+    ],
+    "Violet_Clay_Mage_Body_Armour": [
+      "VioletClayMageBodyArmour"
+    ],
+    "Scarlet_Clay_Mage_Helmet": [
+      "ScarletClayMageHelmet"
+    ],
+    "Scarlet_Clay_Mage_Boots": [
+      "ScarletClayMageBoots"
+    ],
+    "Scarlet_Clay_Mage_Gloves": [
+      "ScarletClayMageGloves"
+    ],
+    "Scarlet_Clay_Mage_Body_Armour": [
+      "ScarletClayMageBodyArmour"
+    ],
+    "Blood_Tendrils_Footprints_Effect": [
+      "BloodTendrilsFootprintsEffect"
+    ],
+    "Webbed_Tendrils_Footprints_Effect": [
+      "WebbedTendrilsFootprintsEffect"
+    ],
+    "Ink_Tendrils_Footprints_Effect": [
+      "InkTendrilsFootprintsEffect"
+    ],
+    "Harpy_Flyover_Level-up_Extra_Effect": [],
+    "Tencent_Anniversary_Portrait_Frame7": [],
+    "Kingsmarch_Portal_Effect": [],
+    "Kalguuran_Cloak": [],
+    "Warlord_of_the_Karui_Alternate_Helmet": [],
+    "Warlord_of_the_Karui_Helmet": [],
+    "Warlord_of_the_Karui_Boots": [],
+    "Warlord_of_the_Karui_Gloves": [],
+    "Warlord_of_the_Karui_Body_Armour": [],
+    "Karui_Totemcaller_Rare_Finisher_Effect": [],
+    "Lord_of_Ogham_Helmet": [],
+    "Lord_of_Ogham_Boots": [],
+    "Lord_of_Ogham_Gloves": [],
+    "Lord_of_Ogham_Body_Armour": [],
+    "King_of_the_Faridun_Helmet": [],
+    "King_of_the_Faridun_Boots": [],
+    "King_of_the_Faridun_Gloves": [],
+    "King_of_the_Faridun_Body_Armour": [],
+    "Thaumaturge_of_the_Vaal_Helmet": [],
+    "Thaumaturge_of_the_Vaal_Boots": [],
+    "Thaumaturge_of_the_Vaal_Gloves": [],
+    "Thaumaturge_of_the_Vaal_Body_Armour": [],
+    "Liberator_of_Wraeclast_Helmet_Attachment": [],
+    "Liberator_of_Wraeclast_Helmet": [],
+    "Liberator_of_Wraeclast_Boots": [],
+    "Liberator_of_Wraeclast_Gloves": [],
+    "Liberator_of_Wraeclast_Body_Armour": [],
+    "Liberator_of_Wraeclast_Back_Attachment": [],
+    "Thaumaturge_of_the_Vaal_Back_Attachment": [],
+    "Warlord_of_the_Karui_Back_Attachment": [],
+    "Lord_of_Ogham_Back_Attachment": [],
+    "Soulcore_Weapon_Effect": [],
+    "Deshrets_Blessing_Level-up_Extra_Effect": [],
+    "The_Rust_King_Portal_Effect": [],
+    "Window_to_Twilight_Portal_Effect": [],
+    "Iron_Counts_Zweihander": [],
+    "Tyrannys_End_Spear_Skin": [],
+    "Fariduns_Glory_Bow_Skin": [],
+    "Wand_of_the_Thaumaturge_Skin": [],
+    "Royal_Sacrifical_Dagger_Skin": [],
+    "Akoyas_Felling_Axe_Skin": [],
+    "Tukohamas_Crusher_Mace_Skin": [],
+    "Doryanis_Idol_Focus_and_Shield_Skin": [],
+    "Light_of_Divinity_Sceptre_Skin": [],
+    "Deliverance_Crossbow_Skin": [],
+    "Justice_Flail_Skin": [],
+    "Redemption_Shield_Skin": [],
+    "King_of_the_Faridun_Back_Attachment": [],
+    "Lord_of_Ogham_Portrait_Frame": [],
+    "King_of_the_Faridun_Portrait_Frame": [],
+    "Thaumaturge_of_the_Vaal_Portrait_Frame": [],
+    "Warlord_of_the_Karui_Portrait_Frame": [],
+    "Liberator_of_Wraeclast_Portrait_Frame": [],
+    "Hands_of_Xesht_Back_Attachment": [],
+    "Temporal_Lords_Portal_Effect": [],
+    "Energising_Bolt_Flask_Effect": [],
+    "Halo_of_the_Righteous_Helmet_Attachment": [],
+    "Zodiac_Dragon_Marauder_Helmet": [],
+    "Zodiac_Dragon_Marauder_Boots": [],
+    "Zodiac_Dragon_Marauder_Gloves": [],
+    "Zodiac_Dragon_Marauder_Body_Armour": [],
+    "Zodiac_Dragon_Templar_Helmet": [],
+    "Zodiac_Dragon_Templar_Boots": [],
+    "Zodiac_Dragon_Templar_Gloves": [],
+    "Zodiac_Dragon_Templar_Body_Armour": [],
+    "Zodiac_Dragon_Witch_Helmet": [],
+    "Zodiac_Dragon_Witch_Boots": [],
+    "Zodiac_Dragon_Witch_Gloves": [],
+    "Zodiac_Dragon_Witch_Body_Armour": [],
+    "Zodiac_Dragon_Shadow_Helmet": [],
+    "Zodiac_Dragon_Shadow_Boots": [],
+    "Zodiac_Dragon_Shadow_Gloves": [],
+    "Zodiac_Dragon_Shadow_Body_Armour": [],
+    "Zodiac_Dragon_Ranger_Helmet": [],
+    "Zodiac_Dragon_Ranger_Boots": [],
+    "Zodiac_Dragon_Ranger_Gloves": [],
+    "Zodiac_Dragon_Ranger_Body_Armour": [],
+    "Zodiac_Dragon_Sorceress_Helmet": [],
+    "Zodiac_Dragon_Sorceress_Boots": [],
+    "Zodiac_Dragon_Sorceress_Gloves": [],
+    "Zodiac_Dragon_Sorceress_Body_Armour": [],
+    "Zodiac_Dragon_Druid_Helmet": [],
+    "Zodiac_Dragon_Druid_Boots": [],
+    "Zodiac_Dragon_Druid_Gloves": [],
+    "Zodiac_Dragon_Druid_Body_Armour": [],
+    "Zodiac_Dragon_Huntress_Helmet": [],
+    "Zodiac_Dragon_Huntress_Boots": [],
+    "Zodiac_Dragon_Huntress_Gloves": [],
+    "Zodiac_Dragon_Huntress_Body_Armour": [],
+    "Zodiac_Dragon_Footprints_Effect": [],
+    "Zodiac_Dragon_Character_Effect": [],
+    "Zodiac_Dragon_Apparition_Effect": [],
+    "Zodiac_Dragon_Weapon_Effect": [],
+    "Zodiac_Dragon_Flask_Effect": [],
+    "Zodiac_Dragon_Back_Attachment": [],
+    "Zodiac_Dragon_Weapon_Skin": [],
+    "Zodiac_Dragon_Shield": [],
+    "Zodiac_Dragon_Charge_Effect": [],
+    "Zodiac_Dragon_Portal_Effect": [],
+    "Zodiac_Dragon_Rare_Finisher_Effect": [],
+    "Zodiac_Dragon_Pet": [],
+    "Zodiac_Dragon_Premium_Pet": [],
+    "Zodiac_Dragon_Premium_Expired_Pet": [],
+    "Zodiac_Dragon_Portrait_Frame": [],
+    "Witchhunter_Helmet": [
+      "WitchhunterHelmet"
+    ],
+    "Witchhunter_Boots": [
+      "WitchhunterBoots"
+    ],
+    "Witchhunter_Gloves": [
+      "WitchhunterGloves"
+    ],
+    "Witchhunter_Body_Armour": [
+      "WitchhunterBodyArmour"
+    ],
+    "Witchhunter_Back_Attachment": [
+      "WitchhunterBackAttachment"
+    ],
+    "Ghoulhunter_Helmet": [
+      "GhoulhunterHelmet"
+    ],
+    "Ghoulhunter_Boots": [
+      "GhoulhunterBoots"
+    ],
+    "Ghoulhunter_Gloves": [
+      "GhoulhunterGloves"
+    ],
+    "Ghoulhunter_Body_Armour": [
+      "GhoulhunterBodyArmour"
+    ],
+    "Ghoulhunter_Back_Attachment": [
+      "GhoulhunterBackAttachment"
+    ],
+    "Witchhunter_Crossbow_Skin": [
+      "WitchhunterCrossbowSkin"
+    ],
+    "Ghoulhunter_Crossbow_Skin": [
+      "GhoulhunterCrossbowSkin"
+    ],
+    "Arbiter_of_Ash_Wings": [
+      "ArbiterOfAshWings"
+    ],
+    "Corroding_Arbiter_of_Ash_Wings": [
+      "CorrodingArbiterOfAshWings"
+    ],
+    "Pale_Arbiter_of_Ash_Wings": [
+      "PaleArbiterOfAshWings"
+    ],
+    "Executioners_Guillotine_Unique_Finisher_Effect": [],
+    "Xeshts_Clap_Rare_Finisher_Effect": [
+      "XeshtsClapRareFinisherEffect"
+    ],
+    "Tormentors_Rare_Finisher_Effect": [
+      "TormentorsRareFinisherEffect"
+    ],
+    "Defilers_Rare_Finisher_Effect": [
+      "DefilersRareFinisherEffect"
+    ],
+    "Chaosborn_Druids_Rare_Finisher_Effect": [
+      "ChaosbornDruidsRareFinisherEffect"
+    ],
+    "Sun_Priests_Incineration_Rare_Finisher_Effect": [],
+    "Doryanis_Crash_Landing_Unique_Finisher_Effect": [
+      "DoryanisCrashLandingUniqueFinisherEffect"
+    ],
+    "Doryanis_Freeze_Ray_Rare_Finisher_Effect": [
+      "DoryanisFreezeRayRareFinisherEffect"
+    ],
+    "Doryanis_Refracted_Lasers_Rare_Finisher_Effect": [
+      "DoryanisRefractedLasersRareFinisherEffect"
+    ],
+    "Doryanis_Flamethrower_Rare_Finisher_Effect": [
+      "DoryanisFlamethrowerRareFinisherEffect"
+    ],
+    "Doryanis_Laser_Beam_Rare_Finisher_Effect": [
+      "DoryanisLaserBeamRareFinisherEffect"
+    ],
+    "The_Defiler_Portal": [
+      "TheDefilerPortalEffect"
+    ],
+    "Rising_Ash_Character_Effect": [
+      "RisingAshCharacterEffect"
+    ],
+    "Orbiting_Ash_Character_Effect": [
+      "OrbitingAshCharacterEffect"
+    ],
+    "Gathering_Ash_Character_Effect": [
+      "GatheringAshCharacterEffect"
+    ],
+    "Particle_Accelerator_Portal": [],
+    "Breach_Flame_Charge_Skin": [
+      "BreachFlameChargeSkin"
+    ],
+    "Breach_Imp_Charge_Skin": [
+      "BreachImpChargeSkin"
+    ],
+    "Breach_Fae_Charge_Skin": [
+      "BreachFaeChargeSkin"
+    ],
+    "Breachlord_Mantra_of_Destruction_Effect": [
+      "BreachlordMantraofDestructionEffect"
+    ],
+    "Breachlord_Flicker_Strike_Effect": [
+      "BreachlordFlickerStrikeEffect"
+    ],
+    "Breachlord_Tempest_Bell": [],
+    "Breachlord_Vaulting_Impact_Effect": [
+      "BreachlordVaultingImpactEffect"
+    ],
+    "Breachlord_Wind_Blast_Effect": [
+      "BreachlordWindBlastEffect"
+    ],
+    "Breachlord_Killing_Palm_Effect": [
+      "BreachlordKillingPalmEffect"
+    ],
+    "Breachlord_Whirling_Assault_Effect": [
+      "BreachlordWhirlingAssaultEffect"
+    ],
+    "Demonfire_Fireball_Effect": [
+      "DemonfireFireballEffect"
+    ],
+    "Demonfire_Firestorm_Effect": [
+      "DemonfireFirestormEffect"
+    ],
+    "Demonfire_Flame_Wall_Effect": [
+      "DemonfireFlameWallEffect"
+    ],
+    "Demonfire_Flameblast_Effect": [
+      "DemonfireFlameblastEffect"
+    ],
+    "Demonfire_Incinerate_Effect": [
+      "DemonfireIncinerateEffect"
+    ],
+    "Demonfire_Solar_Orb_Effect": [
+      "DemonfireSolarOrbEffect"
+    ],
+    "Demonfire_Ember_Fusillade_Effect": [
+      "DemonfireEmberFusiladeEffect"
+    ],
+    "Faridun_Lightning_Arrow_Effect": [
+      "FaridunLightningArrowEffect"
+    ],
+    "Faridun_Lightning_Rod_Effect": [
+      "FaridunLightningRodEffect"
+    ],
+    "Faridun_Magnetic_Salvo_Effect": [
+      "FaridunMagneticSalvoEffect"
+    ],
+    "Faridun_Stormcaller_Arrow_Effect": [
+      "FaridunStormcallerArrowEffect"
+    ],
+    "Faridun_Shockchain_Arrow_Effect": [
+      "FaridunShockchainArrowEffect"
+    ],
+    "Faridun_Voltaic_Mark_Effect": [
+      "FaridunVoltaicMarkEffect"
+    ],
+    "Faridun_Electrocuting_Arrow_Effect": [
+      "FaridunElectrocutingArrowEffect"
+    ],
+    "Faridun_Herald_of_Thunder_Effect": [
+      "FaridunHeraldofThunderEffect"
+    ],
+    "Thaumaturges_Voltaic_Grenades_Effect": [
+      "ThaumaturgesVoltaicGrenadesEffect"
+    ],
+    "Thaumaturges_Stormblast_Bolts_Effect": [
+      "ThaumaturgesStormblastBoltsEffect"
+    ],
+    "Thaumaturges_Plasma_Blast_Effect": [
+      "ThaumaturgesPlasmaBlastEffect"
+    ],
+    "Thaumaturges_Shockburst_Rounds_Effect": [
+      "ThaumaturgesShockburstRoundsEffect"
+    ],
+    "Thaumaturges_Galvanic_Shards_Effect": [
+      "ThaumaturgesGalvanicShardsEffect"
+    ],
+    "Thaumaturges_Herald_of_Thunder_Effect": [
+      "ThaumaturgesHeraldofThunderEffect"
+    ],
+    "Kitava_Earthquake_Effect": [
+      "KitavaEarthquakeEffect"
+    ],
+    "Kitava_Rolling_Slam_Effect": [
+      "KitavaRollingSlamEffect"
+    ],
+    "Kitava_Sunder_Effect": [
+      "KitavaSunderEffect"
+    ],
+    "Kitava_Molten_Blast_Effect": [
+      "KitavaMoltenBlastEffect"
+    ],
+    "Kitava_Perfect_Strike_Effect": [
+      "KitavaPerfectStrikeEffect"
+    ],
+    "Kitava_Earthshatter_Effect": [
+      "KitavaEarthshatterEffect"
+    ],
+    "Kitava_Volcanic_Fissure_Effect": [
+      "KitavaVolcanicFissureEffect"
+    ],
+    "Sanguine_Unearth_Effect": [
+      "SanguineUnearthEffect"
+    ],
+    "Sanguine_Bone_Offering_Effect": [
+      "SanguineBoneOfferingEffect"
+    ],
+    "Sanguine_Pain_Offering_Effect": [
+      "SanguinePainOfferingEffect"
+    ],
+    "Sanguine_Soul_Offering_Effect": [
+      "SanguineSoulOfferingEffect"
+    ],
+    "Sanguine_Bone_Blast_Effect": [
+      "SanguineBoneBlastEffect"
+    ],
+    "Sanguine_Bone_Storm_Effect": [],
+    "Sanguine_Vulnerability_Effect": [
+      "SanguineVulnerabilityEffect"
+    ],
+    "Sanguine_Despair_Effect": [
+      "SanguineDespairEffect"
+    ],
+    "Sanguine_Temporal_Chains_Effect": [
+      "SanguineTemporalChainsEffect"
+    ],
+    "Sanguine_Enfeeble_Effect": [
+      "SanguineEnfeebleEffect"
+    ],
+    "Sanguine_Bone_Cage_Effect": [
+      "SanguineBoneCageEffect"
+    ],
+    "Sanguine_Spectre_Skin": [
+      "SanguineSpectreSkin"
+    ],
+    "Shifting_Sands_Dodge_Roll_Effect": [
+      "ShiftingSandsDodgeRollEffect"
+    ],
+    "Elusive_Dodge_Roll_Effect": [
+      "ElusiveDodgeRollEffect"
+    ],
+    "Vampiric_Dodge_Roll_Effect": [
+      "VampiricDodgeRollEffect"
+    ],
+    "Honour_Guard_Dodge_Roll_Effect": [
+      "HonourGuardDodgeRollEffect"
+    ],
+    "Hunters_Trophy_Back_Attachment": [],
+    "Honour_Guard_Rhoa_Mount": [],
+    "Ritualists_Rhoa_Mount": [],
+    "Fractured_Rhoa_Mount_Effect": [
+      "FracturedRhoaMountEffect"
+    ],
+    "Karui_Rhoa_Mount_Effect": [
+      "KaruiRhoaMountEffect"
+    ],
+    "Wings_of_the_Valkyrie_Level-up_Effect": [],
+    "Autumn_Knight_Helmet": [],
+    "Autumn_Knight_Boots": [],
+    "Autumn_Knight_Gloves": [],
+    "Autumn_Knight_Body_Armour": [],
+    "Hallowed_Keeper_Helmet": [
+      "HallowedKeeperHelmet"
+    ],
+    "Hallowed_Keeper_Boots": [
+      "HallowedKeeperBoots"
+    ],
+    "Hallowed_Keeper_Gloves": [
+      "HallowedKeeperGloves"
+    ],
+    "Hallowed_Keeper_Body_Armour": [
+      "HallowedKeeperBodyArmour"
+    ],
+    "Flesh_Warden_Helmet": [
+      "FleshWardenHelmet"
+    ],
+    "Flesh_Warden_Boots": [
+      "FleshWardenBoots"
+    ],
+    "Flesh_Warden_Gloves": [
+      "FleshWardenGloves"
+    ],
+    "Flesh_Warden_Body_Armour": [
+      "FleshWardenBodyArmour"
+    ],
+    "Assassin_Djinns_Portal": [
+      "AssassinDjinnsPortal"
+    ],
+    "Arcane_Djinns_Portal": [
+      "ArcaneDjinnsPortal"
+    ],
+    "Water_Djinns_Portal": [
+      "WaterDjinnsPortal"
+    ],
+    "Time_Djinns_Portal": [
+      "TimeDjinnsPortal"
+    ],
+    "Breach_Hedron_Portal": [],
+    "Demigods_Virtue": [],
+    "Demigods_Duty": [],
+    "Demigods_Loyalty": [],
+    "Demigods_Valor": [],
+    "Demigods_Fortitude": [],
+    "Demigods_Judgement": [],
+    "Honour_Guard_Helmet": [],
+    "Honour_Guard_Boots": [],
+    "Honour_Guard_Gloves": [],
+    "Honour_Guard_Body_Armour": [],
+    "Honour_Guard_Shield_Skin": [
+      "HonourGuardShieldSkin"
+    ],
+    "Honour_Guard_Spear_Skin": [
+      "HonourGuardSpearSkin"
+    ],
+    "Arbiter_of_Ash_Portal_Effect": [
+      "ArbiterofAshPortalEffect"
+    ],
+    "Breachlords_Knight_Helmet": [
+      "BreachlordsKnightHelmet"
+    ],
+    "Breachlords_Knight_Boots": [
+      "BreachlordsKnightBoots"
+    ],
+    "Breachlords_Knight_Gloves": [
+      "BreachlordsKnightGloves"
+    ],
+    "Breachlords_Knight_Body_Armour": [
+      "BreachlordsKnightBodyArmour"
+    ],
+    "Breachlords_Knight_Quarterstaff": [
+      "BreachlordsKnightQuarterstaffSkin"
+    ],
+    "Breachlords_Knight_Mace": [
+      "BreachlordsKnightMaceSkin"
+    ],
+    "Breachlords_Crusader_Helmet": [
+      "BreachlordsCrusaderHelmet"
+    ],
+    "Breachlords_Crusader_Boots": [
+      "BreachlordsCrusaderBoots"
+    ],
+    "Breachlords_Crusader_Gloves": [
+      "BreachlordsCrusaderGloves"
+    ],
+    "Breachlords_Crusader_Body_Armour": [
+      "BreachlordsCrusaderBodyArmour"
+    ],
+    "Breachlords_Crusader_Quarterstaff": [
+      "BreachlordsCrusaderQuarterstaffSkin"
+    ],
+    "Breachlords_Crusader_Mace": [
+      "BreachlordsCrusaderMaceSkin"
+    ],
+    "Sun_Clan_Raider_Helmet": [],
+    "Sun_Clan_Raider_Boots": [],
+    "Sun_Clan_Raider_Gloves": [],
+    "Sun_Clan_Raider_Body_Armour": [],
+    "Sun_Clan_Raider_Buckler_Skin": [
+      "SunClanRaiderBucklerSkin"
+    ],
+    "Sun_Clan_Raider_Weapon_Skin": [],
+    "Sun_Clan_Raider_Character_Skin": [
+      "SunClanRaiderCharacterSkin"
+    ],
+    "Tracking_Scroll_of_Hunting": [
+      "TrackingScrollofHunting"
+    ],
+    "Tracking_Scroll_of_Headhunting": [
+      "TrackingScrollofHeadhunting"
+    ],
+    "Tracking_Scroll_of_Bounty": [
+      "TrackingScrollofBounty"
+    ],
+    "Tracking_Scroll_of_Treasures": [
+      "TrackingScrollofTreasures"
+    ],
+    "Tracking_Scroll_of_Abysses": [
+      "TrackingScrollofAbysses"
+    ],
+    "Chaosborn_Druid_Disengage_Effect": [
+      "ChaosbornDruidDisengageEffect"
+    ],
+    "Chaosborn_Druid_Spear_Throw_Effect": [
+      "ChaosbornDruidSpearThrowEffect"
+    ],
+    "Chaosborn_Druid_Whirlwind_Lance_Effect": [
+      "ChaosbornDruidWhirlwindLanceEffect"
+    ],
+    "Chaosborn_Druid_Whirling_Slash_Effect": [
+      "ChaosbornDruidWhirlingSlashEffect"
+    ],
+    "Chaosborn_Druid_Twister_Effect": [
+      "ChaosbornDruidTwisterEffect"
+    ],
+    "Chaosborn_Druid_Tamed_Beast_Skin": [
+      "ChaosbornDruidTamedBeastSkin"
+    ],
+    "Apostle_of_Justice_Back_Attachment": [],
+    "Cruel_Trarthan_Executioner_Character_Effect": [],
+    "Trarthan_Executioner_Unique_Finisher_Effect": [],
+    "Cruel_Trarthan_Executioner_Helmet": [],
+    "Cruel_Trarthan_Executioner_Boots": [],
+    "Cruel_Trarthan_Executioner_Gloves": [],
+    "Cruel_Trarthan_Executioner_Body_Armour": [],
+    "Cruel_Trarthan_Executioner_Back_Attachment": [],
+    "Cryptkeeper_Unique_Finisher_Effect": [],
+    "Hallowed_Cryptkeeper_Helmet": [],
+    "Hallowed_Cryptkeeper_Boots": [],
+    "Hallowed_Cryptkeeper_Gloves": [],
+    "Hallowed_Cryptkeeper_Body_Armour": [],
+    "Hallowed_Cryptkeeper_Hood": [],
+    "Hallowed_Cryptkeeper_Helmet_Attachment": [],
+    "Sacred_Cryptkeeper_Back_Attachment": [],
+    "Cryptkeeper_Portal_Effect": [],
+    "The_Originators_Portal": [],
+    "Valkyrie_Thunderous_Leap_Effect": [
+      "ValkyrieThunderousLeapEffect"
+    ],
+    "Valkyrie_Storm_Lance_Effect": [
+      "ValkyrieStormLanceEffect"
+    ],
+    "Valkyrie_Lightning_Spear_Effect": [
+      "ValkyrieLightningSpearEffect"
+    ],
+    "Valkyrie_Herald_of_Thunder_Effect": [
+      "ValkyrieHeraldofThunderEffect"
+    ],
+    "Valkyrie_Primal_Strikes_Effect": [
+      "ValkyriePrimalStrikesEffect"
+    ],
+    "Delirium_Hexblast_Effect": [
+      "DeliriumHexblastEffect"
+    ],
+    "Delirium_Dark_Effigy_Effect": [
+      "DeliriumDarkEffigyEffect"
+    ],
+    "Delirium_Despair_Effect": [
+      "DeliriumDespairEffect"
+    ],
+    "Delirium_Essence_Drain_Effect": [
+      "DeliriumEssenceDrainEffect"
+    ],
+    "Delirium_Contagion_Effect": [
+      "DeliriumContagionEffect"
+    ],
+    "Dark_Tempest_Lightning_Spear_Effect": [
+      "DarkTempestLightningSpearEffect"
+    ],
+    "Dark_Tempest_Thunderous_Leap_Effect": [
+      "DarkTempestThunderousLeapEffect"
+    ],
+    "Dark_Tempest_Storm_Lance_Effect": [
+      "DarkTempestStormLanceEffect"
+    ],
+    "Dark_Tempest_Primal_Strikes_Effect": [
+      "DarkTempestPrimalStrikesEffect"
+    ],
+    "Dark_Tempest_Herald_of_Thunder_Effect": [
+      "DarkTempestHeraldofThunderEffect"
+    ],
+    "Skull_of_Undeath": [],
+    "Syndicates_Demise_Unique_Finisher_Effect": [],
+    "Phrecian_Grand_Magistrate_Hood": [],
+    "Phrecian_Grand_Magistrate_Helmet": [],
+    "Phrecian_Grand_Magistrate_Boots": [],
+    "Phrecian_Grand_Magistrate_Gloves": [],
+    "Phrecian_Grand_Magistrate_Body_Armour": [],
+    "Phrecian_Grand_Magistrate_Helmet_Attachment": [],
+    "Phrecian_Imperial_Magistrate_Back_Attachment": [],
+    "Phrecian_Magistrate_Weapon_Effect": [],
+    "Phrecian_Magistrate_Character_Effect": [],
+    "Cryptkeeper_Portrait_Frame": [],
+    "Hallowed_Cryptkeeper_Portrait_Frame": [],
+    "Sacred_Cryptkeeper_Portrait_Frame": [],
+    "Phrecian_Magistrate_Portrait_Frame": [],
+    "Phrecian_Grand_Magistrate_Portrait_Frame": [],
+    "Phrecian_Imperial_Magistrate_Portrait_Frame": [],
+    "Rose_Charge_Effect": [],
+    "Abyssal_Volcano_Effect": [
+      "AbyssalVolcanoEffect"
+    ],
+    "Abyssal_Tornado_Effect": [
+      "AbyssalTornadoEffect"
+    ],
+    "Abyssal_Lightning_Bolt_Effect": [
+      "AbyssalLightningBoltEffect"
+    ],
+    "Abyssal_Thunderstorm_Effect": [
+      "AbyssalThunderstormEffect"
+    ],
+    "Abyssal_Snap_Effect": [
+      "AbyssalSnapEffect"
+    ],
+    "Radiant_Lightning_Bolt_Effect": [
+      "RadiantLightningBoltEffect"
+    ],
+    "Hartlins_Wrath_Unique_Finisher_Effect": [],
+    "Archon_of_the_Atlas_Helmet": [],
+    "Archon_of_the_Atlas_Boots": [],
+    "Archon_of_the_Atlas_Gloves": [],
+    "Archon_of_the_Atlas_Body_Armour": [],
+    "Watchers_Wrath_Helmet": [],
+    "Watchers_Wrath_Boots": [],
+    "Watchers_Wrath_Gloves": [],
+    "Watchers_Wrath_Body_Armour": [],
+    "Apostle_of_Justice_Helmet": [],
+    "Apostle_of_Justice_Boots": [],
+    "Apostle_of_Justice_Gloves": [],
+    "Apostle_of_Justice_Body_Armour": [],
+    "Banner_of_Justice_Portal": [],
+    "Apostle_of_Justice_Unique_Finisher_Effect": [],
+    "Fracturing_Veil_Character_Effect": [
+      "FracturingVeilCharacterEffect"
+    ],
+    "Fracturing_Sleeve_Character_Effect": [
+      "FracturingSleeveCharacterEffect"
+    ],
+    "Fracturing_Character_Effect": [
+      "FracturingCharacterEffect"
+    ],
+    "Ghoul_Dodge_Roll_Effect": [
+      "GhoulDodgeRollEffect"
+    ],
+    "Rolling_Waves_Dodge_Roll_Effect": [
+      "RollingWavesDodgeRollEffect"
+    ],
+    "Storm_of_Valako_Portal": [],
+    "Molten_Charge_Skin": [
+      "MoltenChargeSkin"
+    ],
+    "Electro_Charge_Skin": [
+      "ElectroChargeSkin"
+    ],
+    "Atomic_Charge_Skin": [
+      "AtomicChargeSkin"
+    ],
+    "Burning_Monolith_Portal_Effect": [
+      "BurningMonolithPortalEffect"
     ],
     "Molten_Portal_Effect": [
       "MoltenPortalEffect",
       "MoltenPortalEffectVariation"
     ],
+    "Shifting_Paintings_Portal_Effect": [
+      "ShiftingPaintingsPortalEffect"
+    ],
+    "Mercenaries_Gauntlet": [],
+    "Mirage_Gauntlet": [],
+    "Justice_Portrait_Frame": [],
+    "Apostle_of_Justice_Portrait_Frame": [],
+    "Herald_of_Justice_Portrait_Frame": [],
+    "Trarthan_Executioner_Portrait_Frame": [],
+    "Cruel_Trarthan_Executioner_Portrait_Frame": [],
+    "Merciless_Trarthan_Executioner_Portrait_Frame": [],
+    "Goblin_Shaman_Skin": [
+      "GoblinShamanSkin"
+    ],
+    "Goblin_Witchdoctor_Skin": [
+      "GoblinWitchdoctorSkin"
+    ],
+    "Molten_Forgemaster_Back_Attachment": [
+      "MoltenForgemasterBackAttachment"
+    ],
+    "Sanguine_Explosion_Level-up_Extra_Effect": [
+      "SanguineExplosionLevelupExtraEffect"
+    ],
+    "Gilded_Explosion_Level-up_Extra_Effect": [
+      "GildedExplosionLevelupExtraEffect"
+    ],
+    "Crystalline_Explosion_Level-up_Extra_Effect": [
+      "CrystallineExplosionLevelupExtraEffect"
+    ],
+    "Exiles_Hood": [],
+    "Exiles_Staff": [],
+    "Djinn_Helmet_Attachment": [
+      "DjinnHelmetAttachment"
+    ],
+    "Djinn_Helmet": [
+      "DjinnHelmet"
+    ],
+    "Djinn_Boots": [
+      "DjinnBoots"
+    ],
+    "Djinn_Gloves": [
+      "DjinnGloves"
+    ],
+    "Djinn_Body_Armour": [
+      "DjinnBodyArmour"
+    ],
+    "Djinn_Character_Skin": [
+      "DjinnCharacterSkin"
+    ],
+    "Djinn_Tempest_Bell_Effect": [
+      "DjinnTempestBellEffect"
+    ],
+    "Helmet_of_the_Abyssal": [],
+    "Goblin_Shaman_Back_Attachment": [
+      "GoblinShamanBackAttachment"
+    ],
+    "Lichs_Gaze_Shield": [
+      "LichsGazeShield"
+    ],
+    "Cape_of_the_Abyssal": [],
+    "Exiles_Cloak": [],
+    "Fractured_Dreamer_Alternate_Helmet": [
+      "FracturedDreamerAltHelmet"
+    ],
+    "Fractured_Dreamer_Helmet": [
+      "FracturedDreamerHelmet"
+    ],
+    "Fractured_Dreamer_Boots": [
+      "FracturedDreamerBoots"
+    ],
+    "Fractured_Dreamer_Gloves": [
+      "FracturedDreamerGloves"
+    ],
+    "Fractured_Dreamer_Body_Armour": [
+      "FracturedDreamerBodyArmour"
+    ],
+    "Fractured_Nightmare_Alternate_Helmet": [
+      "FracturedNightmareAltHelmet"
+    ],
+    "Fractured_Nightmare_Helmet": [
+      "FracturedNightmareHelmet"
+    ],
+    "Fractured_Nightmare_Boots": [
+      "FracturedNightmareBoots"
+    ],
+    "Fractured_Nightmare_Gloves": [
+      "FracturedNightmareGloves"
+    ],
+    "Fractured_Nightmare_Body_Armour": [
+      "FracturedNightmareBodyArmour"
+    ],
+    "Fractured_Dreamer_Back_Attachment": [
+      "FracturedDreamerBackAttachment"
+    ],
+    "Fractured_Nightmare_Back_Attachment": [
+      "FracturedNightmareBackAttachment"
+    ],
+    "Goblin_Shaman_Helmet": [
+      "GoblinShamanHelmet"
+    ],
+    "Goblin_Shaman_Boots": [
+      "GoblinShamanBoots"
+    ],
+    "Goblin_Shaman_Gloves": [
+      "GoblinShamanGloves"
+    ],
+    "Goblin_Shaman_Body_Armour": [
+      "GoblinShamanBodyArmour"
+    ],
+    "Goblin_Shaman_Weapon_Skin": [
+      "GoblinShamanWeaponSkin"
+    ],
+    "Goblin_Witchdoctor_Helmet": [
+      "GoblinWitchdoctorHelmet"
+    ],
+    "Goblin_Witchdoctor_Boots": [
+      "GoblinWitchdoctorBoots"
+    ],
+    "Goblin_Witchdoctor_Gloves": [
+      "GoblinWitchdoctorGloves"
+    ],
+    "Goblin_Witchdoctor_Body_Armour": [
+      "GoblinWitchdoctorBodyArmour"
+    ],
+    "Goblin_Witchdoctor_Back_Attachment": [
+      "GoblinWitchdoctorBackAttachment"
+    ],
+    "Goblin_Witchdoctor_Weapon_Skin": [
+      "GoblinWitchdoctorWeaponSkin"
+    ],
+    "Shifting_Doors_Portal_Effect": [
+      "ShiftingDoorsPortalEffect"
+    ],
+    "Fractured_Dreamer_Weapon_Skin": [
+      "FracturedDreamerWeaponSkin"
+    ],
+    "Fractured_Nightmare_Weapon_Skin": [
+      "FracturedNightmareWeaponSkin"
+    ],
+    "Djinn_Weapon_Skin": [
+      "DjinnWeaponSkin"
+    ],
+    "Abyssal_Fleshwarden_Helmet": [
+      "AbyssalFleshwardenHelmet"
+    ],
+    "Abyssal_Fleshwarden_Boots": [
+      "AbyssalFleshwardenBoots"
+    ],
+    "Abyssal_Fleshwarden_Gloves": [
+      "AbyssalFleshwardenGloves"
+    ],
+    "Abyssal_Fleshwarden_Body_Armour": [
+      "AbyssalFleshwardenBodyArmour"
+    ],
+    "Blackblood_Abyssal_Halo_Helmet_Attachment": [],
+    "Lightless_Abyssal_Halo_Helmet_Attachment": [],
+    "Abyssal_Halo_of_the_Pit_Helmet_Attachment": [],
+    "Flowing_Fire_Plume_Helmet": [],
+    "Flowing_Fire_Plume_Boots": [],
+    "Flowing_Fire_Plume_Gloves": [],
+    "Flowing_Fire_Plume_Body_Armour": [],
+    "Flowing_Fire_Plume_Back_Attachment": [],
+    "Flowing_Fire_Plume_Character_Effect": [],
+    "Abyssal_Eye_of_Winter_Effect": [
+      "AbyssalEyeofWinterEffect"
+    ],
+    "Abyssal_Comet_Effect": [
+      "AbyssalCometEffect"
+    ],
+    "Abyssal_Frostbolt_Effect": [
+      "AbyssalFrostboltEffect"
+    ],
+    "Abyssal_Ice_Nova_Effect": [
+      "AbyssalIceNovaEffect"
+    ],
+    "Abyssal_Frost_Darts_Effect": [
+      "AbyssalFrostDartsEffect"
+    ],
+    "Abyssal_Elemental_Weakness_Effect": [
+      "AbyssalElementalWeaknessEffect"
+    ],
+    "Vaal_Chrono_Seer_Helmet": [
+      "VaalChronoSeerHelmet"
+    ],
+    "Vaal_Chrono_Seer_Boots": [
+      "VaalChronoSeerBoots"
+    ],
+    "Vaal_Chrono_Seer_Gloves": [
+      "VaalChronoSeerGloves"
+    ],
+    "Vaal_Chrono_Seer_Body_Armour": [
+      "VaalChronoSeerBodyArmour"
+    ],
+    "Vaal_Chrono_Seer_Character_Skin": [
+      "VaalChronoSeerCharacterSkin"
+    ],
+    "Vaal_Chrono_Seer_Weapon_Skin": [
+      "VaalChronoSeerWeaponSkin"
+    ],
+    "Vaal_Chrono_Seer_Temporal_Chains_Effect": [
+      "VaalChronoSeerTemporalChainsEffect"
+    ],
+    "Vaal_Chrono_Seer_Blink_Effect": [
+      "VaalChronoSeerBlinkEffect"
+    ],
+    "Wide-brimmed_Witch_Hat": [
+      "WidebrimmedWitchHat"
+    ],
+    "Devil_Tail_Hip_Attachment": [
+      "DevilTailHipAttachment"
+    ],
+    "Magus_Tome_Hip_Attachment": [],
+    "Incarnation_of_Dread_Portal_Effect": [],
+    "Severed_Arm_Weapon_Skin": [
+      "SeveredArmWeaponSkin"
+    ],
+    "Skeleton_Skin": [
+      "SkeletonSkin"
+    ],
+    "Flaming_Minotaurs_Flask_Effect": [],
+    "Grand_Champion_of_Theopolis_Helmet": [],
+    "Grand_Champion_of_Theopolis_Boots": [],
+    "Grand_Champion_of_Theopolis_Gloves": [],
+    "Grand_Champion_of_Theopolis_Body_Armour": [],
+    "Champion_of_Theopolis_Portal_Effect": [],
+    "Marble_Statue_Character_Effect": [],
+    "Lions_Might_Unique_Finisher_Effect": [],
+    "Grand_Verdant_Magus_Helmet": [],
+    "Grand_Verdant_Magus_Boots": [],
+    "Grand_Verdant_Magus_Gloves": [],
+    "Grand_Verdant_Magus_Body_Armour": [],
+    "Grand_Verdant_Magus_Back_Attachment": [],
+    "Verdant_Magus_Level-up_Extra_Effect": [],
+    "Xeshts_Slam_Rare_Finisher_Effect": [],
+    "Keeper_of_the_Flame_Helmet": [],
+    "Keeper_of_the_Flame_Boots": [],
+    "Keeper_of_the_Flame_Gloves": [],
+    "Keeper_of_the_Flame_Body_Armour": [],
+    "Darkshard_Lightning_Warp_Effect": [
+      "DarkshardLightningWarpEffect"
+    ],
+    "Darkshard_Elemental_Weakness_Effect": [
+      "DarkshardElementalWeaknessEffect"
+    ],
+    "Darkshard_Lightning_Conduit_Effect": [
+      "DarkshardLightningConduitEffect"
+    ],
+    "Darkshard_Ball_Lightning_Effect": [
+      "DarkshardBallLightningEffect"
+    ],
+    "Darkshard_Orb_of_Storms_Effect": [
+      "DarkshardOrbofStormsEffect"
+    ],
+    "Darkshard_Spark_Effect": [
+      "DarkshardSparkEffect"
+    ],
+    "Darkshard_Arc_Effect": [
+      "DarkshardArcEffect"
+    ],
+    "Darkshard_Lightning_Bolt_Effect": [
+      "DarkshardLightningBoltEffect"
+    ],
+    "Darkshard_Mana_Tempest_Effect": [
+      "DarkshardManaTempestEffect"
+    ],
+    "Breachlords_Claw_Character_Effect": [],
+    "Champion_of_Theopolis_Portrait_Frame": [],
+    "Grand_Champion_of_Theopolis_Portrait_Frame": [],
+    "Eternal_Champion_of_Theopolis_Portrait_Frame": [],
+    "Verdant_Magus_Portrait_Frame": [],
+    "Grand_Verdant_Magus_Portrait_Frame": [],
+    "Supreme_Verdant_Magus_Portrait_Frame": [],
+    "Echoes_of_the_Maven_Helmet": [],
+    "Echoes_of_the_Maven_Boots": [],
+    "Echoes_of_the_Maven_Gloves": [],
+    "Echoes_of_the_Maven_Body_Armour": [],
+    "Radiant_Volcano_Effect": [
+      "RadiantVolcanoEffect"
+    ],
+    "Radiant_Thunderstorm_Effect": [
+      "RadiantThunderstormEffect"
+    ],
+    "Radiant_Tornado_Effect": [
+      "RadiantTornadoEffect"
+    ],
+    "Crocolisk_Bear_Shapeshift_Skin": [
+      "CrocoliskBearShapeshiftEffect"
+    ],
+    "Crocolisk_Werewolf_Shapeshift_Effect": [],
+    "Crocolisk_Wyvern_Shapeshift_Skin": [
+      "CrocoliskWyvernShapeshiftEffect"
+    ],
+    "Bat_Wyvern_Shapeshift_Effect": [
+      "BatWyvernShapeshiftEffect"
+    ],
+    "Boar_Bear_Shapeshift_Effect": [
+      "BoarBearShapeshiftEffect"
+    ],
+    "Crocolisk_Staff_Skin": [
+      "CrocoliskStaffSkin"
+    ],
+    "Tortoise_Staff_Skin": [
+      "TortoiseStaffSkin"
+    ],
+    "Arcane_Golem_Portal_Effect": [],
+    "Sulphite_Galvanic_Shards_Effect": [
+      "SulphiteGalvanicShardsEffect"
+    ],
+    "Sulphite_Voltaic_Grenades_Effect": [
+      "SulphiteVoltaicGrenadesEffect"
+    ],
+    "Sulphite_Stormblast_Bolts_Effect": [
+      "SulphiteStormblastBoltsEffect"
+    ],
+    "Sulphite_Shockburst_Rounds_Effect": [
+      "SulphiteShockburstRoundsEffect"
+    ],
+    "Sulphite_Plasma_Blast_Effect": [
+      "SulphitePlasmaBlastEffect"
+    ],
+    "Gravity_Well_Portal": [],
+    "Teleporting_Gravity_Well_Portal": [],
+    "Desert_Sands_Portal_Effect": [
+      "DesertSandsPortalEffect"
+    ],
+    "Crimson_Sands_Portal_Effect": [
+      "CrimsonSandsPortalEffect"
+    ],
+    "Wasteland_Sands_Portal_Effect": [
+      "WastelandSandsPortalEffect"
+    ],
+    "Verdant_Wilds_Dodge_Roll_Effect": [],
+    "Shattered_Dodge_Roll_Effect": [
+      "ShatteredDodgeRollEffect"
+    ],
+    "Rat_Swarm_Dodge_Roll_Effect": [
+      "RatSwarmDodgeRollEffect"
+    ],
+    "Rat_Fountain_Level-up_Extra_Effect": [
+      "RatFountainLevelupExtraEffect"
+    ],
+    "Seer_of_the_Maji_Level-up_Extra_Effect": [
+      "SeerOfTheMajiLevelupExtraEffect"
+    ],
+    "Ghostlance_Level-up_Extra_Effect": [
+      "GhostlanceLevelupExtraEffect"
+    ],
+    "Blood_Moon_Level-up_Extra_Effect": [],
+    "Astronomers_Level-up_Extra_Effect": [],
+    "Molten_Forgemaster_Helmet": [],
+    "Molten_Forgemaster_Boots": [],
+    "Molten_Forgemaster_Gloves": [],
+    "Molten_Forgemaster_Body_Armour": [],
+    "Molten_Forgemaster_Character_Skin": [
+      "MoltenForgemasterCharacterSkin"
+    ],
+    "Druids_of_the_Maji_Portal": [],
+    "Kalguuran_Portrait_Frame": [],
+    "Kalguuran_Seafarer_Portrait_Frame": [],
+    "Kalguuran_Captain_Portrait_Frame": [],
+    "Precursor_Portrait_Frame": [],
+    "Awakened_Precursor_Portrait_Frame": [],
+    "Eternal_Precursor_Portrait_Frame": [],
+    "Awakened_Precursor_Helmet": [],
+    "Awakened_Precursor_Boots": [],
+    "Awakened_Precursor_Gloves": [],
+    "Awakened_Precursor_Body_Armour": [],
+    "Kalguuran_Seafarer_Helmet": [],
+    "Kalguuran_Seafarer_Boots": [],
+    "Kalguuran_Seafarer_Gloves": [],
+    "Kalguuran_Seafarer_Body_Armour": [],
+    "Lost_Treasure_Weapon_Skin": [],
+    "Wings_of_the_Phoenix_Level-up_Effect": [],
+    "Phoenix_Nosedive_Rare_Finisher_Effect": [
+      "PhoenixNosediveRareFinisherEffect"
+    ],
+    "Soulslash_Portal": [
+      "SoulslashPortalEffect"
+    ],
+    "Marble_Soulslash_Portal": [
+      "MarbleSoulslashPortalEffect"
+    ],
+    "Smoking_Pipe_Helmet_Attachment": [],
+    "Plummeting_Chandelier_Rare_Finisher_Effect": [
+      "PlummetingChandelierRareFinisherEffect"
+    ],
+    "Battle-hardened_Warbear_Shapeshift_Effect": [],
+    "Panda_Bear_Shapeshift_Effect": [
+      "PandaWarbearShapeshiftEffect"
+    ],
+    "The_Red_Queens_Portal": [],
+    "Aurora_Ice_Strike_Effect": [
+      "AuroraIceStrikeEffect"
+    ],
+    "Aurora_Glacial_Lance_Effect": [
+      "AuroraGlacialLanceEffect"
+    ],
+    "Aurora_Ice_Shot_Effect": [
+      "AuroraIceShotEffect"
+    ],
+    "Aurora_Frost_Bomb_Effect": [
+      "AuroraFrostBombEffect"
+    ],
+    "Aurora_Herald_of_Ice_Effect": [
+      "AuroraHeraldofIceEffect"
+    ],
+    "Mask_of_the_Vaal": [],
     "Stormborne_Helmet": [
       "StormborneHelmet",
       "StormborneHelmetVariation"
@@ -26,10 +2970,1400 @@
       "StormborneGloves",
       "StormborneGlovesVariation"
     ],
+    "Frigid_Stormborne_Body_Armour": [
+      "FrigidStormborneBodyArmour"
+    ],
+    "Infernal_Stormborne_Body_Armour": [
+      "InfernalStormborneBodyArmour"
+    ],
+    "Thunderous_Stormborne_Body_Armour": [
+      "ThunderousStormborneBodyArmour"
+    ],
     "Chaotic_Stormborne_Body_Armour": [
       "ChaoticStormborneBodyArmour"
     ],
+    "Frigid_Stormborne_Back_Attachment": [
+      "FrigidStormborneBackAttachment"
+    ],
+    "Infernal_Stormborne_Back_Attachment": [
+      "InfernalStormborneBackAttachment"
+    ],
+    "Thunderous_Stormborne_Back_Attachment": [
+      "ThunderousStormborneBackAttachment"
+    ],
+    "Chaotic_Stormborne_Back_Attachment": [
+      "ChaoticStormborneBackAttachment"
+    ],
+    "Stormborne_Weapon_Skin": [
+      "StormborneWeaponSkin"
+    ],
+    "Giant_Centipede_Rare_Finisher_Effect": [
+      "GiantCentipedeRareFinisherEffect"
+    ],
+    "Fleshveil_Marionette_Helmet": [
+      "FleshveilMarionetteHelmet"
+    ],
+    "Fleshveil_Marionette_Boots": [
+      "FleshveilMarionetteBoots"
+    ],
+    "Fleshveil_Marionette_Gloves": [
+      "FleshveilMarionetteGloves"
+    ],
+    "Fleshveil_Marionette_Body_Armour": [
+      "FleshveilMarionetteBodyArmour"
+    ],
+    "Silver_Marionette_Back_Attachment": [
+      "SilverMarionetteBackAttachment"
+    ],
+    "Silver_Marionette_Character_Skin": [
+      "SilverMarionetteCharacterSkin"
+    ],
+    "Porcelain_Marionette_Helmet": [
+      "PorcelainMarionetteHelmet"
+    ],
+    "Porcelain_Marionette_Boots": [
+      "PorcelainMarionetteBoots"
+    ],
+    "Porcelain_Marionette_Gloves": [
+      "PorcelainMarionetteGloves"
+    ],
+    "Porcelain_Marionette_Body_Armour": [
+      "PorcelainMarionetteBodyArmour"
+    ],
+    "Bronze_Marionette_Back_Attachment": [
+      "BronzeMarionetteBackAttachment"
+    ],
+    "Bronze_Marionette_Character_Skin": [
+      "BronzeMarionetteCharacterSkin"
+    ],
+    "Silver_Marionette_Weapon_Skin": [
+      "SilverMarionetteWeaponSkin"
+    ],
+    "Bronze_Marionette_Weapon_Skin": [
+      "BronzeMarionetteWeaponSkin"
+    ],
+    "Blood_Moon_Wolf_Pack_Skill_Effect": [],
+    "Lichborn_Rend_Effect": [
+      "LichbornRendEffect"
+    ],
+    "Lichborn_Rolling_Magma_Effect": [
+      "LichbornRollingMagmaEffect"
+    ],
+    "Lichborn_Wing_Blast_Effect": [
+      "LichbornWingBlastEffect"
+    ],
+    "Lichborn_Devour_Effect": [
+      "LichbornDevourEffect"
+    ],
+    "Lichborn_Oil_Barrage_Effect": [
+      "LichbornOilBarrageEffect"
+    ],
+    "Lichborn_Flame_Breath_Effect": [
+      "LichbornFlameBreatheEffect"
+    ],
+    "Crocolisk_Character_Skin": [
+      "CrocoliskCharacterSkin"
+    ],
+    "Blood_Moon_Shred": [],
+    "Blood_Moon_Cross_Slash_Effect": [
+      "BloodMoonCrossSlashEffect"
+    ],
+    "Blood_Moon_Pounce_Effect": [
+      "BloodMoonPounceEffect"
+    ],
+    "Blood_Moon_Lunar_Assault_Effect": [
+      "BloodMoonLunarAssaultEffect"
+    ],
+    "Blood_Moon_Lunar_Blessing_Effect": [
+      "BloodMoonLunarBlessingEffect"
+    ],
+    "Blood_Moon_Arctic_Howl_Effect": [
+      "BloodMoonArcticHowlEffect"
+    ],
+    "Bestial_Thrashing_Vines_Effect": [
+      "BestialThrashingVinesEffect"
+    ],
+    "Bestial_Entangle_Effect": [
+      "BestialEntangleEffect"
+    ],
+    "Bestial_Barkskin_Effect": [
+      "BestialBarkskinEffect"
+    ],
+    "Stygian_Thrashing_Vines_Effect": [
+      "StygianThrashingVinesEffect"
+    ],
+    "Stygian_Entangle_Effect": [
+      "StygianEntangleEffect"
+    ],
+    "Stygian_Barkskin_Effect": [
+      "StygianBarkskinEffect"
+    ],
+    "Bestial_Accelerated_Growth_Effect": [
+      "BestialAcceleratedGrowthEffect"
+    ],
+    "Stygian_Accelerated_Growth_Effect": [
+      "StygianAcceleratedGrowthEffect"
+    ],
+    "Forgemaster_Maul_Effect": [
+      "ForgemasterMaulEffect"
+    ],
+    "Forgemaster_Furious_Slam_Effect": [
+      "ForgemasterFuriousSlamEffect"
+    ],
+    "Forgemaster_Fury_of_the_Mountain_Effect": [
+      "ForgemasterFuryoftheMountainEffect"
+    ],
+    "Forgemaster_Rampage_Effect": [
+      "ForgemasterRampageEffect"
+    ],
+    "Forgemaster_Ferocious_Roar_Effect": [
+      "ForgemasterFerociousRoarEffect"
+    ],
+    "Forgemaster_Walking_Calamity_Effect": [
+      "ForgemasterWalkingCalamityEffect"
+    ],
+    "Crocolisk_Helmet": [
+      "CrocoliskHelmet"
+    ],
+    "Crocolisk_Boots": [
+      "CrocoliskBoots"
+    ],
+    "Crocolisk_Gloves": [
+      "CrocoliskGloves"
+    ],
+    "Crocolisk_Body_Armour": [
+      "CrocoliskBodyArmour"
+    ],
+    "Seer_of_the_Maji_Staff": [
+      "SeerOfTheMajiStaff"
+    ],
+    "Phoenix_Dodge_Roll_Effect": [
+      "PhoenixDodgeRollEffect"
+    ],
+    "Abyssal_Dodge_Roll_Effect": [
+      "AbyssalDodgeRollEffect"
+    ],
+    "Abyssal_Portal": [],
+    "Runic_Portal": [],
+    "Vampires_Portal": [
+      "VampiresPortalEffect"
+    ],
+    "Azmeri_Portal": [],
+    "Runic_Dodge_Roll_Effect": [
+      "RunicDodgeRollEffect"
+    ],
+    "Abyssal_Charges_Effect": [
+      "AbyssalChargesEffect"
+    ],
+    "Azmeri_Charges_Effect": [
+      "AzmeriChargesEffect"
+    ],
+    "Bloodreaver_Charges_Effect": [],
+    "Acquired_Wisdom_Unique_Finisher_Effect": [],
+    "Chains_of_the_Incarcerator_Weapon_Effect": [],
+    "Incarcerators_Restraints_Back_Attachment": [],
+    "The_Iron_Maiden_Portal": [],
+    "Exsanguinator_Weapon_Effect": [],
+    "Mirage_Weapon_Effect": [],
+    "Night_Lotus_Toxic_Domain_Effect": [
+      "NightLotusToxicDomainEffect"
+    ],
+    "Night_Lotus_Vine_Arrow_Effect": [
+      "NightLotusVineArrowEffect"
+    ],
+    "Night_Lotus_Gas_Arrow_Effect": [
+      "NightLotusGasArrowEffect"
+    ],
+    "Night_Lotus_Toxic_Growth_Effect": [
+      "NightLotusToxicGrowthEffect"
+    ],
+    "Night_Lotus_Poisonburst_Arrow_Effect": [
+      "NightLotusPoisonBurstArrowEffect"
+    ],
+    "Stygian_Chains_Rare_Finisher_Effect": [
+      "StygianChainsRareFinisherEffect"
+    ],
+    "Glacial_Black_Hole_Unique_Finisher_Effect": [
+      "GlacialBlackHoleUniqueFinisherEffect"
+    ],
+    "Deathbloom_Rare_Finisher_Effect": [
+      "DeathbloomRareFinisherEffect"
+    ],
+    "Wisdom_Scroll_Portal": [],
+    "Portal_Scroll_Portal": [],
+    "Abyssal_Weapon_Effect": [
+      "AbyssalWeaponEffect"
+    ],
+    "Azmeri_Weapon_Effect": [
+      "AzmeriWeaponEffect"
+    ],
+    "Runic_Weapon_Effect": [
+      "RunicWeaponEffect"
+    ],
+    "Ancestral_Elemental_Sundering_Effect": [
+      "AncestralElementalSunderingEffect"
+    ],
+    "Ancestral_Explosive_Spear_Effect": [
+      "AncestralExplosiveSpearEffect"
+    ],
+    "Ancestral_Spear_of_Solaris_Effect": [
+      "AncestralSpearofSolarisEffect"
+    ],
+    "Ancestral_Fangs_of_Frost_Effect": [
+      "AncestralFangsofFrostEffect"
+    ],
+    "Ancestral_Glacial_Lance_Effect": [
+      "AncestralGlacialLanceEffect"
+    ],
+    "Ancestral_Primal_Strikes_Effect": [
+      "AncestralPrimalStrikesEffect"
+    ],
+    "Ancestral_Thunderous_Leap_Effect": [
+      "AncestralThunderousLeapEffect"
+    ],
+    "Ancestral_Storm_Lance_Effect": [
+      "AncestralStormLanceEffect"
+    ],
+    "Ancestral_Lightning_Spear_Effect": [
+      "AncestralLightningSpearEffect"
+    ],
+    "Delirium_Escape_Shot_Effect": [
+      "DeliriumEscapeShotEffect"
+    ],
+    "Delirium_Freezing_Salvo_Effect": [
+      "DeliriumFreezingSalvoEffect"
+    ],
+    "Delirium_Freezing_Mark_Effect": [
+      "DeliriumFreezingMarkEffect"
+    ],
+    "Delirium_Ice-Tipped_Arrows_Effect": [
+      "DeliriumIceTippedArrowEffect"
+    ],
+    "Delirium_Ice_Shot_Effect": [
+      "DeliriumIceShotEffect"
+    ],
+    "Originators_Character_Effect": [
+      "OriginatorsCharacterEffect"
+    ],
+    "Originators_Weapon_Effect": [
+      "OriginatorsWeaponEffect"
+    ],
+    "Awakeners_Character_Effect": [
+      "AwakenersCharacterEffect"
+    ],
+    "Awakeners_Weapon_Effect": [
+      "AwakenersWeaponEffect"
+    ],
+    "Aurora_Tempest_Bell_Effect": [
+      "AuroraTempestBellEffect"
+    ],
+    "Aurora_Storm_Wave_Effect": [
+      "AuroraStormWaveEffect"
+    ],
+    "Aurora_Flicker_Strike_Effect": [
+      "AuroraFlickerStrikeEffect"
+    ],
+    "Aurora_Mantra_of_Destruction_Effect": [
+      "AuroraMantraofDestructionEffect"
+    ],
+    "Aurora_Killing_Palm_Effect": [
+      "AuroraKillingPalmEffect"
+    ],
+    "Aurora_Charged_Staff_Effect": [
+      "AuroraChargedStaffEffect"
+    ],
+    "Aurora_Escape_Shot_Effect": [
+      "AuroraEscapeShotEffect"
+    ],
+    "Aurora_Freezing_Salvo_Effect": [
+      "AuroraFreezingSalvoEffect"
+    ],
+    "Aurora_Snipe_Effect": [
+      "AuroraSnipeEffect"
+    ],
+    "Aurora_Frozen_Spite_Effect": [
+      "AuroraFrozenSpiteEffect"
+    ],
+    "Aurora_Wind_Dancer_Effect": [
+      "AuroraWindDancerEffect"
+    ],
+    "Aurora_Ice-Tipped_Arrows_Effect": [],
+    "Blightborn_Bow_and_Quiver": [],
+    "Blight_Poisonburst_Arrow_Effect": [
+      "BlightPoisonBurstArrowEffect"
+    ],
+    "Blight_Vine_Arrow_Effect": [
+      "BlightVineArrowEffect"
+    ],
+    "Blight_Toxic_Growth_Effect": [
+      "BlightToxicGrowthEffect"
+    ],
+    "Blight_Toxic_Domain_Effect": [
+      "BlightToxicDomainEffect"
+    ],
+    "Blight_Gas_Arrow_Effect": [
+      "BlightGasArrowEffect"
+    ],
+    "Blight_Plague_Bearer_Effect": [
+      "BlightPlagueBearerEffect"
+    ],
+    "Vampiric_Armour_Piercing_Rounds_Effect": [
+      "VampiricArmourPiercingRoundsEffect"
+    ],
+    "Vampiric_Fragmentation_Rounds_Effect": [
+      "VampiricFragmentationRoundsEffect"
+    ],
+    "Vampiric_High_Velocity_Rounds_Effect": [
+      "VampiricHighVelocityRoundsEffect"
+    ],
+    "Vampiric_Siege_Cascade_Effect": [
+      "VampiricSiegeCascadeEffect"
+    ],
+    "Vampiric_Flash_Grenade_Effect": [
+      "VampiricFlashGrenadeEffect"
+    ],
+    "Vampiric_Emergency_Reload_Effect": [
+      "VampiricEmergencyReloadEffect"
+    ],
+    "Vampiric_Shard_Scavenger_Effect": [
+      "VampiricShardScavengerEffect"
+    ],
+    "Vampiric_Mortar_Cannon_Effect": [
+      "VampiricMortarCannonEffect"
+    ],
+    "Vampiric_Artillery_Ballista_Effect": [
+      "VampiricArtilleryBallistaEffect"
+    ],
+    "Vampiric_Siege_Ballista_Effect": [
+      "VampiricSiegeBallistaEffect"
+    ],
+    "Obsidian_Ice_Nova_Effect": [
+      "ObsidianIceNovaEffect"
+    ],
+    "Obsidian_Comet_Effect": [
+      "ObsidianCometEffect"
+    ],
+    "Obsidian_Snap_Effect": [
+      "ObsidianSnapEffect"
+    ],
+    "Obsidian_Eye_of_Winter_Effect": [
+      "ObsidianEyeofWinterEffect"
+    ],
+    "Obsidian_Frost_Wall_Effect": [
+      "ObsidianFrostWallEffect"
+    ],
+    "Obsidian_Frost_Bomb_Effect": [
+      "ObsidianFrostBombEffect"
+    ],
+    "Verisium_Siege_Cascade_Effect": [
+      "VerisiumSiegeCascadeEffect"
+    ],
+    "Verisium_High_Velocity_Rounds_Effect": [
+      "VerisiumHighVelocityRoundsEffect"
+    ],
+    "Verisium_Fragmentation_Rounds_Effect": [
+      "VerisiumFragmentationRoundsEffect"
+    ],
+    "Verisium_Armour_Piercing_Rounds_Effect": [
+      "VerisiumArmourPiercingRoundsEffect"
+    ],
+    "Verisium_Hailstorm_Rounds_Effect": [
+      "VerisiumHailstormRoundsEffect"
+    ],
+    "Verisium_Glacial_Bolt_Effect": [
+      "VerisiumGlacialBoltEffect"
+    ],
+    "Verisium_Ice_Shards_Effect": [
+      "VerisiumIceShardsEffect"
+    ],
+    "Verisium_Permafrost_Bolts_Effect": [
+      "VerisiumPermafrostBoltsEffect"
+    ],
+    "Verisium_Emergency_Reload_Effect": [
+      "VerisiumEmergencyReloadEffect"
+    ],
+    "Verisium_Gas_Grenade_Effect": [
+      "VerisiumGasGrenadeEffect"
+    ],
+    "Verisium_Oil_Grenade_Effect": [
+      "VerisiumOilGrenadeEffect"
+    ],
+    "Verisium_Flash_Grenade_Effect": [
+      "VerisiumFlashGrenadeEffect"
+    ],
+    "Verisium_Shard_Scavenger_Effect": [
+      "VerisiumShardScavengerEffect"
+    ],
+    "Verisium_Mortar_Cannon_Effect": [
+      "VerisiumMortarCannonEffect"
+    ],
+    "Verisium_Character_Effect": [
+      "VerisiumCharacterEffect"
+    ],
+    "Verisium_Level-up_Extra_Effect": [
+      "VerisiumLevelupExtraEffect"
+    ],
+    "Spirit_Warden_Cull_the_Weak_Effect": [
+      "SpiritWardenCulltheWeakEffect"
+    ],
+    "Spirit_Warden_Wind_Serpents_Fury_Effect": [
+      "SpiritWardenWindSerpentsFuryEffect"
+    ],
+    "Spirit_Warden_Disengage_Effect": [
+      "SpiritWardenDisengageEffect"
+    ],
+    "Spirit_Warden_Glacial_Lance_Effect": [
+      "SpiritWardenGlacialLanceEffect"
+    ],
+    "Spirit_Warden_Explosive_Spear_Effect": [
+      "SpiritWardenExplosiveSpearEffect"
+    ],
+    "Spirit_Warden_Storm_Lance_Effect": [
+      "SpiritWardenStormLanceEffect"
+    ],
+    "Spirit_Warden_Lightning_Spear_Effect": [
+      "SpiritWardenLightningSpearEffect"
+    ],
+    "Spirit_Warden_Barrage_Effect": [
+      "SpiritWardenBarrageEffect"
+    ],
+    "Spirit_Warden_Weapon_Skin": [
+      "SpiritWardenWeaponSkin"
+    ],
+    "Spirit_Warden_Buckler_Skin": [],
+    "Stonefist_Glacial_Cascade_Effect": [
+      "StonefistGlacialCascadeEffect"
+    ],
+    "Stonefist_Tempest_Bell_Effect": [
+      "StonefistTempestBellEffect"
+    ],
+    "Stonefist_Falling_Thunder_Effect": [
+      "StonefistFallingThunderEffect"
+    ],
+    "Stonefist_Vaulting_Impact_Effect": [
+      "StonefistVaultingImpactEffect"
+    ],
+    "Stonefist_Wind_Blast_Effect": [
+      "StonefistWindBlastEffect"
+    ],
+    "Stonefist_Shattering_Palm_Effect": [
+      "StonefistShatteringPalmEffect"
+    ],
+    "Stonefist_Frozen_Locus_Effect": [
+      "StonefistFrozenLocusEffect"
+    ],
+    "Stonefist_Wave_of_Frost_Effect": [
+      "StonefistWaveofFrostEffect"
+    ],
+    "Stonefist_Whirling_Assault_Effect": [
+      "StonefistWhirlingAssaultEffect"
+    ],
+    "Phantasmal_Solar_Orb_Effect": [
+      "PhantasmalSolarOrbEffect"
+    ],
+    "Phantasmal_Flame_Wall_Effect": [
+      "PhantasmalFlameWallEffect"
+    ],
+    "Phantasmal_Fireball_Effect": [
+      "PhantasmalFireballEffect"
+    ],
+    "Phantasmal_Ember_Fusillade_Effect": [
+      "PhantasmalEmberFusilladeEffect"
+    ],
+    "Phantasmal_Living_Bomb_Effect": [
+      "PhantasmalLivingBombEffect"
+    ],
+    "Phantasmal_Incinerate_Effect": [
+      "PhantasmalIncinerateEffect"
+    ],
+    "Phantasmal_Firestorm_Effect": [
+      "PhantasmalFirestormEffect"
+    ],
+    "Phantasmal_Flameblast_Effect": [
+      "PhantasmalFlameblastEffect"
+    ],
+    "Phantasmal_Explosive_Grenade_Effect": [
+      "PhantasmalExplosiveGrenadeEffect"
+    ],
+    "Phantasmal_Cluster_Grenade_Effect": [
+      "PhantasmalClusterGrenadeEffect"
+    ],
+    "Phantasmal_Rapid_Shot_Effect": [
+      "PhantasmalRapidShotEffect"
+    ],
+    "Phantasmal_Incendiary_Shot_Effect": [
+      "PhantasmalIncendiaryShotEffect"
+    ],
+    "Phantasmal_Explosive_Shot_Effect": [
+      "PhantasmalExplosiveShotEffect"
+    ],
+    "Phantasmal_Siege_Ballista_Effect": [
+      "PhantasmalSiegeBallistaEffect"
+    ],
+    "Abyssal_Flash_Grenade_Effect": [
+      "AbyssalFlashGrenadeEffect"
+    ],
+    "Abyssal_Oil_Grenade_Effect": [
+      "AbyssalOilGrenadeEffect"
+    ],
+    "Abyssal_Gas_Grenade_Effect": [
+      "AbyssalGasGrenadeEffect"
+    ],
+    "Abyssal_Voltaic_Grenade_Effect": [
+      "AbyssalVoltaicGrenadeEffect"
+    ],
+    "Abyssal_Explosive_Grenade_Effect": [
+      "AbyssalExplosiveGrenadeEffect"
+    ],
+    "Abyssal_Cluster_Grenade_Effect": [
+      "AbyssalClusterGrenadeEffect"
+    ],
+    "Radiant_Flash_Grenade_Effect": [
+      "RadiantFlashGrenadeEffect"
+    ],
+    "Radiant_Oil_Grenade_Effect": [
+      "RadiantOilGrenadeEffect"
+    ],
+    "Radiant_Gas_Grenade_Effect": [
+      "RadiantGasGrenadeEffect"
+    ],
+    "Radiant_Voltaic_Grenade_Effect": [
+      "RadiantVoltaicGrenadeEffect"
+    ],
+    "Radiant_Explosive_Grenade_Effect": [
+      "RadiantExplosiveGrenadeEffect"
+    ],
+    "Radiant_Cluster_Grenade_Effect": [],
+    "Vampires_Weapon_Effect": [
+      "VampiresWeaponEffect"
+    ],
+    "Curator_of_Wisdom_Portrait_Frame": [],
+    "Grand_Curator_of_Wisdom_Portrait_Frame": [],
+    "Supreme_Curator_of_Wisdom_Portrait_Frame": [],
+    "Iron_Incarcerator_Portrait_Frame": [],
+    "Elite_Iron_Incarcerator_Portrait_Frame": [],
+    "Eternal_Iron_Incarcerator_Portrait_Frame": [],
+    "Grand_Curator_of_Wisdom_Helmet": [],
+    "Grand_Curator_of_Wisdom_Boots": [],
+    "Grand_Curator_of_Wisdom_Gloves": [],
+    "Grand_Curator_of_Wisdom_Body_Armour": [],
+    "Travelling_Wisdom_Back_Attachment": [],
+    "Seer_of_the_Maji_Portal": [
+      "SeerOfTheMajiPortalEffect"
+    ],
+    "Orb_Regalia_Helmet": [],
+    "Orb_Regalia_Boots": [],
+    "Orb_Regalia_Gloves": [],
+    "Orb_Regalia_Body_Armour": [],
+    "Eradicator_of_Decay_Helmet": [],
+    "Eradicator_of_Decay_Boots": [],
+    "Eradicator_of_Decay_Gloves": [],
+    "Eradicator_of_Decay_Body_Armour": [],
+    "Eradicator_of_Decay_Back_Attachment": [],
+    "Elite_Iron_Incarcerator_Helmet": [],
+    "Elite_Iron_Incarcerator_Boots": [],
+    "Elite_Iron_Incarcerator_Gloves": [],
+    "Elite_Iron_Incarcerator_Body_Armour": [],
+    "Torture_Mace": [
+      "TortureMace"
+    ],
+    "Wardens_Weapon_Skin": [
+      "WardensWeaponSkin"
+    ],
+    "Divine_Surge_Character_Effect": [],
+    "Divinity_Dodge_Roll_Effect": [],
+    "Arbiter_of_Divinity_Wings": [],
+    "Storm_of_Divinity_Portal_Effect": [],
+    "Blightborn_Helmet": [],
+    "Blightborn_Boots": [],
+    "Blightborn_Gloves": [],
+    "Blightborn_Body_Armour": [],
+    "Verisium_Portal": [
+      "VerisiumPortalEffect"
+    ],
+    "Verisium_Weapon_Effect": [
+      "VerisiumWeaponEffect"
+    ],
+    "Verisium_Dodge_Roll_Effect": [
+      "VerisiumDodgeRollEffect"
+    ],
+    "Spirit_Warden_Portal": [],
+    "Spear_of_Divinity_Portal": [],
+    "Divinity_Portrait_Frame": [],
+    "Knight_of_Divinity_Portrait_Frame": [],
+    "Arbiter_of_Divinity_Portrait_Frame": [],
+    "Bloodreaver_Portrait_Frame": [],
+    "Elite_Bloodreaver_Portrait_Frame": [],
+    "Eternal_Bloodreaver_Portrait_Frame": [],
+    "Elite_Bloodreaver_Helmet": [],
+    "Elite_Bloodreaver_Boots": [],
+    "Elite_Bloodreaver_Gloves": [],
+    "Elite_Bloodreaver_Body_Armour": [],
+    "Elite_Bloodreaver_Back_Attachment": [],
+    "Bloodreaver_Character_Skin": [
+      "BloodreaverCharacterSkin"
+    ],
+    "Eldritch-touched_Emperor_Helmet": [
+      "EldritchTouchedEmperorHelmet"
+    ],
+    "Eldritch-touched_Emperor_Boots": [
+      "EldritchTouchedEmperorBoots"
+    ],
+    "Eldritch-touched_Emperor_Gloves": [
+      "EldritchTouchedEmperorGloves"
+    ],
+    "Eldritch-touched_Emperor_Body_Armour": [
+      "EldritchTouchedEmperorBodyArmour"
+    ],
+    "Eldritch-touched_Assassin_Helmet": [
+      "EldritchTouchedAssassinHelmet"
+    ],
+    "Eldritch-touched_Assassin_Boots": [
+      "EldritchTouchedAssassinBoots"
+    ],
+    "Eldritch-touched_Assassin_Gloves": [
+      "EldritchTouchedAssassinGloves"
+    ],
+    "Eldritch-touched_Assassin_Body_Armour": [
+      "EldritchTouchedAssassinBodyArmour"
+    ],
+    "Eldritch-touched_Emperor_Back_Attachment": [
+      "EldritchTouchedEmperorBackAttachment"
+    ],
+    "Eldritch-touched_Assassin_Back_Attachment": [
+      "EldritchTouchedAssassinBackAttachment"
+    ],
+    "Eldritch-touched_Emperor_Weapon_Skin": [
+      "EldritchTouchedEmperorWeaponSkin"
+    ],
+    "Eldritch-touched_Assassin_Weapon_Skin": [
+      "EldritchTouchedAssassinWeaponSkin"
+    ],
+    "Knight_of_Divinity_Helmet": [],
+    "Knight_of_Divinity_Boots": [],
+    "Knight_of_Divinity_Gloves": [],
+    "Knight_of_Divinity_Body_Armour": [],
+    "Azmeri_Dodge_Roll_Effect": [
+      "AzmeriDodgeRollEffect"
+    ],
+    "Corpsebearer_Back_Attachment": [
+      "CorpsebearerBackAttachment"
+    ],
+    "Maraketh_Corpsebearer_Back_Attachment": [
+      "MarakethCorpsebearerBackAttachment"
+    ],
+    "Corrupted_Wendigo_Helmet": [
+      "CorruptedWendigoHelmet"
+    ],
+    "Corrupted_Wendigo_Boots": [
+      "CorruptedWendigoBoots"
+    ],
+    "Corrupted_Wendigo_Gloves": [
+      "CorruptedWendigoGloves"
+    ],
+    "Corrupted_Wendigo_Body_Armour": [
+      "CorruptedWendigoBodyArmour"
+    ],
+    "Feathered_Wendigo_Helmet": [
+      "FeatheredWendigoHelmet"
+    ],
+    "Feathered_Wendigo_Boots": [
+      "FeatheredWendigoBoots"
+    ],
+    "Feathered_Wendigo_Gloves": [
+      "FeatheredWendigoGloves"
+    ],
+    "Feathered_Wendigo_Body_Armour": [
+      "FeatheredWendigoBodyArmour"
+    ],
+    "Wendigo_Character_Skin": [
+      "WendigoCharacterSkin"
+    ],
+    "Corrupted_Wendigo_Back_Attachment": [
+      "CorruptedWendigoBackAttachment"
+    ],
+    "Feathered_Wendigo_Back_Attachment": [
+      "FeatheredWendigoBackAttachment"
+    ],
+    "Corrupted_Wendigo_Weapon_Skin": [
+      "CorruptedWendigoWeaponSkin"
+    ],
+    "Feathered_Wendigo_Weapon_Skin": [
+      "FeatheredWendigoWeaponSkin"
+    ],
+    "Wendigos_Crown_Helmet_Attachment": [],
+    "Wendigo_Whirling_Slash_Effect": [
+      "WendigoWhirlingSlashEffect"
+    ],
+    "Wendigo_Twister_Effect": [
+      "WendigoTwisterEffect"
+    ],
+    "Wendigo_Whirlwind_Lance_Effect": [
+      "WendigoWhirlwindLanceEffect"
+    ],
+    "Ezomyte_Rune_Scars_Character_Skin": [],
+    "Spirit_Warden_Helmet": [],
+    "Spirit_Warden_Boots": [],
+    "Spirit_Warden_Gloves": [],
+    "Spirit_Warden_Body_Armour": [],
+    "Spirit_Warden_Cloak": [
+      "SpiritWardenCloak"
+    ],
+    "Spirit_Warden_Character_Skin": [
+      "SpiritWardenCharacterSkin"
+    ],
+    "Tukohamas_Jade_Quicksilver_Flask_Skin": [],
+    "Candlemass_Portal": [],
+    "Knight_of_Aldur_Helmet": [],
+    "Knight_of_Aldur_Boots": [],
+    "Knight_of_Aldur_Gloves": [],
+    "Knight_of_Aldur_Body_Armour": [],
+    "Night_Lotus_Bow_and_Quiver_Skin": [
+      "NightLotusBowAndQuiver"
+    ],
+    "Spirit_Warden_Level-up_Extra_Effect": [
+      "SpiritWardenLevelupExtraEffect"
+    ],
+    "Dreamkeeper_Back_Attachment": [],
+    "The_Stonefist_Character_Skin": [
+      "TheStonefistCharacterSkin"
+    ],
+    "Dreamkeeper_Helmet": [],
+    "Dreamkeeper_Boots": [],
+    "Dreamkeeper_Gloves": [],
+    "Dreamkeeper_Body_Armour": [],
+    "Dreamkeeper_Weapon_Skin": [],
+    "Dreamkeeper_Character_Skin": [],
+    "The_Stonefist_Helmet": [],
+    "The_Stonefist_Boots": [],
+    "The_Stonefist_Gloves": [],
+    "The_Stonefist_Body_Armour": [],
+    "Stonefist_Dodge_Roll_Effect": [
+      "StonefistDodgeRollEffect"
+    ],
+    "Stonefist_Charges": [
+      "TheStonefistCharges"
+    ],
+    "Plaguebearer_Helmet": [],
+    "Plaguebearer_Boots": [],
+    "Plaguebearer_Gloves": [],
+    "Plaguebearer_Body_Armour": [],
+    "Plaguebearer_Back_Attachment": [],
+    "Plaguebearer_Charges": [],
+    "Plague_Weapon_Skin": [],
+    "Plaguebearer_Weapon_Effect": [],
+    "Plague_Portrait_Frame": [],
+    "Plaguebearer_Portrait_Frame": [],
+    "Plaguewraith_Portrait_Frame": [],
+    "Remidus_Portrait_Frame": [],
+    "Remidus_Knight_Portrait_Frame": [],
+    "Remidus_Saint_Portrait_Frame": [],
+    "Remidus_Knight_Helmet": [],
+    "Remidus_Knight_Boots": [],
+    "Remidus_Knight_Gloves": [],
+    "Remidus_Knight_Body_Armour": [],
+    "Remidus_Weapon_Skin": [],
+    "Remidus_Knight_Back_Attachment": [],
+    "Remidus_Knight_Weapon_Effect": [],
+    "Medi-Rhoa_Mount": [],
+    "Erupting_Pustules_Rare_Finisher_Effect": [],
+    "Putrefying_Portal": [],
+    "Captains_Wheel_Back_Attachment": [],
+    "Oceanic_Weapon_Effect": [],
+    "Oceanic_Portal": [],
+    "Zarokhs_Temporal_Level-up_Extra_Effect": [
+      "ZarokhsTemporalLevelupExtraEffect"
+    ],
+    "Zarokhs_Temporal_Quicksilver_Flask_Effect": [
+      "ZarokhsTemporalQuicksilverFlaskEffect"
+    ],
+    "Zarokhs_Temporal_Portal": [],
+    "Zarokhs_Temporal_Weapon_Effect": [
+      "ZarokhsTemporalWeaponEffect"
+    ],
+    "Nocturne_Watchmen_Helmet": [
+      "NocturneWatchmenHelmet"
+    ],
+    "Nocturne_Watchmen_Boots": [
+      "NocturneWatchmenBoots"
+    ],
+    "Nocturne_Watchmen_Gloves": [
+      "NocturneWatchmenGloves"
+    ],
+    "Nocturne_Watchmen_Body_Armour": [
+      "NocturneWatchmenBodyArmour"
+    ],
+    "Scarlet_Watchmen_Helmet": [
+      "ScarletWatchmenHelmet"
+    ],
+    "Scarlet_Watchmen_Boots": [
+      "ScarletWatchmenBoots"
+    ],
+    "Scarlet_Watchmen_Gloves": [
+      "ScarletWatchmenGloves"
+    ],
+    "Scarlet_Watchmen_Body_Armour": [
+      "ScarletWatchmenBodyArmour"
+    ],
+    "Nocturne_Watchmen_Back_Attachment": [
+      "NocturneWatchmenBackAttachment"
+    ],
+    "Scarlet_Watchmen_Back_Attachment": [
+      "ScarletWatchmenBackAttachment"
+    ],
+    "Watchmen_Weapon_Skin": [
+      "WatchmenWeaponSkin",
+      "WatchmenWeaponSkinVariation"
+    ],
+    "Tukohamas_Jade_Unique_Finisher_Effect": [
+      "TukohamasJadeFinisherEffect"
+    ],
+    "Zarokhs_Temporal_Rare_Finisher_Effect": [
+      "ZarokhsTemporalFinisherEffect"
+    ],
+    "Tukohamas_Jade_Weapon_Effect": [
+      "TukohamasJadeWeaponEffect"
+    ],
+    "Tukohamas_Jade_Level-up_Extra_Effect": [
+      "TukohamasJadeLevelUpExtraEffect"
+    ],
+    "Bone_Horns_Helmet_Attachment": [
+      "BoneHornsHelmetAttachment"
+    ],
+    "Golden_Horns_Helmet_Attachment": [
+      "GoldenHornsHelmetAttachment"
+    ],
+    "Smouldering_Horns_Helmet_Attachment": [
+      "SmoulderingHornsHelmetAttachment"
+    ],
+    "Silver_Avian_Knight_Helmet": [
+      "SilverAvianKnightHelmet"
+    ],
+    "Silver_Avian_Knight_Boots": [
+      "SilverAvianKnightBoots"
+    ],
+    "Silver_Avian_Knight_Gloves": [
+      "SilverAvianKnightGloves"
+    ],
+    "Silver_Avian_Knight_Body_Armour": [
+      "SilverAvianKnightBodyArmour"
+    ],
+    "Gold_Avian_Knight_Helmet": [
+      "GoldAvianKnightHelmet"
+    ],
+    "Gold_Avian_Knight_Boots": [
+      "GoldAvianKnightBoots"
+    ],
+    "Gold_Avian_Knight_Gloves": [
+      "GoldAvianKnightGloves"
+    ],
+    "Gold_Avian_Knight_Body_Armour": [
+      "GoldAvianKnightBodyArmour"
+    ],
+    "Silver_Avian_Knight_Back_Attachment": [
+      "SilverAvianKnightBackAttachment"
+    ],
+    "Gold_Avian_Knight_Back_Attachment": [
+      "GoldAvianKnightBackAttachment"
+    ],
+    "Silver_Avian_Knight_Weapon_Skin": [
+      "SilverAvianKnightWeaponSkin"
+    ],
+    "Gold_Avian_Knight_Weapon_Skin": [
+      "GoldAvianKnightWeaponSkin"
+    ],
+    "Water_Portal_Effect": [],
+    "Tukohamas_Jade_Portal": [],
+    "Demonic_Slash_Rare_Finisher_Effect": [
+      "DemonicSlashFinisherEffect"
+    ],
+    "Spectral_Shark_Rare_Finisher_Effect": [
+      "SpectralSharkFinisherEffect"
+    ],
+    "Abyssal_Soulshatter_Rare_Finisher_Effect": [],
+    "High_Templars_War_Regalia_Helmet": [],
+    "High_Templars_War_Regalia_Boots": [],
+    "High_Templars_War_Regalia_Gloves": [],
+    "High_Templars_War_Regalia_Body_Armour": [],
+    "Fateweavers_Portal": [
+      "FateweaversPortalVariation"
+    ],
+    "Nautical_Explorer_Back_Attachment": [],
+    "Locust_Footprints_Effect": [],
+    "Wildwood_Affliction_Level-up_Extra_Effect": [],
+    "Locust_Swarm_Rare_Finisher_Effect": [],
+    "Seer_of_the_Maji_Helmet": [],
+    "Seer_of_the_Maji_Boots": [],
+    "Seer_of_the_Maji_Gloves": [],
+    "Seer_of_the_Maji_Body_Armour": [],
+    "Seer_of_the_Maji_Character_Skin": [
+      "SeerOfTheMajiCharacterSkin"
+    ],
+    "Polar_Bear_Shapeshift_Effect": [
+      "PolarBearShapeshiftEffect"
+    ],
+    "Chaosborn_Druid_Essence_Drain_Effect": [],
+    "Chaosborn_Druid_Contagion_Effect": [],
+    "Chaosborn_Druid_Dark_Effigy_Effect": [],
+    "Chaosborn_Druid_Hexblast_Effect": [],
+    "Chaosborn_Druid_Profane_Ritual_Effect": [],
+    "Soulflame_Rapid_Shot_Effect": [],
+    "Snow_Leopard_Werewolf_Shapeshift_Effect": [],
+    "Archon_of_Ash_Portrait_Frame": [],
+    "Archon_of_Destruction_Portrait_Frame": [],
+    "Archon_of_Rebirth_Portrait_Frame": [],
+    "Archon_of_Divinity_Portrait_Frame": [],
+    "Archon_of_Corruption_Portrait_Frame": [],
+    "Archon_of_Corruption_Helmet": [],
+    "Archon_of_Corruption_Boots": [],
+    "Archon_of_Corruption_Gloves": [],
+    "Archon_of_Corruption_Body_Armour": [],
+    "Archon_of_Corruption_Back_Attachment": [],
+    "Archon_of_Corruption_Weapon_Skin": [],
+    "Core_of_Corruption_Weapon_Effect": [],
+    "Colossal_Tentacle_Unique_Finisher_Effect": [],
+    "Portal_of_Corruption": [],
+    "Corruption_Charges": [],
+    "Nexus_of_Corruption_Level-up_Extra_Effect": [],
+    "Archon_of_Ash_Helmet": [],
+    "Archon_of_Ash_Boots": [],
+    "Archon_of_Ash_Gloves": [],
+    "Archon_of_Ash_Body_Armour": [],
+    "Archon_of_Ash_Weapon_Skin": [],
+    "Archon_of_Ash_Character_Skin": [],
+    "Ashbringer_Dodge_Roll_Effect": [],
+    "Burning_Ruination_Unique_Finisher_Effect": [],
+    "Archon_of_Ash_Back_Attachment": [],
+    "Ashbringer_Wyvern_Shapeshift_Effect": [],
+    "Archon_of_Destruction_Helmet": [],
+    "Archon_of_Destruction_Boots": [],
+    "Archon_of_Destruction_Gloves": [],
+    "Archon_of_Destruction_Body_Armour": [],
+    "Archon_of_Destruction_Back_Attachment": [],
+    "Archon_of_Destruction_Weapon_Skin": [],
+    "Orb_of_Destruction_Unique_Finisher_Effect": [],
+    "Precursor_Remnant_Level-up_Extra_Effect": [],
+    "Archon_of_Divinity_Helmet": [],
+    "Archon_of_Divinity_Boots": [],
+    "Archon_of_Divinity_Gloves": [],
+    "Archon_of_Divinity_Body_Armour": [],
+    "Archon_of_Divinity_Weapon_Skin": [],
+    "Core_of_Divinity_Weapon_Effect": [],
+    "Archon_of_Divinity_Back_Attachment": [],
+    "Gateway_of_Divinity_Portal": [],
+    "Archon_of_Rebirth_Helmet": [],
+    "Archon_of_Rebirth_Boots": [],
+    "Archon_of_Rebirth_Gloves": [],
+    "Archon_of_Rebirth_Body_Armour": [],
+    "Archon_of_Rebirth_Back_Attachment": [],
+    "Archon_of_Rebirth_Weapon_Skin": [],
+    "Portal_of_Eternity": [],
+    "Nightfowl_Back_Attachment": [],
+    "Nightfowl_Dodge_Roll_Effect": [],
+    "Nightfowl_Level-up_Extra_Effect": [],
+    "Nightfowl_Weapon_Effect": [],
+    "Stash_Tab": [],
+    "Premium_Stash_Tab": [
+      "PremiumStashTab"
+    ],
+    "Currency_Tab": [],
+    "Delirium_Tab": [],
+    "Premium_Quad_Tab": [],
+    "Ritual_Tab": [],
+    "Socketable_Tab": [],
+    "Green_Basilisk_Pet": [
+      "BasiliskGreen"
+    ],
+    "Infernal_Basilisk_Pet": [
+      "BasiliskInfernal"
+    ],
+    "Spectral_Basilisk_Pet": [
+      "BasiliskSpectral"
+    ],
+    "Blue_Frog_Pet": [
+      "FrogBlue"
+    ],
+    "Royal_Blue_Frog_Pet": [
+      "FrogBlueCrown"
+    ],
+    "Green_Frog_Pet": [
+      "FrogGreen"
+    ],
+    "Royal_Green_Frog_Pet": [
+      "FrogGreenCrown"
+    ],
+    "Red_Frog_Pet": [
+      "FrogRed"
+    ],
+    "Royal_Red_Frog_Pet": [
+      "FrogRedCrown"
+    ],
+    "Mysterious_Frog_Pet": [],
+    "Ebony_Scorpion_Pet": [
+      "ScorpionEbony"
+    ],
+    "Chrome_Scorpion_Pet": [
+      "ScorpionChrome"
+    ],
+    "Purple_Scorpion_Pet": [],
+    "Red_Scorpion_Pet": [],
+    "Ivory_Scorpion_Pet": [
+      "ScorpionIvory"
+    ],
+    "Scorpion_Pet": [
+      "Scorpion"
+    ],
+    "Infernal_Scorpion_Pet": [
+      "ScorpionInfernal"
+    ],
+    "Acid_Scorpion_Pet": [
+      "ScorpionAcid"
+    ],
+    "Lightning_Scorpion_Pet": [
+      "ScorpionLightning"
+    ],
+    "Weta_Pet": [
+      "WetaBasic"
+    ],
+    "Colossal_Weta_Pet": [
+      "WetaColossal"
+    ],
+    "Giant_Weta_Pet": [
+      "WetaGiant"
+    ],
+    "Gore_Weta_Pet": [
+      "WetaGore"
+    ],
+    "Kiwi_Pet": [],
+    "Bronze_Kiwi_Pet": [],
+    "Silver_Kiwi_Pet": [],
+    "Gold_Kiwi_Pet": [],
+    "Diamond_Kiwi_Pet": [],
+    "Rhoa_Pet": [],
+    "Regal_Rhoa_Pet": [],
+    "Divine_Rhoa_Pet": [],
+    "Exalted_Rhoa_Pet": [],
+    "Eternal_Rhoa_Pet": [],
+    "Ferret_Pet": [
+      "Ferret"
+    ],
+    "Black_Cat_Pet": [
+      "BlackCat"
+    ],
+    "Demon_Hand_Pet": [
+      "DemonHand"
+    ],
+    "Infernal_Fox_Pet": [
+      "FoxInfernal"
+    ],
+    "Lightning_Bat_Pet": [
+      "LightningBat"
+    ],
+    "Bell_Lizard_Pet": [
+      "BellLizard"
+    ],
+    "Cobra_Pet": [
+      "CobraPet"
+    ],
+    "Cockroach_Pet": [
+      "CockroachPet"
+    ],
+    "Formosan_Bear_Pet": [
+      "FormosanBearPet"
+    ],
+    "Two-Tailed_Lizard_Pet": [
+      "TwoTailedLizardPet"
+    ],
+    "Blue_Land_Crab_Pet": [
+      "BlueLandCrab"
+    ],
+    "Toad_Pet": [
+      "ToadPet"
+    ],
     "Nursery_Web_Spider_Pet": [],
+    "Formosan_Deer_Pet": [
+      "FormosanDeerPet"
+    ],
+    "Firefly_Swarm": [],
+    "Ghostflame_Swarm_Pet": [
+      "GhostflameSwarmPet"
+    ],
+    "Firefly_Swarm_Pet": [
+      "FireflySwarmPet"
+    ],
+    "Bloodworm_Pet": [],
+    "Black_Rat_Pet": [
+      "BlackRatPet"
+    ],
+    "Rolling_Head_Pet": [
+      "RollingHead"
+    ],
+    "Baby_Black_Death_Pet": [],
+    "Chicken_Pet": [
+      "ChickenPet"
+    ],
+    "Wild_Turkey_Pet": [],
+    "Hedgehog_Pet": [
+      "HedgehogPet",
+      "HedgehogPetTW"
+    ],
+    "Lemur_Pet": [
+      "LemurPet"
+    ],
+    "Peacock_Pet": [
+      "PeacockPet"
+    ],
+    "Peahen_Pet": [
+      "PeahenPet"
+    ],
+    "Pukeko_Pet": [
+      "PukekoPet"
+    ],
+    "Rock_Elemental_Pet": [
+      "RockElementalPet"
+    ],
+    "Tortoise_Pet": [
+      "TortoisePet"
+    ],
+    "Koala_Bear_Pet": [],
+    "Baby_Elephant_Pet": [
+      "BabyElephant"
+    ],
+    "Celestial_Cat_Pet": [
+      "CelestialCatPet"
+    ],
+    "Gothic_Horror_Ghost_Child_Pet": [
+      "GothicHorrorGhostChildPet"
+    ],
+    "Nine-Tailed_Fox_Pet": [
+      "NineTailedFoxPet"
+    ],
+    "Sunprism_Cat_Pet": [
+      "EmpyreanCatPet"
+    ],
+    "Tabby_Cat_Pet": [
+      "TabbyCatPet"
+    ],
+    "Amber_Cat_Pet": [],
+    "Cinnamon_Cat_Pet": [
+      "CinnamonCatPet"
+    ],
+    "Heist_Cat_Pet": [],
+    "Mallard_Duck_Pet": [
+      "DuckPet"
+    ],
+    "Male_Paradise_Duck_Pet": [
+      "MaleParadiseDuckPet"
+    ],
+    "Female_Paradise_Duck_Pet": [
+      "FemaleParadiseDuckPet"
+    ],
+    "Ginger_Rabbit_Pet": [
+      "GingerRabbitPet"
+    ],
+    "Black_Rabbit_Pet": [
+      "BlackRabbitPet"
+    ],
+    "White_Rabbit_Pet": [
+      "WhiteRabbitPet"
+    ],
+    "Lightbringer_Cat_Pet": [
+      "LightbringerSmallPet"
+    ],
+    "Darkshard_Falcon_Pet": [
+      "DarkshardSmallPet"
+    ],
+    "Thaumaturgy_Dachshund_Pet": [
+      "ThaumaturgyDachshundPet"
+    ],
+    "Scavenger_Bat_Pet": [
+      "ScavengerSmallPet"
+    ],
+    "Scavenger_Ratmother_Pet": [
+      "ScavengerLargePet"
+    ],
+    "Deepwater_Frog_Pet": [
+      "DeepwaterSmallPet"
+    ],
+    "Deepwater_Puffer_Pet": [
+      "DeepwaterLargePet"
+    ],
+    "Celestial_Turtle_Pet": [
+      "CelestialTurtlePet"
+    ],
+    "Heritage_Scarab_Pet": [
+      "HeritageSmallpet"
+    ],
+    "Heritage_Peacock_Pet": [
+      "HeritageLargePet"
+    ],
+    "Divergence_Centipede_Pet": [
+      "DivergenceSmallPet"
+    ],
+    "Divergence_Predator_Pet": [
+      "DivergenceLargePet"
+    ],
+    "Hummingbird_Pet": [
+      "HummingbirdPet"
+    ],
+    "Fangtooth_Moray_Pet": [],
+    "Skin_Transfer": [
+      "SkinTransfer"
+    ],
+    "Suspicious_Rock_Pet": [
+      "SuspiciousRockPet"
+    ],
+    "Suspicious_Azurite_Rock_Pet": [
+      "SuspiciousAzuriteRockPet"
+    ],
+    "Suspicious_Gold_Rock_Pet": [
+      "SuspiciousGoldRockPet"
+    ],
+    "Suspicious_Sandstone_Rock_Pet": [
+      "SuspiciousSandstoneRockPet"
+    ],
+    "Suspicious_Sulphur_Rock_Pet": [
+      "SuspiciousSulphurRockPet"
+    ],
+    "Goblin_Troupe_Pet": [],
+    "Sandfish_Pet": [
+      "SandfishVariations",
+      "SandfishPet"
+    ],
+    "Enraged_Sandfish_Pet": [
+      "EnragedSandfishPet"
+    ],
+    "Tranquil_Sandfish_Pet": [
+      "TranquilSandfishPet"
+    ],
+    "Tumbling_Chaos_Orb_Pet": [
+      "TumblingChaosOrbPet"
+    ],
+    "Tumbling_Vaal_Orb_Pet": [
+      "TumblingVaalOrbPet"
+    ],
+    "Tumbling_Exalted_Orb_Pet": [
+      "TumblingExaltedOrbPet"
+    ],
+    "Celestial_Octoparasite_Pet": [
+      "CelestialOctoparasitePet"
+    ],
+    "Molten_Octoparasite_Pet": [
+      "MoltenOctoparasitePet"
+    ],
+    "Ocean_Octoparasite_Pet": [
+      "OceanOctoparasitePet"
+    ],
+    "Baby_Kitava_Pet": [
+      "BabyKitavaPet"
+    ],
+    "Baby_Brutus_Pet": [
+      "BabyBrutusPet"
+    ],
+    "Baby_Piety_Pet": [
+      "BabyPietyPet"
+    ],
+    "Baby_Dominus_Pet": [
+      "BabyDominusPet"
+    ],
+    "Baby_Vaal_Oversoul_Pet": [
+      "BabyVaalOversoulPet"
+    ],
+    "Enthusiastic_Exiled_Squire": [],
+    "Pessimistic_Exiled_Squire": [],
+    "Insulting_Exiled_Squire": [],
+    "Wuzhiqi_Pet": [],
+    "Wuzhiqi_Premium_Pet": [],
+    "Wuzhiqi_Premium_Expired_Pet": [],
+    "Baby_Crowbell_Pet": [],
+    "Lord_of_Ogham_Kiwi_Pet": [],
+    "King_of_the_Faridun_Kiwi_Pet": [],
+    "Thaumaturge_of_the_Vaal_Kiwi_Pet": [],
+    "Warlord_of_the_Karui_Kiwi_Pet": [],
+    "Liberator_of_Wraeclast_Kiwi_Pet": [],
+    "Chimera_Pet": [],
+    "Prosperous_Serpent-King_Pet": [
+      "ProsperousSerpentKingPet"
+    ],
+    "Demonic_Fabrications_Pet": [
+      "DemonicFabricationsPet"
+    ],
+    "Toxic_Fabrications_Pet": [
+      "ToxicFabricationsPet"
+    ],
+    "Triceratops_Pet": [
+      "TriceratopsPet"
+    ],
+    "Lightning_Triceratops_Pet": [],
+    "Hairless_Quadrilla_Pet": [
+      "HairlessQuadrillaPet"
+    ],
+    "Armoured_Quadrilla_Pet": [
+      "ArmouredQuadrillaPet"
+    ],
+    "Capuchin_Quadrilla_Pet": [
+      "CapuchinQuadrillaPet"
+    ],
+    "Land_Shark_Pet": [
+      "LandSharkPet"
+    ],
+    "Stormweavers_Etched_Beetle_Pet": [
+      "StormweaversEtchedBeetlePet"
+    ],
+    "Assassins_Etched_Beetle_Pet": [
+      "AssassinsEtchedBeetlePet"
+    ],
+    "Fariduns_Etched_Beetle_Pet": [
+      "FaridunsEtchedBeetlePet"
+    ],
+    "Chronomancers_Etched_Beetle_Pet": [
+      "ChronomancersEtchedBeetlePet"
+    ],
+    "Sun_Clan_Hyena_Pet": [
+      "SunClanHyenaPet"
+    ],
+    "Azmeri_Noble_Deer_Pet": [],
+    "Carrion_Raptor_Pet": [],
+    "Spiderblossom_Pet": [],
+    "Griffin_Fledgling_Pet": [],
+    "Giant_Smokey_Sphynx_Pet": [
+      "GiantSmokeySphinxPet"
+    ],
+    "Giant_Lucent_Sphynx_Pet": [
+      "GiantLucentSphinxPet"
+    ],
+    "Giant_Sphynx_Pet": [
+      "GiantSphinxPet"
+    ],
+    "Giant_Maraketh_Sphynx_Pet": [
+      "GiantMarakethSphinxPet"
+    ],
+    "Giant_Spotted_Sphynx_Pet": [
+      "GiantSpottedSphinxPet"
+    ],
+    "Mummified_Giant_Sphynx_Pet": [
+      "MummifiedGiantSphynxPet"
+    ],
+    "Lin_Lin_Pet": [],
+    "Hiveborn_Crawler_Pet": [],
+    "Ghost_Dog_Pet": [
+      "GhostDogPet"
+    ],
+    "Verdant_Wayfinder_Pet": [],
+    "Crimson_Wraithpot_Pet": [
+      "CrimsonWraithpotPet"
+    ],
+    "Amber_Wraithpot_Pet": [
+      "AmberWraithpotPet"
+    ],
+    "Stone_Wraithpot_Pet": [
+      "StoneWraithpotPet"
+    ],
+    "Jade_Wraithpot_Pet": [
+      "JadeWraithpotPet"
+    ],
+    "Burdenback_Billy_Goat_Pet": [],
+    "Ancient_Tunneller_Pet": [],
     "Phoenix_Pet": [
       "PhoenixPet"
     ],
@@ -39,8 +4373,680 @@
     "Abyssal_Phoenix_Pet": [
       "AbyssalPhoenixPet"
     ],
+    "Magus_Quillbook_Pet": [
+      "MagusQuillbookPet"
+    ],
+    "Abyssal_Quillbook_Pet": [
+      "AbyssalQuillbookPet"
+    ],
+    "Vaal_Quillbook_Pet": [
+      "VaalQuillbookPet"
+    ],
+    "Incarcerators_Mesmer_Pet": [],
+    "Scrollshaper_Familiar_Pet": [],
+    "Bloodreaver_Gargoyle_Pet": [],
+    "Verisium_Parasite_Pet": [],
     "Wolf_of_Ogham_Pet": [
       "WolfOfOghamPet"
-    ]
+    ],
+    "Plague_Rat_Pet": [],
+    "Medi-Rhoa_Pet": [],
+    "Bandit_Otter_Pet": [
+      "BanditOtterPet"
+    ],
+    "Deckhand_Otter_Pet": [
+      "DeckhandOtterPet"
+    ],
+    "Feral_Otter_Pet": [
+      "FeralOtterPet"
+    ],
+    "Wildwood_Guardian_Pet": [],
+    "Blade_of_the_Champion_Pet": [],
+    "Ancient_Artificer_Pet": [],
+    "Archon_of_Destruction_Rhoa_Pet": [],
+    "Spirit_of_Rebirth_Pet": [],
+    "Archon_of_Rebirth_Rhoa_Pet": [],
+    "Archon_of_Divinity_Rhoa_Pet": [],
+    "Archon_of_Ash_Rhoa_Pet": [],
+    "Archon_of_Corruption_Rhoa_Pet": [],
+    "Mystery_Box": [],
+    "Stash": [],
+    "Guild_Stash": [],
+    "Waypoint": [],
+    "Alva": [],
+    "Dannig": [],
+    "Gwennen": [],
+    "Tujen": [],
+    "Rog": [],
+    "Zelina": [],
+    "Zolin": [],
+    "Doryani": [],
+    "Warp_Destination": [],
+    "Runes_of_Aldur_Challenger_Statue": [],
+    "Forbidden_Rites_Challenger_Statue": [],
+    "Forbidden_Rites_Challenger_Trophy_Test_Pole": [],
+    "Celestial_Tree": [],
+    "Clam_Stash": [],
+    "Clam_Guild_Stash": [],
+    "Precursor_Receptacle_Stash": [],
+    "Precursor_Receptacle_Guild_Stash": [],
+    "Kraken_Stash_Skin": [],
+    "Kraken_Guild_Stash_Skin": [],
+    "Atziris_Royal_Cache_Stash": [],
+    "Atziris_Royal_Cache_Guild_Stash": [],
+    "Shattered_Mirror_Stash": [],
+    "Shattered_Mirror_Guild_Stash": [],
+    "Vaal_Cache_Stash": [],
+    "Vaal_Cache_Guild_Stash": [],
+    "Afflicted_Altar_Stash": [],
+    "Afflicted_Altar_Guild_Stash": [],
+    "Abyss_Brazier_Stash": [],
+    "Abyss_Brazier_Guild_Stash": [],
+    "Runestone_Stash": [],
+    "Runestone_Guild_Stash": [],
+    "Corrupted_Crystal_Stash": [],
+    "Corrupted_Crystal_Guild_Stash": [],
+    "Clasped_Hand_Stash": [],
+    "Clapsed_Hand_Guild_Stash": [],
+    "Astrolabe_Stash": [],
+    "Astrolabe_Guild_Stash": [],
+    "Currency_Coffer_Stash": [],
+    "Currency_Coffer_Guild_Stash": [],
+    "Curio_Display_Stash": [],
+    "Curio_Display_Guild_Stash": [],
+    "Relic_Locker": [],
+    "Reforging_Bench": [],
+    "Salvage_Bench": [],
+    "Well": [],
+    "Synthesis_Waypoint": [],
+    "Demonic_Waypoint": [
+      "DemonicWaypoint"
+    ],
+    "Heritage_Building_Supplies": [
+      "HeritageHideoutDecor1"
+    ],
+    "Heritage_Curios": [
+      "HeritageHideoutDecor2"
+    ],
+    "Heritage_Environmental_Effect": [
+      "HeritageHideoutDecor3"
+    ],
+    "Divergence_Building_Supplies": [
+      "DivergenceHideoutDecor1"
+    ],
+    "Divergence_Curios": [
+      "DivergenceHideoutDecor2"
+    ],
+    "Divergence_Environmental_Effect": [
+      "DivergenceHideoutDecor3"
+    ],
+    "Warp_Rune": [],
+    "Scientist_Tinkers_Waypoint": [],
+    "Stormcaller_Tinkers_Waypoint": [],
+    "Divine_Tinkers_Waypoint": [],
+    "Darkshard_Tinkers_Waypoint": [],
+    "Verdant_Tinkers_Waypoint": [],
+    "Thaumaturgy_Tinkers_Waypoint": [],
+    "Item_Display_Case": [],
+    "Bronze_Timekeepers_Map_Device": [
+      "BronzeTimekeepersMapDevice"
+    ],
+    "Silver_Timekeepers_Map_Device": [
+      "SilverTimekeepersMapDevice"
+    ],
+    "Gold_Timekeepers_Map_Device": [
+      "GoldTimekeepersMapDevice"
+    ],
+    "Transmuted_Peddlers_Rain_Hideout_Decoration": [
+      "TransmutedPeddlersRain"
+    ],
+    "Chaotic_Peddlers_Rain_Hideout_Decoration": [
+      "ChaoticPeddlersRain"
+    ],
+    "Exalted_Peddlers_Rain_Hideout_Decoration": [
+      "ExaltedPeddlersRain"
+    ],
+    "Atzoatl_Map_Device": [],
+    "Verdant_Evertree_Map_Device": [
+      "VerdantEvertreeMapDevice"
+    ],
+    "Bloodbark_Evertree_Map_Device": [
+      "BloodbarkEvertreeMapDevice"
+    ],
+    "Night_Lotus_Evertree_Map_Device": [
+      "NightLotusEvertreeMapDevice"
+    ],
+    "Desert_Pavilion": [],
+    "Desert_Tent": [],
+    "Potted_Cactus": [],
+    "Comfortable_Cushions": [],
+    "Desert_Statue": [],
+    "Pitch_Burner": [],
+    "Rhoa_Race_Flag_%28Cyan%29": [],
+    "Rhoa_Race_Flag_%28Purple%29": [],
+    "Rhoa_Race_Flag_%28Yellow%29": [],
+    "Rhoa_Race_Flag_%28Red%29": [],
+    "Rhoa_Race_Flag_%28Green%29": [],
+    "Rhoa_Race_Flag_%28Blue%29": [],
+    "Rhoa_Race_Controller": [],
+    "Rhoa_Race_Spectate": [],
+    "Extra_Rhoa_Race_Flag": [],
+    "Extra_Rhoa_Race_Controller": [],
+    "Extra_Rhoa_Race_Spectate": [],
+    "Decorative_Rhoa_Race_Flag": [],
+    "Decorative_Rhoa_Race_Controller": [],
+    "Decorative_Rhoa_Race_Spectate": [],
+    "Trialmaster_Hideout_Decoration": [],
+    "Cauldron_Map_Device": [],
+    "Throne_of_the_Ruler_Map_Device": [],
+    "Ancestral_Canoe_Crafting_Bench": [],
+    "Zodiac_Dragon_Map_Device": [],
+    "Commemorative_Hillock_Statue_Hideout_Decoration": [],
+    "Commemorative_Vaal_Oversoul_Statue_Hideout_Decoration": [],
+    "Commemorative_Dominus_Statue_Hideout_Decoration": [],
+    "Commemorative_Malachai_Statue_Hideout_Decoration": [],
+    "Commemorative_Kitava_Statue_Hideout_Decoration": [],
+    "The_Defiler_Map_Device": [
+      "TheDefilerMapDeviceVariation",
+      "TheDefilerMapDevice"
+    ],
+    "Tree_of_Souls_Map_Device": [
+      "TreeofSoulsMapDevice"
+    ],
+    "Assassin_Djinns_Map_Device": [
+      "AssassinDjinnsMapDevice"
+    ],
+    "Water_Djinns_Map_Device": [
+      "WaterDjinnsMapDevice"
+    ],
+    "Time_Djinns_Map_Device": [
+      "TimeDjinnsMapDevice"
+    ],
+    "Divine_Arch": [],
+    "Divine_Banner": [],
+    "Divine_Candles": [],
+    "Divine_Fence": [],
+    "Divine_Offerings": [],
+    "Divine_Pedestal": [],
+    "Divine_Table": [],
+    "Divine_Thinwall": [],
+    "Golden_Brazier": [],
+    "Golden_Pot_Plant": [],
+    "Golden_Statues": [],
+    "Ornate_Carpet": [],
+    "Exotic_Jungle_Cluster": [],
+    "Karui_Chair": [],
+    "Karui_Floor_Medallion": [],
+    "Karui_Gate": [],
+    "Karui_Low_Table": [],
+    "Karui_Low_Wall": [],
+    "Karui_Pillar": [],
+    "Karui_Post": [],
+    "Karui_Shrine": [],
+    "Karui_Totem": [],
+    "Gargolyle_Pedestal": [],
+    "Manor_Throne": [],
+    "Ritual_Totems": [],
+    "Stone_Circle": [],
+    "Treadwheel": [],
+    "Wolf_Statue": [],
+    "Work_Bench": [],
+    "Work_Cart": [],
+    "Work_Table": [],
+    "Twilight_Banner": [],
+    "Twilight_Carpet": [],
+    "Twilight_Circular_Table": [],
+    "Twilight_Float": [],
+    "Twilight_Lamp": [],
+    "Twilight_Long_Bench": [],
+    "Twilight_Offerings": [],
+    "Twlight_Worship_Table": [],
+    "Vaal_Low_Broken_Wall": [],
+    "Vaal_Pillar": [],
+    "Vaal_Planterbox": [],
+    "Vaal_Icon_Statue": [],
+    "Vaal_Sundial": [],
+    "Dawn_of_the_Hunt_Mystery_Box": [
+      "MysteryPackDawnoftheHuntBox"
+    ],
+    "The_Third_Edict_Mystery_Box": [
+      "MysteryPackTheThirdEdictBox"
+    ],
+    "The_Last_of_the_Druids_Mystery_Box": [
+      "MysteryPackTheLastOfTheDruidsBox"
+    ],
+    "Return_of_the_Ancients_Mystery_Box": [
+      "MysteryPackReturnOfTheAncientsBox"
+    ],
+    "Curse_of_the_Allflame_Mystery_Box": [
+      "MysteryPackCurseOfTheAllflameBox"
+    ],
+    "Maraketh_Cursor": [
+      "CursorMaraketh"
+    ],
+    "Vaal_Cursor": [
+      "CursorVaal"
+    ],
+    "Eternal_Cursor": [
+      "CursorEternal"
+    ],
+    "Karui_Cursor": [
+      "CursorKarui"
+    ],
+    "Ezomyte_Cursor": [
+      "CursorEzomyte"
+    ],
+    "Saqawals_Fate_Rare_Finisher_Effect": [
+      "SaqawalsFateRareFinisherEffect"
+    ],
+    "Purifiers_Swordstorm_Rare_Finisher_Effect": [
+      "PurifiersSwordstormRareFinisherEffect"
+    ],
+    "Kaoms_Desire_Rare_Finisher_Effect": [
+      "KaomsDesireRareFinisherEffect"
+    ],
+    "Malachais_Demise_Rare_Finisher_Effect": [
+      "MalachaisDemiseRareFinisherEffect"
+    ],
+    "Luminary_Charges": [
+      "LuminaryCharges"
+    ],
+    "Maraketh_Goddess_Statue": [],
+    "Maraketh_Trinkets": [],
+    "Maraketh_Pillows": [],
+    "Maraketh_Mat": [],
+    "Maraketh_Ruin": [],
+    "Maraketh_Shelter": [],
+    "Vaal_Ruined_Statues": [],
+    "Karui_Decoration": [],
+    "Karui_Fence": [],
+    "Karui_Seat": [],
+    "Faridun_Chains": [],
+    "Faridun_Cargo": [],
+    "Faridun_Ballista": [],
+    "Faridun_Tools": [],
+    "Faridun_Ropes": [],
+    "Faridun_Weapons": [],
+    "Faridun_Lights": [],
+    "Faridun_Barricade": [],
+    "Faridun_Gazebo": [],
+    "Faridun_Throne": [],
+    "Faridun_Burner": [],
+    "Faridun_Cloth": [],
+    "Faridun_Cages": [],
+    "Hideout_Music_Player": [
+      "HideoutMusicPlayer"
+    ],
+    "Canopy_Hut": [],
+    "Canopy_Rack": [],
+    "Canopy_Base": [],
+    "Canopy_Container": [],
+    "Canopy_Messy_Base": [],
+    "Canopy_Scaffold": [],
+    "Canopy_Stool": [],
+    "Canopy_Wood_Bundle": [],
+    "Withered_Tree": [],
+    "Beech_Tree": [],
+    "Falling_Sand": [],
+    "Maraketh_Chest": [],
+    "Maraketh_Pillar": [],
+    "Maraketh_Incense_Burner": [],
+    "Goddess_Statue": [],
+    "Maraketh_Guard": [],
+    "Maraketh_Rhoa": [],
+    "Maraketh_Ballista": [],
+    "Maraketh_Barricade": [],
+    "Maraketh_Pavilion": [],
+    "Maraketh_Spire": [],
+    "Maraketh_Rubble": [],
+    "Maraketh_Treasure": [],
+    "Maraketh_Decor": [],
+    "Maraketh_Fire_Pot": [],
+    "Atziri_Statue": [],
+    "Twilight_Potted_Tree": [],
+    "Twilight_Potted_Plant": [],
+    "Twilight_Planter": [],
+    "Twilight_Tree": [],
+    "Twilight_Market_Stall": [],
+    "Twilight_Telescope": [],
+    "Twilight_Indoor_Chair": [],
+    "Twilight_Outdoor_Chair": [],
+    "Twilight_Banquet_Table": [],
+    "Twilight_Table": [],
+    "Twilight_Bench": [],
+    "Twilight_Container": [],
+    "Twilight_Stockpile": [],
+    "Cave_Coral": [],
+    "Cave_Coral_Group": [],
+    "Cave_Fossil": [],
+    "Cave_Petrified_Figure": [],
+    "Cave_Siren_Nest": [],
+    "Scattered_Fruit": [],
+    "Vaal_Bench": [],
+    "Vaal_Chair": [],
+    "Vaal_Market_Clusters": [],
+    "Vaal_Market_Fish": [],
+    "Vaal_Market_Stalls_Cover": [],
+    "Vaal_Market_Table": [],
+    "Vaal_Potted_Plants": [],
+    "Vaal_Small_Market_Table": [],
+    "Forest_Fern": [],
+    "Fringe_Moss": [],
+    "Large_Forest_Trees": [],
+    "Leaf_Pile": [],
+    "Log_Pile": [],
+    "Long_Grass": [],
+    "Rugged_Wood_Pile": [],
+    "Tree_Stump": [],
+    "Single_Log": [],
+    "Ziggurat_Map_Device": [],
+    "Scorched_Statue": [],
+    "Dissection_Table": [],
+    "Doryanis_Research_Shelf": [],
+    "Doryanis_Research_Table": [],
+    "Doryanis_Test_Subject": [],
+    "Experiment_Pot": [],
+    "Experiment_Stool": [],
+    "Surgical_Devices": [],
+    "Surgical_Lights": [],
+    "Slicer_Wall": [],
+    "Sanctum_Medallion": [],
+    "Sanctum_Pillars": [],
+    "Sanctum_Walls": [],
+    "Sanctum_Treasure": [],
+    "Sanctum_Wisp": [],
+    "Sanctum_Suspension_Trap": [],
+    "Sanctum_Trap": [],
+    "Chaos_Pots": [],
+    "Chaos_Rack": [],
+    "Chaos_Remains": [],
+    "Chaos_Ritual_Altar": [],
+    "Chaos_Small_Ritual_Altar": [],
+    "Chaos_Crawling_Leaves": [],
+    "Chaos_Sprout": [],
+    "Chaos_Stone_Blocks": [],
+    "Pulveriser_Map_Device": [],
+    "Goblin_Gamblers_Hideout_Decoration": [],
+    "Sacred_Archives_Map_Device": [],
+    "Trials_of_Chaos_Hideout_Decoration": [],
+    "Lounger": [],
+    "Marble_Bench": [],
+    "Marble_Fountain": [],
+    "Marble_Pillar": [],
+    "Marble_Spire": [],
+    "Marble_Table": [],
+    "Marble_Walls": [],
+    "Ornate_Gazebo": [],
+    "Ornate_Statue": [],
+    "Summit_Brazier": [],
+    "Summit_Planter": [],
+    "Tree_Planter": [],
+    "Burrowing_Bramble_Bash_Hideout_Decoration": [],
+    "Ange": [],
+    "Hilda": [],
+    "Jado": [],
+    "Sphinx_Mystic_Hideout_Decoration": [],
+    "The_Forgemasters_Map_Device": [
+      "TheForgemastersMapDevice",
+      "TheForgemastersMapDeviceVariation"
+    ],
+    "Fountain_of_Saint_Cecilia_Map_Device": [
+      "FountainOfSaintCeciliaMapDevice"
+    ],
+    "Wardrobe_Decoration": [],
+    "Cabbage_Tree": [],
+    "Harakeke": [],
+    "Manuka_Tree": [],
+    "Nikau_Palm": [],
+    "Pohutukawa": [],
+    "Punga": [],
+    "Sand_Tussock": [],
+    "Seaweed": [],
+    "Small_Shore_Rock": [],
+    "Medium_Shore_Rock": [],
+    "Large_Shore_Rock": [],
+    "Settlement_Buildings": [],
+    "Encampment_Bed": [],
+    "Encampment_Chest": [],
+    "Encampment_Crate": [],
+    "Encampment_Storage_Tent": [],
+    "Encampment_Table": [],
+    "Encampment_Container_Cluster": [],
+    "Encampment_Equipment": [],
+    "Shoreline_Pebbles": [],
+    "Shoreline_Fern": [],
+    "Karui_Well_Decoration": [
+      "KaruiWellDecoration"
+    ],
+    "Fractured_Well_Decoration": [
+      "FracturedWellDecoration"
+    ],
+    "Prison_Waygate_Map_Device": [
+      "PrisonWaygateMapDevice",
+      "PrisonWaygateMapDeviceVariation"
+    ],
+    "Well_of_Souls_Decoration": [],
+    "Backalley_Trader": [],
+    "Exiles_Treasurer_Hideout_Decoration": [],
+    "Champions_Podium_Map_Device": [],
+    "Arcane_Astronomy_Tool": [],
+    "Arcane_Cabinet": [],
+    "Arcane_Chair": [],
+    "Arcane_Research_Board": [],
+    "Arcane_Research_Material": [],
+    "Arcane_Research_Table": [],
+    "Arcane_Shelf": [],
+    "Arcane_Ruin_Walls": [],
+    "Arcane_Ruin_Structures": [],
+    "Arcane_Ruin_Stairs": [],
+    "Arcane_Plant_Pot": [],
+    "Arcane_Broken_Plant_Pot": [],
+    "Arcane_Planter": [],
+    "Arcane_Overgrown_Post": [],
+    "Clothesline": [],
+    "Fishermans_Display": [],
+    "Fishing_Supplies": [],
+    "Fish_Storage": [],
+    "Hammock": [],
+    "Marine_Frames": [],
+    "Mutineers_Cages": [],
+    "Mutineers_Tree": [],
+    "Shipwreck_Barrels": [],
+    "Shipwreck_Crate_Cluster": [],
+    "Shipwreck_Crates": [],
+    "Shipwreck_Lanterns": [],
+    "Shipwreck_Seat": [],
+    "Shipwreck_Storage_Cluster": [],
+    "Shipwreck_Table": [],
+    "Blood_Pots": [],
+    "Sacrifice_Altar": [],
+    "Sacrifice_Basin": [],
+    "Sacrifice_Bed": [],
+    "Sacrifice_Bench": [],
+    "Sacrificed_Body": [],
+    "Sacrifice_Pile_Large": [],
+    "Sacrifice_Pile_Small": [],
+    "Sacrifice_Pillar": [],
+    "Sacrifice_Table": [],
+    "Sacrifice_Throne": [],
+    "Relic_of_the_Precursors_Map_Device": [],
+    "Overgrown_Vaal_Artifact_Large": [],
+    "Overgrown_Vaal_Artifact_Medium": [],
+    "Overgrown_Vaal_Artifact_Small": [],
+    "Overgrown_Vaal_Artifact_Trim_Corner": [],
+    "Overgrown_Vaal_Artifact_Trim": [],
+    "Root_Bound_Statue": [],
+    "Root_Bound_Statue_Small": [],
+    "Vaal_Bone_Pile": [],
+    "Vaal_Crates_Large": [],
+    "Vaal_Crates_Small": [],
+    "Webbed_Vaal_Crates": [],
+    "Jungle_Plant_Cluster": [],
+    "Desert_Hourglass_Map_Device": [
+      "DesertHourglassMapDevice"
+    ],
+    "Crimson_Hourglass_Map_Device": [
+      "CrimsonHourglassMapDevice"
+    ],
+    "Wasteland_Hourglass_Map_Device": [
+      "WastelandHourglassMapDevice"
+    ],
+    "Kraken_Stash_Skin_%28Currency%29": [],
+    "Kraken_Guild_Stash_Skin_%28Currency%29": [],
+    "Vaal_Brazier": [],
+    "Atziris_Royal_Cache_Stash_%28Unique%29": [],
+    "Atziris_Royal_Cache_Guild_Stash_%28Unique%29": [],
+    "Forgemasters_Salvage_Bench": [],
+    "Toad_Idol_of_Corruption_Hideout_Decoration": [
+      "ToadIdolOfCorruptionHideoutDecoration"
+    ],
+    "Toad_Idol_of_Chaos_Hideout_Decoration": [
+      "ToadIdolOfChaosHideoutDecoration"
+    ],
+    "Toad_Idol_of_Alchemy_Hideout_Decoration": [
+      "ToadIdolOfAlchemyHideoutDecoration"
+    ],
+    "Tracking_Scroll_of_the_Vaal": [
+      "TrackingScrollOfTheVaal"
+    ],
+    "Tracking_Scroll_of_Crafting": [
+      "TrackingScrollOfCrafting",
+      "TrackingScrollVariation"
+    ],
+    "Sacrificial_Zealot": [],
+    "Harbinger_Zealot": [],
+    "Sacrificial_Ange": [],
+    "Runic_Charges_Effect": [
+      "RunicChargesEffect"
+    ],
+    "Manor_Bookshelf": [],
+    "Manor_Book_Stand": [],
+    "Manor_Carpet": [],
+    "Manor_Chair": [],
+    "Manor_Fireplace": [],
+    "Manor_Garden": [],
+    "Manor_Garden_Corner": [],
+    "Manor_Instrument": [],
+    "Manor_Lights": [],
+    "Manor_Locker": [],
+    "Manor_Poker_Stand": [],
+    "Manor_Side_Table": [],
+    "Manor_Storage": [],
+    "Manor_Storage_Bench": [],
+    "Manor_Structure_Corner": [],
+    "Manor_Structure_Door": [],
+    "Manor_Structure_Pillar": [],
+    "Manor_Structure_Wall": [],
+    "Manor_Table": [],
+    "Manor_Wall_Decoration": [],
+    "Manor_Wrecked_Wagon": [],
+    "Manor_Wrecked_Wagon_Small": [],
+    "Manor_Bed": [],
+    "Manor_Cabinet": [],
+    "Caged_People": [],
+    "Manor_Dining_Table": [],
+    "Aloe_Vera": [],
+    "Large_Cactus": [],
+    "Small_Cactus": [],
+    "Desert_Altar": [],
+    "Desert_Gate": [],
+    "Desert_Wall": [],
+    "Desert_Oasis": [],
+    "Desert_Pillar": [],
+    "Desert_Tree": [],
+    "Imprisoned_Djinn_Merchant": [],
+    "Servant_of_the_Manor_Merchant": [],
+    "Eternal_Incarceration_Map_Device": [],
+    "Mirage_Quicksilver_Flask_Effect": [],
+    "Gem_Mining_Cart_Large": [],
+    "Gem_Mining_Cart_Small": [],
+    "Gem_Mining_Table": [],
+    "Gem_Pile": [],
+    "Nameless_Shrine_Map_Device": [],
+    "Kalguuran_Detonator_Map_Device": [],
+    "Splintered_Reflection_Map_Device": [],
+    "The_Red_Queens_Font": [],
+    "Arbiter_of_Ash_Waypoint": [],
+    "Divine_Genesis_Map_Device": [],
+    "Tracking_Scroll_of_Peddling": [
+      "TrackingScrollOfPeddling",
+      "TrackingScrollOfPeddlingVariation"
+    ],
+    "Runes_of_Aldur_Tracking_Scroll": [
+      "RunesOfAldurTrackingScroll"
+    ],
+    "Shady_Merchant": [
+      "ShadyMerchantVariation"
+    ],
+    "Verisium_Anvil": [],
+    "Farrow": [],
+    "Reservoir_of_Benediction_Well": [],
+    "Reservoir_of_Benediction_Stash_Skin_%28Flask%29": [],
+    "Reservoir_of_Benediction_Guild_Stash_Skin_%28Flask%29": [],
+    "Fire_Waypoint": [],
+    "Ice_Waypoint": [],
+    "Plaguewraith_Map_Device": [],
+    "Monastery_Bush": [],
+    "Monastery_Dead_Bush": [],
+    "Monastery_Dead_Hedge": [],
+    "Monastery_Dead_Oak": [],
+    "Monastery_Decaying_Bush": [],
+    "Monastery_Decaying_Hedge": [],
+    "Monastery_Hedge": [],
+    "Monastery_Grass": [],
+    "Undying_Syndicate_Merchant": [
+      "UndyingSyndicateMerchant",
+      "UndyingSyndicateMerchantVariation"
+    ],
+    "Monastery_Wall": [],
+    "Monastery_Door": [],
+    "Monastery_Path": [],
+    "Monastery_Path_Connection": [],
+    "Monastery_Pillar": [],
+    "Monastery_Rubble": [],
+    "Monastery_Ruined_Wall": [],
+    "Fateweavers_Map_Device": [],
+    "Allflame_Crafting_Bench": [],
+    "Vaal_Forgemasters_Crafting_Bench": [
+      "VaalForgemastersCraftingBench"
+    ],
+    "Vaal_Thaumaturges_Crafting_Bench": [
+      "VaalThaumaturgesCraftingBench"
+    ],
+    "Tracking_Scroll_of_Exotic_Items": [
+      "TrackingScrollOfExoticItems",
+      "TrackingScrollOfExoticItemsVariation"
+    ],
+    "Ship_Cluster": [],
+    "Ship_Containers": [],
+    "Ship_Pipe_Rusted": [],
+    "Ship_Pipe": [],
+    "Ship_Ropes": [],
+    "Ship_Rug": [],
+    "Ship_Sack": [],
+    "Ship_Tank": [],
+    "Ship_Tank_Rusted": [],
+    "Ship_Valve": [],
+    "Ship_Valve_Rusted": [],
+    "Archon_of_Destruction_Throne": [],
+    "Archon_of_Divinity_Throne": [],
+    "Archon_of_Corruption_Throne": [],
+    "Corrupted_Precursor_Beacon_Hideout_Decoration": [],
+    "Manifestation_of_Corruption_Merchant": [],
+    "Archon_of_Ash_Throne": [],
+    "Archon_of_Rebirth_Throne": [],
+    "Tree_of_Eternity_Map_Device": [],
+    "Hinekora_Figure": [],
+    "Tavakai_Figure": [],
+    "Count_Geonor_Figure": [],
+    "Doryani_Figure": [],
+    "Lumerius_Figure": [],
+    "Ritual_Stone": [],
+    "Labyrinth_End_Cap": [],
+    "Labyrinth_Pillar": [],
+    "Labyrinth_Spire": [],
+    "Labyrinth_Wall": [],
+    "Labyrinth_Chair": [],
+    "Labyrinth_Table": []
   }
 }
