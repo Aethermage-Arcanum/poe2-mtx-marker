@@ -34,6 +34,7 @@ zweispaltige Layout erhalten bleibt.
 | `options.html`, `options.js` | Farbe, Intensität, Live-Vorschau; offene Shop-Tabs übernehmen Änderungen über `storage.onChanged` |
 | `data/poe2db-shopid-map.json` | Mitgelieferte Zuordnung Slug -> Shop-IDs (`{"generatedAt", "map"}`) |
 | `tools/build-idmap.mjs` | Baut die Zuordnung aus einer Listen-HTML und gecachten Detailseiten |
+| `tools/acceptance/` | Datenabruf und Firefox-Abnahme per Selenium (siehe unten) |
 | `tests/` | Node-Tests (`node --test`) mit den echten Fixtures aus Phase 0 |
 
 HTML wird im Background mit dem `DOMParser` von Firefox geparst, in Tests und im Build-Tool mit dem
@@ -66,6 +67,36 @@ node tools/build-idmap.mjs <list.html> <detailDir> data/poe2db-shopid-map.json
   `href` des Listeneintrags ist (z. B. `Kraken_Stash_Skin_%28Currency%29` -> `Kraken_Stash_Skin_%2528Currency%2529.html`).
 - Slugs ohne Detaildatei werden auf stderr gemeldet (`fehlt: <slug>`) und nicht in die Map geschrieben;
   die Extension lädt sie zur Laufzeit nach.
+- Liste und Detailseiten lädt `tools/acceptance/download_details.py` nach `temp/` (siehe unten), danach:
+  `node tools/build-idmap.mjs temp/poe2db_mtx.html temp/poe2db_detail data/poe2db-shopid-map.json`.
+  Beim Neubau auch `tests/fixtures/poe2db/list_*.html` auf denselben Stand bringen (Test prüft die Abdeckung).
+
+## Abnahme in Firefox (Selenium)
+
+Prüft die Extension im installierten Firefox als temporäres Add-on (gleicher Mechanismus wie
+about:debugging) gegen unabhängig berechnete Soll-Werte. Rohdaten und Ergebnisse liegen in `temp/`.
+
+```
+py -3.13 -m venv temp/.venv
+temp/.venv/Scripts/python.exe -m pip install -r tools/acceptance/requirements.txt
+py -3.13 tools/acceptance/fetch_shop.py
+py -3.13 tools/acceptance/download_details.py
+temp/.venv/Scripts/python.exe tools/acceptance/acceptance_firefox.py
+temp/.venv/Scripts/python.exe tools/acceptance/scenario3.py
+```
+
+| Skript | Aufgabe |
+| --- | --- |
+| `fetch_shop.py` | Shop-Bestand EN + DE über die Shop-API nach `temp/shop_api` (Cache, vorhandene Dateien bleiben) |
+| `download_details.py` | poe2db-Liste und alle Detailseiten nach `temp/` (1,2 s Abstand, fortsetzbar; `--refresh-list` lädt die Liste neu) |
+| `expected.py` | Soll-Label je Shop-Karte mit eigenem Parser, unabhängig vom Extension-Code |
+| `acceptance_firefox.py` | Szenarien: Live EN + DE (pets, armour-effects, bundles inkl. Endlos-Scroll, Layout), Optionen live, Cache-Fallback, ohne Cache. `--headed` zeigt das Fenster |
+| `scenario3.py` | Cache-Fallback isoliert, zwei Läufe |
+
+Selenium Manager lädt beim ersten Start geckodriver. Screenshots und Logs: `temp/acceptance/`.
+Die Soll-Werte setzen voraus, dass `temp/` (Shop-Abzug, poe2db-Liste, Detailseiten) zeitnah zum Lauf
+abgerufen wurde; ändert sich der Shop oder poe2db dazwischen, zeigt der Vergleich Abweichungen, die keine
+Fehler der Extension sind.
 
 ## Technische Befunde (Phase 0)
 
