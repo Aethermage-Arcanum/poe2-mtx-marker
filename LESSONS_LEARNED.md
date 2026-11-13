@@ -15,3 +15,9 @@
 - Der Shop hängt `div.shopItemBase#<id>` zuerst leer an `#mtx-list` an und befüllt die Karte danach
   asynchron per `$el.html(...)`. Karten erst bewerten, wenn ihr Inhalt da ist, und bei Mutationen im
   Karten-Teilbaum neu bewerten. Jsdom-Tests mit fertig eingefügtem HTML decken das nicht ab.
+- Der Shop-Kartencontainer ist ein 920 px breiter Flex-Wrap mit 460-px-Karten (`content-box`). Jeder
+  zusätzliche Rahmen ohne `box-sizing: border-box` macht den Shop einspaltig. Nur im echten Browser sichtbar,
+  jsdom berechnet kein Layout.
+- Für Abnahmetests "poe2db nicht erreichbar" reicht `network.dns.localDomains` allein nicht: Firefox
+  verwendet offene Verbindungen weiter. Zusätzlich DNS-Cache leeren und Verbindungen kappen
+  (`net:prune-all-connections`).

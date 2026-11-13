@@ -5,7 +5,13 @@ Karten markiert, deren MTX laut https://poe2db.tw/us/Microtransactions in Path o
 
 ## Status
 
-Phase 1 in Arbeit. Schlüsselstrategie "Option D" ist freigegeben und umgesetzt: Ein Shop-Item ist ein
+Phase 1 abgeschlossen (2026-11-13). Abnahme im installierten Firefox als temporäres Add-on per Selenium:
+www. und de., Kategorien pets (233), armour-effects (457) und bundles (47) inkl. Endlos-Scroll mit
+0 Abweichungen gegen unabhängig berechnete Soll-Werte; Optionen wirken live; Cache-Fallback mit
+"Stand vom"-Hinweis; ohne Cache keine Markierung und Fehlermeldung im Popup. Die ID-Map
+(`data/poe2db-shopid-map.json`) hat den Stand der poe2db-Liste vom 2026-11-13.
+
+Schlüsselstrategie "Option D" ist freigegeben und umgesetzt: Ein Shop-Item ist ein
 Treffer, wenn seine Shop-ID zu einem aktuell auf poe2db gelisteten Slug gehört (Zuordnung Slug -> Shop-IDs
 aus den poe2db-Detailseiten) oder sein Bildpfad-Schlüssel (artKey) dem eines gelisteten Eintrags entspricht.
 
