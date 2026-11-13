@@ -6,7 +6,8 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
-const { POE2DB_LIST_FIXTURE, POE2DB_DETAIL_DIR } = require('./helpers.js');
+const { POE2DB_LIST_FIXTURE, POE2DB_DETAIL_DIR, listDocument } = require('./helpers.js');
+const core = require('../lib/core.js');
 
 const ROOT = path.join(__dirname, '..');
 const TOOL = path.join(ROOT, 'tools', 'build-idmap.mjs');
@@ -61,8 +62,17 @@ test('build-idmap CLI: falsche Argumente -> Exit-Code != 0 und Hinweis auf Aufru
   assert.match(result.stderr, /build-idmap\.mjs <list\.html> <detailDir> <out\.json>/);
 });
 
-test('data/poe2db-shopid-map.json: Startinhalt entspricht den Fixture-Detailseiten', () => {
+test('data/poe2db-shopid-map.json: volle Map, deckt die Listen-Fixture ab, Fixture-Slugs exakt', () => {
   const shipped = JSON.parse(fs.readFileSync(SHIPPED_MAP, 'utf8'));
   assert.equal(new Date(shipped.generatedAt).toISOString(), shipped.generatedAt);
-  assert.deepEqual(sortedMap(shipped.map), sortedMap(EXPECTED_MAP));
+  for (const [slug, ids] of Object.entries(EXPECTED_MAP)) {
+    assert.deepEqual(shipped.map[slug], ids, slug);
+  }
+  // Map und Listen-Fixture stammen vom selben Stand; beim Neubau der Map auch die Fixture erneuern.
+  const listSlugs = new Set(core.parsePoe2dbList(listDocument()).map((e) => e.slug));
+  const uncovered = [...listSlugs].filter((slug) => !Object.prototype.hasOwnProperty.call(shipped.map, slug));
+  assert.deepEqual(uncovered, []);
+  for (const ids of Object.values(shipped.map)) {
+    assert.ok(Array.isArray(ids) && ids.every((id) => typeof id === 'string' && id !== ''));
+  }
 });
