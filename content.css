@@ -8,8 +8,8 @@
 
 .poe2mtx-label {
   position: absolute;
-  bottom: 6px;
-  right: 8px;
+  left: 10px;
+  bottom: 4px;
   padding: 1px 6px;
   border-radius: 3px;
   background: var(--poe2mtx-color);

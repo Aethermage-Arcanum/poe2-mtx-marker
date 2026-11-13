@@ -29,11 +29,12 @@ test('content.css: markierte Karte mit echtem border und box-sizing border-box (
   assert.match(border, /(^|\s)solid(\s|$)/);
 });
 
-test('content.css: Label innerhalb der Karte unten rechts, kein top / margin-top', () => {
+test('content.css: Label linksbündig unter dem Kaufen-Button (left 10px, bottom 4px), kein right / top / margin-top', () => {
   const style = ruleFor((selector) => selector.trim() === `.${LABEL_CLASS}`);
   assert.equal(style.getPropertyValue('position'), 'absolute');
-  assert.notEqual(style.getPropertyValue('bottom'), '');
-  assert.notEqual(style.getPropertyValue('right'), '');
+  assert.equal(style.getPropertyValue('left'), '10px');
+  assert.equal(style.getPropertyValue('bottom'), '4px');
+  assert.equal(style.getPropertyValue('right'), '');
   assert.equal(style.getPropertyValue('top'), '');
   assert.equal(style.getPropertyValue('margin-top'), '');
 });

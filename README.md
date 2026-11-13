@@ -18,7 +18,8 @@ aus den poe2db-Detailseiten) oder sein Bildpfad-Schlüssel (artKey) dem eines ge
 Label an markierten Karten (ab 1 Treffer): Karten mit genau einem Item (Einzelitem, aber auch Bündel oder
 Varianten-Gruppe mit nur einem Item) zeigen "PoE2 ready", Karten mit mindestens zwei Items "PoE2 ready x/y"
 (x = Treffer, y = Anzahl Items). 0 Treffer: keine Markierung, kein Label.
-Optik: Das Label sitzt innerhalb der Karte unten rechts. Markierte Karten erhalten `box-sizing: border-box`,
+Optik: Das Label sitzt innerhalb der Karte linksbündig direkt unter dem Kaufen-Button, im freien
+Streifen am unteren Kartenrand (`left: 10px; bottom: 4px`). Markierte Karten erhalten `box-sizing: border-box`,
 damit der 2-px-Rahmen die Kartenbreite (460 px im 920 px breiten Flex-Container) nicht vergrößert und das
 zweispaltige Layout erhalten bleibt.
 Die Label-Schrift ist schwarz oder weiß, je nachdem, was auf der eingestellten Farbe den höheren

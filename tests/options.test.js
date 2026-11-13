@@ -81,3 +81,17 @@ test('Optionen: Vorschau-Label nutzt schwarze oder weiße Schrift nach WCAG-Kont
   await new Promise((resolve) => setTimeout(resolve, 0));
   assert.equal(label.style.color, cssColor(document, '#ffffff'));
 });
+
+test('Optionen: Vorschau-Label sitzt wie im Shop linksbündig unten (left 10px, bottom 4px), kein right / top / margin-top', () => {
+  const { document } = setup(undefined);
+  const rules = [...document.styleSheets].flatMap((sheet) => [...sheet.cssRules]);
+  const matching = rules.filter((rule) => rule.selectorText && rule.selectorText.trim() === '.preview-label');
+  assert.equal(matching.length, 1);
+  const style = matching[0].style;
+  assert.equal(style.getPropertyValue('position'), 'absolute');
+  assert.equal(style.getPropertyValue('left'), '10px');
+  assert.equal(style.getPropertyValue('bottom'), '4px');
+  assert.equal(style.getPropertyValue('right'), '');
+  assert.equal(style.getPropertyValue('top'), '');
+  assert.equal(style.getPropertyValue('margin-top'), '');
+});
