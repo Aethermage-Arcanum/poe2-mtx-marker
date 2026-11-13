@@ -32,7 +32,7 @@ WCAG-2-Kontrast hat (bei Gleichstand schwarz); das Content-Script setzt sie als 
 | --- | --- |
 | `manifest.json` | MV3-Manifest (Firefox, Background als `scripts`) |
 | `lib/core.js` | Reine Kernlogik: Schlüssel, Parser, Kartenextraktion, Index, Bewertung, Label, Cache-Entscheidung, Einstellungen. Im Browser global `PoE2Mtx`, in Node per `require` |
-| `background.js` | Lädt bei jedem Shop-Seitenaufruf die poe2db-Liste live, Cache-Fallback, Status, Nachladen fehlender Detailseiten (sequentiell, >= 1200 ms Abstand), Benachrichtigung offener Shop-Tabs |
+| `background.js` | Lädt bei jedem Shop-Seitenaufruf die poe2db-Liste live, Cache-Fallback, Status, Nachladen fehlender Detailseiten (sequentiell, >= 1200 ms Abstand), höchstens alle 24 h Nachprüfung von Einträgen ohne Shop-ID (alle neuen, dazu die 25 am längsten nicht geprüften aus der mitgelieferten Map; nur bei live erreichbarem poe2db, ohne Aufgeben), Benachrichtigung offener Shop-Tabs |
 | `content.js`, `content.css` | Markiert Karten in `#mtx-list` (MutationObserver), Label, Hinweis "Stand vom" bei Cache-Daten, Konsolen-Protokoll nicht gematchter Karten |
 | `popup.html`, `popup.js` | Treffer, Karten gesamt, Datenstand, Quelle, Fehler- und Berechtigungshinweise |
 | `options.html`, `options.js` | Farbe, Intensität, Live-Vorschau; offene Shop-Tabs übernehmen Änderungen über `storage.onChanged` |

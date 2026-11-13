@@ -46,8 +46,11 @@ eigenen Parser, unabhängig vom Extension-Code – nicht auf `lib/core.js` umste
   Cache-Fallback über `resolveDataState`, Status in `dataStatus`), baut den Index aus Liste + ID-Map und
   antwortet mit `{index, source, fetchedAt, error}`. Fehlende Slugs lädt der Background sequentiell nach
   (≥ 1200 ms Abstand zwischen poe2db-Requests), speichert sie in `runtimeIdMap` und schickt `DATA_UPDATED` an
-  alle offenen Shop-Tabs. Popup fragt Zahlen per `GET_STATS` beim Content-Script ab; Optionen wirken über
-  `storage.onChanged`.
+  alle offenen Shop-Tabs. Danach, höchstens alle 24 h (`emptyRecheck.lastRunAt`, erster Aufruf merkt nur die Zeit),
+  Nachprüfung von Slugs ohne Shop-ID: alle nicht in der mitgelieferten Map, dazu die `RECHECK_OLD_PER_RUN` am
+  längsten nicht geprüften (`emptyRecheck.checkedAt`); gefundene IDs landen in `runtimeIdMap`. Backfill und
+  Nachprüfung laufen nacheinander in einem Lauf, damit der Abstand zu poe2db gilt. Popup fragt Zahlen per
+  `GET_STATS` beim Content-Script ab; Optionen wirken über `storage.onChanged`.
 - **Matching ("Option D"):** Item trifft, wenn seine Shop-ID zu einem gelisteten Slug gehört (ID-Map =
   mitgelieferte `data/poe2db-shopid-map.json`, überlagert von `runtimeIdMap`) oder sein artKey (aus dem
   base64url-Segment der Shop-Bild-URL bzw. dem poe2db-Bildpfad) einem gelisteten Eintrag entspricht.

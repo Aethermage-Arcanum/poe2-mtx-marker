@@ -3,7 +3,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const core = require('../lib/core.js');
-const { createBackgroundService, DETAIL_FETCH_INTERVAL_MS } = require('../background.js');
+const { createBackgroundService, DETAIL_FETCH_INTERVAL_MS, RECHECK_INTERVAL_MS, RECHECK_OLD_PER_RUN } = require('../background.js');
 const { POE2DB_LIST_FIXTURE, readText, detailSlugs, readDetail, parseHtml, listDocument } = require('./helpers.js');
 
 const LIST_HTML = readText(POE2DB_LIST_FIXTURE);
@@ -218,4 +218,80 @@ test('Background: Laufzeit-Ergänzung aus storage.local zählt als vorhanden und
     'https://poe2db.tw/us/Nursery_Web_Spider_Pet',
     'https://poe2db.tw/us/Hideout_Music_Player',
   ]);
+});
+
+const HOUR_MS = 60 * 60 * 1000;
+const RECHECK_PRIORITY = ['Stormborne_Helmet', 'Celestial_Body_Armour'];
+
+function shopIdsOf(slug) {
+  return core.parseDetailShopIds(parseHtml(readDetail(slug)));
+}
+
+function detailUrls(env) {
+  return detailRequests(env).map((r) => r.url.slice('https://poe2db.tw/us/'.length));
+}
+
+test('Nachprüfung: erster Seitenaufruf merkt nur die Startzeit, prüft noch nichts nach', async () => {
+  const env = createEnv({ shipped: shippedMapWithout([]) });
+  await env.service.handlePageOpened();
+  await env.service.backfillIdle();
+  assert.equal(detailRequests(env).length, 0);
+  assert.deepEqual(env.storage.data[core.STORAGE_KEYS.RECHECK], { lastRunAt: START_TIME, checkedAt: {} });
+});
+
+test('Nachprüfung: innerhalb von 24 h nach dem letzten Lauf keine Abrufe', async () => {
+  const lastRunAt = START_TIME - RECHECK_INTERVAL_MS + 1;
+  const storage = createStorage({ [core.STORAGE_KEYS.RECHECK]: { lastRunAt, checkedAt: {} } });
+  const env = createEnv({ shipped: shippedMapWithout([]), storage });
+  await env.service.handlePageOpened();
+  await env.service.backfillIdle();
+  assert.equal(detailRequests(env).length, 0);
+  assert.equal(env.storage.data[core.STORAGE_KEYS.RECHECK].lastRunAt, lastRunAt);
+});
+
+test('Nachprüfung: nach 24 h alle neuen Einträge ohne Shop-ID, dazu die am längsten nicht geprüften alten', async () => {
+  const recent = START_TIME - HOUR_MS;
+  const checkedAt = {};
+  for (const slug of LIST_SLUGS) if (!BACKFILL_SLUGS.includes(slug) && !RECHECK_PRIORITY.includes(slug)) checkedAt[slug] = recent;
+  const storage = createStorage({
+    [core.STORAGE_KEYS.RUNTIME_ID_MAP]: { Wolf_of_Ogham_Pet: [], Phoenix_Pet: ['PhoenixPet'], Nursery_Web_Spider_Pet: [], Hideout_Music_Player: [] },
+    [core.STORAGE_KEYS.RECHECK]: { lastRunAt: START_TIME - RECHECK_INTERVAL_MS, checkedAt },
+  });
+  const env = createEnv({ storage });
+  await env.service.handlePageOpened();
+  await env.service.backfillIdle();
+
+  const newEmpty = BACKFILL_SLUGS_IN_LIST_ORDER.filter((slug) => slug !== 'Phoenix_Pet');
+  const oldEmpty = [
+    ...LIST_SLUGS.filter((slug) => RECHECK_PRIORITY.includes(slug)),
+    ...LIST_SLUGS.filter((slug) => !BACKFILL_SLUGS.includes(slug) && !RECHECK_PRIORITY.includes(slug)),
+  ].slice(0, RECHECK_OLD_PER_RUN);
+  assert.deepEqual(detailUrls(env), [...newEmpty, ...oldEmpty]);
+  const details = detailRequests(env);
+  for (let i = 1; i < details.length; i += 1) assert.ok(details[i].at - details[i - 1].at >= DETAIL_FETCH_INTERVAL_MS);
+
+  const runtimeMap = env.storage.data[core.STORAGE_KEYS.RUNTIME_ID_MAP];
+  for (const slug of ['Wolf_of_Ogham_Pet', ...RECHECK_PRIORITY]) {
+    assert.ok(shopIdsOf(slug).length > 0, slug);
+    assert.deepEqual(runtimeMap[slug], shopIdsOf(slug));
+  }
+  assert.deepEqual(runtimeMap.Nursery_Web_Spider_Pet, []);
+  const state = env.storage.data[core.STORAGE_KEYS.RECHECK];
+  assert.equal(state.lastRunAt, START_TIME);
+  assert.ok(state.checkedAt.Nursery_Web_Spider_Pet >= START_TIME);
+  assert.equal(state.checkedAt.Hideout_Music_Player, undefined, 'fehlgeschlagener Abruf zählt nicht als geprüft');
+  assert.equal(env.notifications.length, 1);
+  assert.ok(env.notifications[0].index.shopIds.includes('WolfOfOghamPet'));
+});
+
+test('Nachprüfung: nicht mit Cache-Daten (poe2db nicht erreichbar)', async () => {
+  const storage = createStorage({
+    [core.STORAGE_KEYS.LIST_CACHE]: { entries: core.parsePoe2dbList(listDocument()), fetchedAt: START_TIME - HOUR_MS },
+    [core.STORAGE_KEYS.RECHECK]: { lastRunAt: START_TIME - RECHECK_INTERVAL_MS, checkedAt: {} },
+  });
+  const env = createEnv({ listFails: true, shipped: shippedMapWithout([]), storage });
+  const data = await env.service.handlePageOpened();
+  await env.service.backfillIdle();
+  assert.equal(data.source, core.DATA_SOURCES.CACHE);
+  assert.equal(detailRequests(env).length, 0);
 });

@@ -4,6 +4,10 @@
   const core = root.PoE2Mtx || require('./lib/core.js');
 
   const DETAIL_FETCH_INTERVAL_MS = 1200;
+  // Einträge ohne Shop-ID können sie bei poe2db später bekommen: höchstens einmal je Intervall nachprüfen,
+  // neue (nicht in der mitgelieferten Map) alle, alte reihum die am längsten nicht geprüften.
+  const RECHECK_INTERVAL_MS = 24 * 60 * 60 * 1000;
+  const RECHECK_OLD_PER_RUN = 25;
   const SHIPPED_ID_MAP_PATH = 'data/poe2db-shopid-map.json';
   const LOG_PREFIX = '[PoE2 MTX Marker]';
   const HTML_MIME_TYPE = 'text/html';
@@ -14,7 +18,7 @@
 
   function createBackgroundService({ fetchText, parseHtml, storage, loadShippedMap, notifyTabs, now, sleep, logger }) {
     let listInFlight = null;
-    let backfillInFlight = null;
+    let maintenanceInFlight = null;
     let shippedMap = null;
     let currentState = null;
     let lastPoe2dbRequestAt = null;
@@ -48,6 +52,10 @@
     async function mergedIdMap() {
       const runtimeMap = (await readKey(core.STORAGE_KEYS.RUNTIME_ID_MAP)) || {};
       return { ...(await getShippedMap()), ...runtimeMap };
+    }
+
+    function hasOwn(object, key) {
+      return Object.prototype.hasOwnProperty.call(object, key);
     }
 
     async function refreshList() {
@@ -90,7 +98,7 @@
     async function runBackfill(missingSlugs) {
       const runtimeMap = (await readKey(core.STORAGE_KEYS.RUNTIME_ID_MAP)) || {};
       for (const slug of missingSlugs) {
-        if (Object.prototype.hasOwnProperty.call(runtimeMap, slug)) continue;
+        if (hasOwn(runtimeMap, slug)) continue;
         const url = core.detailUrl(slug);
         if (!url) {
           logger.error(LOG_PREFIX, 'Ungültiger poe2db-Slug:', slug);
@@ -106,26 +114,74 @@
       if (currentState) await notifyTabs((await buildData(currentState)).data);
     }
 
-    function startBackfill(missingSlugs) {
-      if (!backfillInFlight) {
-        backfillInFlight = runBackfill(missingSlugs)
+    async function recheckSlugs() {
+      const shipped = await getShippedMap();
+      const merged = await mergedIdMap();
+      const recheck = await readKey(core.STORAGE_KEYS.RECHECK);
+      const listed = [...new Set(currentState.entries.map((entry) => entry.slug))];
+      const empty = listed.filter((slug) => Array.isArray(merged[slug]) && merged[slug].length === 0);
+      const checkedAt = (slug) => recheck.checkedAt[slug] || 0;
+      const oldest = empty.filter((slug) => hasOwn(shipped, slug)).sort((a, b) => checkedAt(a) - checkedAt(b));
+      return [...empty.filter((slug) => !hasOwn(shipped, slug)), ...oldest.slice(0, RECHECK_OLD_PER_RUN)];
+    }
+
+    async function runRecheck() {
+      // Nur wenn poe2db gerade erreichbar war; mit Cache-Daten liefen die Abrufe ins Leere.
+      if (!currentState || currentState.source !== core.DATA_SOURCES.LIVE) return;
+      const recheck = await readKey(core.STORAGE_KEYS.RECHECK);
+      // Erster Lauf nach der Installation: nur Startzeit merken, die mitgelieferte Map ist frisch.
+      if (!recheck || now() - recheck.lastRunAt >= RECHECK_INTERVAL_MS) {
+        await storage.set({
+          [core.STORAGE_KEYS.RECHECK]: { lastRunAt: now(), checkedAt: recheck ? recheck.checkedAt : {} },
+        });
+      }
+      if (!recheck || now() - recheck.lastRunAt < RECHECK_INTERVAL_MS) return;
+
+      let found = false;
+      for (const slug of await recheckSlugs()) {
+        try {
+          const shopIds = core.parseDetailShopIds(parseHtml(await throttledFetch(core.detailUrl(slug))));
+          const state = await readKey(core.STORAGE_KEYS.RECHECK);
+          state.checkedAt[slug] = now();
+          await storage.set({ [core.STORAGE_KEYS.RECHECK]: state });
+          if (shopIds.length > 0) {
+            const runtimeMap = (await readKey(core.STORAGE_KEYS.RUNTIME_ID_MAP)) || {};
+            runtimeMap[slug] = shopIds;
+            await storage.set({ [core.STORAGE_KEYS.RUNTIME_ID_MAP]: runtimeMap });
+            found = true;
+          }
+        } catch (error) {
+          logger.info(LOG_PREFIX, 'Nachprüfung nicht geladen:', slug, errorText(error));
+        }
+      }
+      if (found) await notifyTabs((await buildData(currentState)).data);
+    }
+
+    async function runMaintenance(missingSlugs) {
+      if (missingSlugs.length > 0) await runBackfill(missingSlugs);
+      await runRecheck();
+    }
+
+    function startMaintenance(missingSlugs) {
+      if (!maintenanceInFlight) {
+        maintenanceInFlight = runMaintenance(missingSlugs)
           .catch((error) => logger.error(LOG_PREFIX, 'Nachlade-Lauf abgebrochen:', errorText(error)))
           .finally(() => {
-            backfillInFlight = null;
+            maintenanceInFlight = null;
           });
       }
-      return backfillInFlight;
+      return maintenanceInFlight;
     }
 
     return {
       async handlePageOpened() {
         const state = await refreshListOnce();
         const { data, missingSlugs } = await buildData(state);
-        if (missingSlugs.length > 0) startBackfill(missingSlugs);
+        startMaintenance(missingSlugs);
         return data;
       },
       backfillIdle() {
-        return backfillInFlight || Promise.resolve();
+        return maintenanceInFlight || Promise.resolve();
       },
     };
   }
@@ -161,7 +217,9 @@
   }
 
   if (typeof module === 'object' && module.exports) {
-    module.exports = { createBackgroundService, DETAIL_FETCH_INTERVAL_MS, SHIPPED_ID_MAP_PATH };
+    module.exports = {
+      createBackgroundService, DETAIL_FETCH_INTERVAL_MS, RECHECK_INTERVAL_MS, RECHECK_OLD_PER_RUN, SHIPPED_ID_MAP_PATH,
+    };
   } else {
     bootstrap(root.browser);
   }
