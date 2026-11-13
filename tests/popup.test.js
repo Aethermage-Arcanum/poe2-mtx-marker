@@ -7,12 +7,17 @@ const path = require('node:path');
 const { JSDOM } = require('jsdom');
 const core = require('../lib/core.js');
 const { loadPopupState, renderPopup, POPUP_IDS } = require('../popup.js');
+const { translator } = require('./helpers.js');
 
 const POPUP_HTML = fs.readFileSync(path.join(__dirname, '..', 'popup.html'), 'utf8');
 const FETCHED_AT = new Date(2026, 10, 13, 8, 7).getTime();
 
 function popupDocument() {
   return new JSDOM(POPUP_HTML).window.document;
+}
+
+function render(document, state, locale) {
+  renderPopup(document, state, translator(locale));
 }
 
 function text(document, id) {
@@ -25,7 +30,7 @@ function visible(document, id) {
 
 test('Popup: live -> Treffer, Karten gesamt, Datenstand, Quelle live, keine Fehlermeldung', () => {
   const document = popupDocument();
-  renderPopup(document, {
+  render(document, {
     permitted: true,
     status: { source: core.DATA_SOURCES.LIVE, fetchedAt: FETCHED_AT, error: null },
     stats: { matchedCards: 12, totalCards: 40 },
@@ -41,7 +46,7 @@ test('Popup: live -> Treffer, Karten gesamt, Datenstand, Quelle live, keine Fehl
 
 test('Popup: Cache -> gut sichtbarer Hinweis "Stand vom" und Fehlergrund', () => {
   const document = popupDocument();
-  renderPopup(document, {
+  render(document, {
     permitted: true,
     status: { source: core.DATA_SOURCES.CACHE, fetchedAt: FETCHED_AT, error: 'HTTP 503' },
     stats: { matchedCards: 1, totalCards: 2 },
@@ -55,7 +60,7 @@ test('Popup: Cache -> gut sichtbarer Hinweis "Stand vom" und Fehlergrund', () =>
 
 test('Popup: keine Daten -> Fehlermeldung', () => {
   const document = popupDocument();
-  renderPopup(document, {
+  render(document, {
     permitted: true,
     status: { source: core.DATA_SOURCES.NONE, fetchedAt: null, error: 'NetworkError' },
     stats: { matchedCards: 0, totalCards: 30 },
@@ -69,7 +74,7 @@ test('Popup: keine Daten -> Fehlermeldung', () => {
 
 test('Popup: noch nie geladen und kein Shop-Tab -> Hinweise statt Zahlen', () => {
   const document = popupDocument();
-  renderPopup(document, { permitted: true, status: null, stats: null });
+  render(document, { permitted: true, status: null, stats: null });
   assert.equal(text(document, POPUP_IDS.MATCHED), '-');
   assert.equal(text(document, POPUP_IDS.TOTAL), '-');
   assert.equal(visible(document, POPUP_IDS.NO_SHOP_TAB), true);
@@ -78,7 +83,7 @@ test('Popup: noch nie geladen und kein Shop-Tab -> Hinweise statt Zahlen', () =>
 
 test('Popup: fehlende Host-Berechtigung wird klar gemeldet', () => {
   const document = popupDocument();
-  renderPopup(document, { permitted: false, status: null, stats: null });
+  render(document, { permitted: false, status: null, stats: null });
   assert.equal(visible(document, POPUP_IDS.PERMISSION), true);
   assert.match(text(document, POPUP_IDS.PERMISSION), /Berechtigung/);
 });

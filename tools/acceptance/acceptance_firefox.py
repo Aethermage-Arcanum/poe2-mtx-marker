@@ -10,10 +10,13 @@ from expected import build_index, shop_category, expected_label  # noqa: E402
 
 FIREFOX = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 EXT_FILES = ['manifest.json', 'background.js', 'content.js', 'content.css', 'popup.html', 'popup.js',
-             'options.html', 'options.js', 'lib', 'data', 'icons']
+             'options.html', 'options.js', 'lib', 'data', 'icons', '_locales']
 MARK_CLASS = 'poe2mtx-marked'
 LABEL_CLASS = 'poe2mtx-label'
 NOTICE_ID = 'poe2mtx-notice'
+# Texte folgen der Sprache von Firefox (_locales de/en).
+STALE_NOTICE_PREFIXES = ('Stand vom', 'Data as of')
+POPUP_SOURCE_CACHE = ('Quelle Cache', 'Source cache')
 with open(os.path.join(ROOT, 'manifest.json'), encoding='utf-8') as f:
     GECKO_ID = json.load(f)['browser_specific_settings']['gecko']['id']
 HEADLESS = '--headed' not in sys.argv
@@ -246,7 +249,7 @@ def main():
     problems += len(m)
     notice = d.execute_script(f"return document.getElementById('{NOTICE_ID}')?.textContent ?? null")
     print('   Hinweis auf der Seite:', notice)
-    if not notice or 'Stand vom' not in notice:
+    if not notice or not notice.startswith(STALE_NOTICE_PREFIXES):
         problems += 1
     screenshot(d, 'cache_de_pets')
     text, stats = popup_text(d, uuid)

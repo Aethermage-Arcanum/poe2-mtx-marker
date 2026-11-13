@@ -1,0 +1,35 @@
+{
+  "extensionDescription": { "message": "Markiert Shop-Karten auf pathofexile.com, deren MTX laut poe2db.tw in Path of Exile 2 verfügbar sind." },
+  "htmlLang": { "message": "de" },
+  "popupPermissionMissing": { "message": "Berechtigung fehlt: Bitte den Zugriff auf pathofexile.com und poe2db.tw unter about:addons > PoE2 MTX Marker > Berechtigungen erlauben." },
+  "popupMatched": { "message": "Treffer" },
+  "popupTotalCards": { "message": "Karten gesamt" },
+  "popupFetchedAt": { "message": "Datenstand" },
+  "popupSource": { "message": "Quelle" },
+  "popupNoShopTab": { "message": "Im aktiven Tab ist keine Shop-Seite von pathofexile.com geöffnet." },
+  "popupNeverLoaded": { "message": "Noch keine Daten geladen. Bitte eine Shop-Seite von pathofexile.com öffnen." },
+  "popupNoData": { "message": "Keine Daten: poe2db.tw nicht erreichbar und kein Cache vorhanden." },
+  "popupLiveFailed": { "message": "Live-Abruf von poe2db.tw fehlgeschlagen, es werden zwischengespeicherte Daten verwendet." },
+  "popupReason": { "message": "Grund:" },
+  "sourceLive": { "message": "live" },
+  "sourceCache": { "message": "Cache" },
+  "optionsTitle": { "message": "PoE2 MTX Marker - Einstellungen" },
+  "optionsColor": { "message": "Farbe des Rahmens" },
+  "optionsIntensity": { "message": "Intensität des Leuchtens" },
+  "optionsPreview": { "message": "Vorschau" },
+  "optionsPreviewCard": { "message": "Shop-Karte" },
+  "staleNotice": {
+    "message": "Stand vom $DATE$",
+    "placeholders": { "date": { "content": "$1" } }
+  },
+  "dateTime": {
+    "message": "$DAY$.$MONTH$.$YEAR$ $HOUR$:$MINUTE$",
+    "placeholders": {
+      "day": { "content": "$1" },
+      "month": { "content": "$2" },
+      "year": { "content": "$3" },
+      "hour": { "content": "$4" },
+      "minute": { "content": "$5" }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 const core = require('../lib/core.js');
 const { createMarker, bootstrap, MARK_CLASS, LABEL_CLASS, NOTICE_ID, CSS_VARS } = require('../content.js');
-const { listDocument, detailSlugs, readDetail, parseHtml, readDomFixture } = require('./helpers.js');
+const { listDocument, detailSlugs, readDetail, parseHtml, readDomFixture, translator, getMessageFor } = require('./helpers.js');
 
 const listEntries = core.parsePoe2dbList(listDocument());
 const idMap = {};
@@ -31,7 +31,7 @@ function createLogger() {
 function setupPage(initialBody = '<div id="shop-item-loading"><div class="shopItemBase"></div></div>') {
   const dom = new JSDOM(`<!DOCTYPE html><html><body>${initialBody}</body></html>`);
   const logger = createLogger();
-  const marker = createMarker({ document: dom.window.document, logger, MutationObserver: dom.window.MutationObserver });
+  const marker = createMarker({ document: dom.window.document, logger, MutationObserver: dom.window.MutationObserver, t: translator() });
   return { dom, document: dom.window.document, logger, marker };
 }
 
@@ -201,6 +201,7 @@ function createFakeBrowser({ storedSettings, pageData }) {
       },
       onMessage: { addListener: (fn) => listeners.message.push(fn) },
     },
+    i18n: { getMessage: getMessageFor('de') },
   };
 }
 

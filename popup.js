@@ -14,15 +14,15 @@
     ERROR: 'error',
   });
   const EMPTY_VALUE = '-';
-  const SOURCE_LABELS = Object.freeze({
-    [core.DATA_SOURCES.LIVE]: 'live',
-    [core.DATA_SOURCES.CACHE]: 'Cache',
+  const SOURCE_LABEL_KEYS = Object.freeze({
+    [core.DATA_SOURCES.LIVE]: 'sourceLive',
+    [core.DATA_SOURCES.CACHE]: 'sourceCache',
   });
-  const TEXTS = Object.freeze({
-    NEVER_LOADED: 'Noch keine Daten geladen. Bitte eine Shop-Seite von pathofexile.com öffnen.',
-    NO_DATA: 'Keine Daten: poe2db.tw nicht erreichbar und kein Cache vorhanden.',
-    LIVE_FAILED: 'Live-Abruf von poe2db.tw fehlgeschlagen, es werden zwischengespeicherte Daten verwendet.',
-    REASON: 'Grund:',
+  const MESSAGE_KEYS = Object.freeze({
+    NEVER_LOADED: 'popupNeverLoaded',
+    NO_DATA: 'popupNoData',
+    LIVE_FAILED: 'popupLiveFailed',
+    REASON: 'popupReason',
   });
 
   async function loadPopupState(browser) {
@@ -41,11 +41,9 @@
     return { permitted, status, stats };
   }
 
-  function withReason(text, error) {
-    return error ? `${text} ${TEXTS.REASON} ${error}` : text;
-  }
-
-  function renderPopup(document, { permitted, status, stats }) {
+  function renderPopup(document, { permitted, status, stats }, t) {
+    const withReason = (key, error) => (error ? `${t(key)} ${t(MESSAGE_KEYS.REASON)} ${error}` : t(key));
+    core.localizeDocument(document, t);
     const byId = (id) => document.getElementById(id);
     const show = (id, text) => {
       byId(id).textContent = text;
@@ -58,26 +56,27 @@
     byId(POPUP_IDS.NO_SHOP_TAB).hidden = Boolean(stats);
 
     const hasData = Boolean(status) && status.source !== core.DATA_SOURCES.NONE;
-    byId(POPUP_IDS.FETCHED_AT).textContent = hasData ? core.formatDateTime(status.fetchedAt) : EMPTY_VALUE;
-    byId(POPUP_IDS.SOURCE).textContent = hasData ? SOURCE_LABELS[status.source] : EMPTY_VALUE;
+    byId(POPUP_IDS.FETCHED_AT).textContent = hasData ? core.formatDateTime(status.fetchedAt, t) : EMPTY_VALUE;
+    byId(POPUP_IDS.SOURCE).textContent = hasData ? t(SOURCE_LABEL_KEYS[status.source]) : EMPTY_VALUE;
     byId(POPUP_IDS.STALE).hidden = true;
     byId(POPUP_IDS.ERROR).hidden = true;
 
     if (!status) {
-      show(POPUP_IDS.ERROR, TEXTS.NEVER_LOADED);
+      show(POPUP_IDS.ERROR, t(MESSAGE_KEYS.NEVER_LOADED));
     } else if (status.source === core.DATA_SOURCES.NONE) {
-      show(POPUP_IDS.ERROR, withReason(TEXTS.NO_DATA, status.error));
+      show(POPUP_IDS.ERROR, withReason(MESSAGE_KEYS.NO_DATA, status.error));
     } else if (status.source === core.DATA_SOURCES.CACHE) {
-      show(POPUP_IDS.STALE, core.staleNoticeText(status.fetchedAt));
-      show(POPUP_IDS.ERROR, withReason(TEXTS.LIVE_FAILED, status.error));
+      show(POPUP_IDS.STALE, core.staleNoticeText(status.fetchedAt, t));
+      show(POPUP_IDS.ERROR, withReason(MESSAGE_KEYS.LIVE_FAILED, status.error));
     }
   }
 
   if (typeof module === 'object' && module.exports) {
     module.exports = { loadPopupState, renderPopup, POPUP_IDS };
   } else {
+    const t = core.createTranslator((key, substitutions) => root.browser.i18n.getMessage(key, substitutions));
     loadPopupState(root.browser)
-      .then((state) => renderPopup(root.document, state))
+      .then((state) => renderPopup(root.document, state, t))
       .catch((error) => {
         const box = root.document.getElementById(POPUP_IDS.ERROR);
         box.textContent = String(error);

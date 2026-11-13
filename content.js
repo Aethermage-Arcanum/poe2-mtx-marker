@@ -17,7 +17,7 @@
 
   const ELEMENT_NODE = 1;
 
-  function createMarker({ document, logger, MutationObserver }) {
+  function createMarker({ document, logger, MutationObserver, t }) {
     let index = null;
     const loggedUnmatched = new Set();
     let observer = null;
@@ -88,7 +88,7 @@
       }
       const notice = existing || document.createElement('div');
       notice.id = NOTICE_ID;
-      notice.textContent = core.staleNoticeText(fetchedAt);
+      notice.textContent = core.staleNoticeText(fetchedAt, t);
       if (!existing) document.body.appendChild(notice);
     }
 
@@ -125,7 +125,8 @@
   }
 
   async function bootstrap({ browser, document, logger, MutationObserver }) {
-    const marker = createMarker({ document, logger, MutationObserver });
+    const t = core.createTranslator((key, substitutions) => browser.i18n.getMessage(key, substitutions));
+    const marker = createMarker({ document, logger, MutationObserver, t });
     const stored = await browser.storage.local.get(core.STORAGE_KEYS.SETTINGS);
     marker.setSettings(stored[core.STORAGE_KEYS.SETTINGS]);
 

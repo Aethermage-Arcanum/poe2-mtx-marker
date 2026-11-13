@@ -55,6 +55,12 @@ eigenen Parser, unabhängig vom Extension-Code – nicht auf `lib/core.js` umste
 - **Content-Script** bewertet Karten erst, wenn `isCardRendered` gilt, und bewertet bei Mutationen im
   Karten-Teilbaum neu (Shop hängt Karten leer an und befüllt sie asynchron). Eigene Label-Mutationen werden
   ignoriert.
+- **Texte (i18n):** Nutzertexte stehen in `_locales/{de,en}/messages.json` (`default_locale` en), nicht im Code.
+  Ein Übersetzer `t` (`core.createTranslator` über `browser.i18n.getMessage`) wird wie andere Abhängigkeiten
+  injiziert; HTML-Texte per `data-i18n` und `core.localizeDocument`. Tests nutzen `translator(locale)` aus
+  `tests/helpers.js`; `tests/i18n.test.js` prüft gleiche Schlüssel in allen Sprachen und keine fehlenden/toten
+  Schlüssel. Konsolen-Logs und technische Fehlergründe bleiben unübersetzt. Neue Dateien/Ordner der Extension
+  auch in `EXT_FILES` von `tools/acceptance/acceptance_firefox.py` eintragen.
 
 ## Fallstricke
 

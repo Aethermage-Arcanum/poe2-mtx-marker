@@ -3,7 +3,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const core = require('../lib/core.js');
-const { listDocument } = require('./helpers.js');
+const { listDocument, translator } = require('./helpers.js');
 
 const realEntries = core.parsePoe2dbList(listDocument());
 const NOW = new Date(2026, 10, 13, 15, 30).getTime();
@@ -68,6 +68,6 @@ test('Cache-Fallback: leerer Cache zählt nicht als Cache', () => {
 });
 
 test('formatDateTime / staleNoticeText: lokales Datum TT.MM.JJJJ HH:MM', () => {
-  assert.equal(core.formatDateTime(CACHED_AT), '12.11.2026 09:05');
-  assert.equal(core.staleNoticeText(CACHED_AT), 'Stand vom 12.11.2026 09:05');
+  assert.equal(core.formatDateTime(CACHED_AT, translator()), '12.11.2026 09:05');
+  assert.equal(core.staleNoticeText(CACHED_AT, translator()), 'Stand vom 12.11.2026 09:05');
 });

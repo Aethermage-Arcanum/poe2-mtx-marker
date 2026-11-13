@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>PoE2 MTX Marker</title>
@@ -17,14 +17,14 @@
 </head>
 <body>
   <h1>PoE2 MTX Marker</h1>
-  <div id="permission" class="box error" hidden>Berechtigung fehlt: Bitte den Zugriff auf pathofexile.com und poe2db.tw unter about:addons &gt; PoE2 MTX Marker &gt; Berechtigungen erlauben.</div>
+  <div id="permission" class="box error" data-i18n="popupPermissionMissing" hidden></div>
   <table>
-    <tr><th>Treffer</th><td id="matched">-</td></tr>
-    <tr><th>Karten gesamt</th><td id="total">-</td></tr>
-    <tr><th>Datenstand</th><td id="fetched-at">-</td></tr>
-    <tr><th>Quelle</th><td id="source">-</td></tr>
+    <tr><th data-i18n="popupMatched"></th><td id="matched">-</td></tr>
+    <tr><th data-i18n="popupTotalCards"></th><td id="total">-</td></tr>
+    <tr><th data-i18n="popupFetchedAt"></th><td id="fetched-at">-</td></tr>
+    <tr><th data-i18n="popupSource"></th><td id="source">-</td></tr>
   </table>
-  <div id="no-shop-tab" class="box hint" hidden>Im aktiven Tab ist keine Shop-Seite von pathofexile.com geöffnet.</div>
+  <div id="no-shop-tab" class="box hint" data-i18n="popupNoShopTab" hidden></div>
   <div id="stale" class="box stale" hidden></div>
   <div id="error" class="box error" hidden></div>
   <script src="lib/core.js"></script>

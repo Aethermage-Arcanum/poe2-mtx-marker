@@ -7,6 +7,7 @@ const path = require('node:path');
 const { JSDOM } = require('jsdom');
 const core = require('../lib/core.js');
 const { initOptions, OPTION_IDS } = require('../options.js');
+const { translator } = require('./helpers.js');
 
 const OPTIONS_HTML = fs.readFileSync(path.join(__dirname, '..', 'options.html'), 'utf8');
 
@@ -44,7 +45,7 @@ function fire(dom, element, value) {
 
 test('Optionen: gespeicherte Werte in Color-Picker, Slider und Vorschau', async () => {
   const { document, storage } = setup({ color: '#00ff00', intensity: 50 });
-  await initOptions({ document, storage });
+  await initOptions({ document, storage, t: translator() });
   assert.equal(document.getElementById(OPTION_IDS.COLOR).value, '#00ff00');
   assert.equal(document.getElementById(OPTION_IDS.INTENSITY).value, '50');
   assert.equal(document.getElementById(OPTION_IDS.INTENSITY).min, String(core.INTENSITY_MIN));
@@ -56,14 +57,14 @@ test('Optionen: gespeicherte Werte in Color-Picker, Slider und Vorschau', async 
 
 test('Optionen: ohne gespeicherte Werte gelten die Standardwerte', async () => {
   const { document, storage } = setup(undefined);
-  await initOptions({ document, storage });
+  await initOptions({ document, storage, t: translator() });
   assert.equal(document.getElementById(OPTION_IDS.COLOR).value, core.DEFAULT_SETTINGS.color);
   assert.equal(document.getElementById(OPTION_IDS.INTENSITY).value, String(core.DEFAULT_SETTINGS.intensity));
 });
 
 test('Optionen: Änderung aktualisiert Vorschau sofort und speichert in storage', async () => {
   const { dom, document, storage, writes } = setup(undefined);
-  await initOptions({ document, storage });
+  await initOptions({ document, storage, t: translator() });
   fire(dom, document.getElementById(OPTION_IDS.COLOR), '#3366ff');
   fire(dom, document.getElementById(OPTION_IDS.INTENSITY), '100');
   await new Promise((resolve) => setTimeout(resolve, 0));
@@ -74,7 +75,7 @@ test('Optionen: Änderung aktualisiert Vorschau sofort und speichert in storage'
 
 test('Optionen: Vorschau-Label nutzt schwarze oder weiße Schrift nach WCAG-Kontrast', async () => {
   const { dom, document, storage } = setup({ color: '#00ff00', intensity: 50 });
-  await initOptions({ document, storage });
+  await initOptions({ document, storage, t: translator() });
   const label = document.getElementById(OPTION_IDS.PREVIEW_LABEL);
   assert.equal(label.style.color, cssColor(document, '#000000'));
   fire(dom, document.getElementById(OPTION_IDS.COLOR), '#000080');

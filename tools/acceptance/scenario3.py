@@ -12,9 +12,9 @@ for run in (1, 2):
     m, _ = a.compare('de', 'pets', st, ids, arts); problems += len(m) + a.layout_problems(d)
     notice = d.execute_script("return document.getElementById('poe2mtx-notice')?.textContent ?? null")
     print(f'   Lauf {run}: Hinweis {notice!r}')
-    if not notice or 'Stand vom' not in notice: problems += 1
+    if not notice or not notice.startswith(a.STALE_NOTICE_PREFIXES): problems += 1
     a.screenshot(d, f'cache_de_pets_run{run}')
     text, _ = a.popup_text(d, uuid); print('   Popup:', text.replace('\n', ' | '))
-    if 'Quelle Cache' not in text: problems += 1
+    if not any(s in text for s in a.POPUP_SOURCE_CACHE): problems += 1
     d.quit()
 print('ERGEBNIS Szenario 3:', 'OK' if problems == 0 else f'{problems} Probleme')

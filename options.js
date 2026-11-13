@@ -12,7 +12,8 @@
   });
   const INPUT_EVENT = 'input';
 
-  async function initOptions({ document, storage }) {
+  async function initOptions({ document, storage, t }) {
+    core.localizeDocument(document, t);
     const byId = (id) => document.getElementById(id);
     const colorInput = byId(OPTION_IDS.COLOR);
     const intensityInput = byId(OPTION_IDS.INTENSITY);
@@ -48,6 +49,7 @@
   if (typeof module === 'object' && module.exports) {
     module.exports = { initOptions, OPTION_IDS };
   } else {
-    initOptions({ document: root.document, storage: root.browser.storage.local });
+    const t = core.createTranslator((key, substitutions) => root.browser.i18n.getMessage(key, substitutions));
+    initOptions({ document: root.document, storage: root.browser.storage.local, t });
   }
 })(typeof globalThis !== 'undefined' ? globalThis : this);

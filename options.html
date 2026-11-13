@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PoE2 MTX Marker - Einstellungen</title>
+  <title data-i18n="optionsTitle"></title>
   <style>
     body { margin: 0; padding: 16px; font: 13px/1.4 sans-serif; color: #222; background: #fff; }
     label { display: block; margin-bottom: 12px; }
@@ -15,15 +15,15 @@
   </style>
 </head>
 <body>
-  <label>Farbe des Rahmens
+  <label><span data-i18n="optionsColor"></span>
     <span class="row"><input type="color" id="color"></span>
   </label>
-  <label>Intensität des Leuchtens
+  <label><span data-i18n="optionsIntensity"></span>
     <span class="row"><input type="range" id="intensity" step="1"><output id="intensity-value"></output></span>
   </label>
-  <div>Vorschau</div>
+  <div data-i18n="optionsPreview"></div>
   <div class="stage">
-    <div class="preview-card" id="preview">Shop-Karte<span class="preview-label" id="preview-label"></span></div>
+    <div class="preview-card" id="preview"><span data-i18n="optionsPreviewCard"></span><span class="preview-label" id="preview-label"></span></div>
   </div>
   <script src="lib/core.js"></script>
   <script src="options.js"></script>
