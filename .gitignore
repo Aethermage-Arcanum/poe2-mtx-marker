@@ -3,3 +3,6 @@ node_modules/
 __pycache__/
 web-ext-artifacts/
 .amo-upload-uuid
+# Lokale Arbeitsdateien für Claude Code, nicht im Repo
+CLAUDE.md
+.claude/

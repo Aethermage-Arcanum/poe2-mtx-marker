@@ -54,7 +54,7 @@ test('Chromium-Paket: enthält alle referenzierten Dateien, Service-Worker-Impor
 
 test('Chromium-Paket: ohne Tests, Tools, Doku, node_modules und versteckte Dateien', () => {
   for (const file of files) {
-    assert.doesNotMatch(file, /^(tests|tools|temp|knowledge|node_modules|web-ext-artifacts)\//, file);
+    assert.doesNotMatch(file, /^(tests|tools|temp|knowledge|docs|node_modules|web-ext-artifacts)\//, file);
     assert.doesNotMatch(file, /(^|\/)\./, file);
     assert.doesNotMatch(file, /\.md$/, file);
     assert.ok(!['package.json', 'package-lock.json', 'web-ext-config.mjs'].includes(file), file);

@@ -23,3 +23,12 @@
   (`net:prune-all-connections`).
 - web-ext-Konfiguration als `.mjs` mit `export default` anlegen. Unter Node 24 liefert der Import einer
   `.cjs`-Datei zusätzlich den Schlüssel `module.exports`, den web-ext als unbekannte Option ablehnt.
+- Chromium-MV3-Service-Worker haben keinen `DOMParser`. HTML parsen geht dort nur in einem Offscreen-Dokument
+  (`chrome.offscreen`, Grund `DOM_PARSER`) oder mit einem mitgelieferten Parser.
+- Ein `onMessage`-Listener, der ein Promise zurückgibt, beantwortet die Nachricht nur in Firefox. Für beide
+  Browser `sendResponse` aufrufen und `true` zurückgeben.
+- Chrome und Edge zeigen keine SVG-Icons aus dem Manifest; PNGs nötig.
+- Neuere Edge-Installationen liegen unter `C:\Program Files (x86)\Microsoft\EdgeCore\<Version>\msedge.exe`,
+  `Edge\Application\` enthält dann kein `msedge.exe` mehr.
+- Markenbrowser laden Erweiterungen nicht mehr über `--load-extension`. Für Tests per CDP mit
+  `--remote-debugging-pipe --enable-unsafe-extension-debugging` starten und `Extensions.loadUnpacked` aufrufen.

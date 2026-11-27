@@ -5,6 +5,7 @@ export default {
     'tools',
     'temp',
     'knowledge',
+    'docs',
     '*.md',
     'package.json',
     'package-lock.json',
