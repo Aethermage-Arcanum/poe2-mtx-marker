@@ -74,7 +74,7 @@ function createEnv({ listFails = false, shipped = shippedMapWithout(BACKFILL_SLU
       if (!FIXTURE_DETAIL_SLUGS.has(slug)) throw new Error('HTTP 404');
       return readDetail(slug);
     },
-    parseHtml,
+    parse: async (kind, html) => core.parsePoe2db(kind, parseHtml(html)),
     storage,
     loadShippedMap: async () => shipped,
     notifyTabs: async (data) => {

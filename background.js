@@ -11,12 +11,18 @@
   const SHIPPED_ID_MAP_PATH = 'data/poe2db-shopid-map.json';
   const LOG_PREFIX = '[PoE2 MTX Marker]';
   const HTML_MIME_TYPE = 'text/html';
+  // Chromium: Service Worker haben keinen DOMParser, geparst wird in einem Offscreen-Dokument.
+  const OFFSCREEN_PATH = 'offscreen.html';
+  const OFFSCREEN_REASON = 'DOM_PARSER';
+  const OFFSCREEN_CONTEXT_TYPE = 'OFFSCREEN_DOCUMENT';
+  const OFFSCREEN_JUSTIFICATION = 'Parse poe2db.tw HTML pages (no DOMParser in the service worker).';
+  const OFFSCREEN_NO_REPLY = 'Offscreen-Dokument antwortet nicht';
 
   function errorText(error) {
     return error && error.message ? error.message : String(error);
   }
 
-  function createBackgroundService({ fetchText, parseHtml, storage, loadShippedMap, notifyTabs, now, sleep, logger }) {
+  function createBackgroundService({ fetchText, parse, storage, loadShippedMap, notifyTabs, now, sleep, logger }) {
     let listInFlight = null;
     let maintenanceInFlight = null;
     let shippedMap = null;
@@ -63,7 +69,7 @@
       try {
         const html = await fetchText(core.POE2DB_LIST_URL);
         lastPoe2dbRequestAt = now();
-        fetchResult = { ok: true, entries: core.parsePoe2dbList(parseHtml(html)) };
+        fetchResult = { ok: true, entries: await parse(core.PARSE_KINDS.LIST, html) };
       } catch (error) {
         fetchResult = { ok: false, error: errorText(error) };
       }
@@ -105,7 +111,7 @@
           continue;
         }
         try {
-          runtimeMap[slug] = core.parseDetailShopIds(parseHtml(await throttledFetch(url)));
+          runtimeMap[slug] = await parse(core.PARSE_KINDS.DETAIL, await throttledFetch(url));
           await storage.set({ [core.STORAGE_KEYS.RUNTIME_ID_MAP]: runtimeMap });
         } catch (error) {
           logger.info(LOG_PREFIX, 'Detailseite nicht geladen:', slug, errorText(error));
@@ -140,7 +146,7 @@
       let found = false;
       for (const slug of await recheckSlugs()) {
         try {
-          const shopIds = core.parseDetailShopIds(parseHtml(await throttledFetch(core.detailUrl(slug))));
+          const shopIds = await parse(core.PARSE_KINDS.DETAIL, await throttledFetch(core.detailUrl(slug)));
           const state = await readKey(core.STORAGE_KEYS.RECHECK);
           state.checkedAt[slug] = now();
           await storage.set({ [core.STORAGE_KEYS.RECHECK]: state });
@@ -186,14 +192,47 @@
     };
   }
 
-  function bootstrap(browser) {
+  function domParse(DOMParser) {
+    return async (kind, html) => core.parsePoe2db(kind, new DOMParser().parseFromString(html, HTML_MIME_TYPE));
+  }
+
+  // Parst über ein Offscreen-Dokument (offscreen.js), das bei Bedarf angelegt und danach wiederverwendet wird.
+  function createOffscreenParser({ offscreen, runtime }) {
+    let creating = null;
+
+    async function ensureDocument() {
+      const contexts = await runtime.getContexts({
+        contextTypes: [OFFSCREEN_CONTEXT_TYPE],
+        documentUrls: [runtime.getURL(OFFSCREEN_PATH)],
+      });
+      if (contexts.length > 0) return;
+      if (!creating) {
+        creating = offscreen
+          .createDocument({ url: OFFSCREEN_PATH, reasons: [OFFSCREEN_REASON], justification: OFFSCREEN_JUSTIFICATION })
+          .finally(() => {
+            creating = null;
+          });
+      }
+      await creating;
+    }
+
+    return async (kind, html) => {
+      await ensureDocument();
+      const reply = await runtime.sendMessage({ type: core.MESSAGE_TYPES.PARSE_HTML, kind, html });
+      if (!reply) throw new Error(OFFSCREEN_NO_REPLY);
+      if (reply.error) throw new Error(reply.error);
+      return reply.result;
+    };
+  }
+
+  function bootstrap(browser, parse) {
     const service = createBackgroundService({
       async fetchText(url) {
         const response = await fetch(url, { credentials: 'omit' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return response.text();
       },
-      parseHtml: (html) => new DOMParser().parseFromString(html, HTML_MIME_TYPE),
+      parse,
       storage: browser.storage.local,
       async loadShippedMap() {
         const response = await fetch(browser.runtime.getURL(SHIPPED_ID_MAP_PATH));
@@ -210,17 +249,22 @@
       logger: console,
     });
 
-    browser.runtime.onMessage.addListener((message) => {
+    browser.runtime.onMessage.addListener(core.messageListener((message) => {
       if (message && message.type === core.MESSAGE_TYPES.PAGE_OPENED) return service.handlePageOpened();
       return undefined;
-    });
+    }, (error) => console.error(LOG_PREFIX, 'Seitenaufruf nicht beantwortet:', errorText(error))));
   }
 
   if (typeof module === 'object' && module.exports) {
     module.exports = {
-      createBackgroundService, DETAIL_FETCH_INTERVAL_MS, RECHECK_INTERVAL_MS, RECHECK_OLD_PER_RUN, SHIPPED_ID_MAP_PATH,
+      createBackgroundService, createOffscreenParser, domParse, OFFSCREEN_PATH, DETAIL_FETCH_INTERVAL_MS, RECHECK_INTERVAL_MS, RECHECK_OLD_PER_RUN, SHIPPED_ID_MAP_PATH,
     };
   } else {
-    bootstrap(root.browser);
+    const api = core.extensionApi(root);
+    // Firefox: Background-Skript mit DOM. Chromium: Service Worker (background-sw.js) ohne DOMParser.
+    const parse = typeof root.DOMParser === 'function'
+      ? domParse(root.DOMParser)
+      : createOffscreenParser({ offscreen: api.offscreen, runtime: api.runtime });
+    bootstrap(api, parse);
   }
 })(typeof globalThis !== 'undefined' ? globalThis : this);

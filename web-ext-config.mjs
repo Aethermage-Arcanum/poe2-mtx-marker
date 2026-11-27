@@ -9,6 +9,11 @@ export default {
     'package.json',
     'package-lock.json',
     'web-ext-config.mjs',
+    // Nur Chromium (tools/build-chromium.mjs nimmt sie dort auf).
+    'background-sw.js',
+    'offscreen.html',
+    'offscreen.js',
+    'icons/png',
   ],
   build: {
     overwriteDest: true,

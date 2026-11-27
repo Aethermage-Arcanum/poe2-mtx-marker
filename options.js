@@ -49,7 +49,8 @@
   if (typeof module === 'object' && module.exports) {
     module.exports = { initOptions, OPTION_IDS };
   } else {
-    const t = core.createTranslator((key, substitutions) => root.browser.i18n.getMessage(key, substitutions));
-    initOptions({ document: root.document, storage: root.browser.storage.local, t });
+    const api = core.extensionApi(root);
+    const t = core.createTranslator((key, substitutions) => api.i18n.getMessage(key, substitutions));
+    initOptions({ document: root.document, storage: api.storage.local, t });
   }
 })(typeof globalThis !== 'undefined' ? globalThis : this);

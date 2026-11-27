@@ -135,7 +135,7 @@
         marker.setSettings(changes[core.STORAGE_KEYS.SETTINGS].newValue);
       }
     });
-    browser.runtime.onMessage.addListener((message) => {
+    browser.runtime.onMessage.addListener(core.messageListener((message) => {
       if (!message) return undefined;
       if (message.type === core.MESSAGE_TYPES.DATA_UPDATED) {
         marker.setData(message.data);
@@ -143,7 +143,7 @@
       }
       if (message.type === core.MESSAGE_TYPES.GET_STATS) return Promise.resolve(marker.stats());
       return undefined;
-    });
+    }, (error) => logger.error(LOG_PREFIX, error)));
 
     marker.start();
     try {
@@ -157,6 +157,6 @@
   if (typeof module === 'object' && module.exports) {
     module.exports = { createMarker, bootstrap, MARK_CLASS, LABEL_CLASS, NOTICE_ID, CSS_VARS };
   } else {
-    bootstrap({ browser: root.browser, document: root.document, logger: root.console, MutationObserver: root.MutationObserver });
+    bootstrap({ browser: core.extensionApi(root), document: root.document, logger: root.console, MutationObserver: root.MutationObserver });
   }
 })(typeof globalThis !== 'undefined' ? globalThis : this);

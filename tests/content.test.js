@@ -224,8 +224,11 @@ test('Content-Bootstrap: meldet Seitenaufruf, übernimmt Daten, Einstellungen li
   for (const fn of browser.listeners.message) fn({ type: core.MESSAGE_TYPES.DATA_UPDATED, data: liveData(FULL_PAYLOAD) });
   assert.equal(labelOf(document, 'ChaoticStormborneArmourPack'), 'PoE2 ready 4/4');
 
-  const replies = browser.listeners.message.map((fn) => fn({ type: core.MESSAGE_TYPES.GET_STATS }));
-  assert.deepEqual(await replies.find((r) => r), { matchedCards: 2, totalCards: 2 });
+  // Antwort über sendResponse mit "return true", wie Firefox und Chromium es beide verstehen.
+  const stats = await new Promise((resolve) => {
+    for (const fn of browser.listeners.message) assert.equal(fn({ type: core.MESSAGE_TYPES.GET_STATS }, {}, resolve), true);
+  });
+  assert.deepEqual(stats, { matchedCards: 2, totalCards: 2 });
   marker.stop();
 });
 

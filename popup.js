@@ -74,8 +74,9 @@
   if (typeof module === 'object' && module.exports) {
     module.exports = { loadPopupState, renderPopup, POPUP_IDS };
   } else {
-    const t = core.createTranslator((key, substitutions) => root.browser.i18n.getMessage(key, substitutions));
-    loadPopupState(root.browser)
+    const api = core.extensionApi(root);
+    const t = core.createTranslator((key, substitutions) => api.i18n.getMessage(key, substitutions));
+    loadPopupState(api)
       .then((state) => renderPopup(root.document, state, t))
       .catch((error) => {
         const box = root.document.getElementById(POPUP_IDS.ERROR);
